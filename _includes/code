@@ -1,0 +1,9 @@
+
+<div class="w3-panel w3-light-grey">
+{% if include.content != null %}
+<kotlin data-highlight-only>{{include.content}}</kotlin>
+{% else %}
+<kotlin data-highlight-only>{% include_relative code/{{include.file}} %}</kotlin>
+{% endif %}
+<button id="opener">Open Dialog</button>
+</div>

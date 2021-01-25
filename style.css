@@ -1,0 +1,163 @@
+body {
+  background-color:  white;
+  font-weight: 300;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14pt;
+	line-height: 1.75em;
+  max-width: 800px;
+
+	margin-left: auto;
+	margin-right: auto;
+  border-color: gray;
+}
+
+div.header {
+  position: fixed;
+  background-color: lightgray;
+  padding: 0px;
+  text-align: center;
+  border-radius: 25px;
+  width: 800px;
+  max-width: 800px;
+  top: 0px;
+  font-size: 18pt;
+  color: gray;
+  height: 40px;
+  margin-top: 20px;
+}
+
+div.footer {
+  position: fixed;
+  bottom: 20px;
+  background-color: lightgray;
+  padding: 0px;
+  text-align: center;
+  border-radius: 25px;
+  border-color: red;
+  font-size: 12pt;
+  width: 800px;
+  max-width: 800px;
+  height: 40px;
+  color: gray;
+}
+
+div.content {
+  position: absolute;
+  top: 40px;
+    bottom: 40px;
+    padding-top: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 795px;
+  max-width: 795px;
+  border-radius: 0px;
+  border-width: medium;
+  border: lightgray 2px solid;
+  background: #f1f1f1;
+  z-index: -1;
+  overflow-y: auto;
+
+}
+
+div.section {
+  padding: 16px;
+  margin-top: 10px;
+  border-radius: 25px;
+  background: white;
+  margin-top: 15px;
+}
+
+
+
+
+h1   {
+  color: gray;
+  font-weight: 500;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20pt;
+  line-height: 1.75em;
+  margin-left: 30px;
+}
+h2   {
+  color: gray;
+  font-weight: 300;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16pt;
+  margin-left: 30px;
+  line-height: 1.75em;
+}
+h3 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-sans-serif;
+  font-size: 12pt;
+}
+p    {
+  color: black;
+  text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+p.exercise {
+    border-style: solid;
+    background-color: gray;
+}
+span.doc  {
+  text-decoration: none;
+}
+span.doc:hover {
+  background-color: yellow;
+}
+a.bullet {
+
+}
+li.bullet {
+  list-style-type: square;
+  padding-left: 60px;
+}
+li.bullet:hover {
+    background-color: yellow;
+}
+#something {
+  display: none;
+}
+
+#something:target {
+  display: block;
+}
+
+img {
+  border: black 1px solid;
+  padding: 10px;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+a {
+  target-name:new;
+  target-new:tab;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 3px;
+    border:2px solid #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    border:2px solid #000000;
+      padding: 5px;
+      background-color: lightgray;
+}
+
+td {
+    border:1px solid #000000;
+    text-align: center;
+    padding: 5px;
+}
+
+img[alt$=">"] {
+  float: right;
+}

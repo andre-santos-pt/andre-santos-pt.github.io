@@ -1,0 +1,4 @@
+<div class="w3-panel w3-red">
+<h2>Erro: {{include.title}}</h2>
+{{include.msg}}
+</div>
