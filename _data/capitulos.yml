@@ -5,7 +5,7 @@ caps:
   url: 00_intro
   secs:
     - sec: Introdução
-      url: 00_intro
+      url: index
 
     - sec: Princípios de Engenharia de Software
       url: principios
