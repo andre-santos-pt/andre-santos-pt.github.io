@@ -72,20 +72,8 @@
 
 
 <header class="w3-container w3-black w3-top">
-  <div class="w3-dropdown-hover w3-display-topleft">
-    <a href="/index">
-    <i class="fa fa-bars w3-xxlarge w3-button w3-black"></i>
-  </a>
-    <!--<button class="w3-button w3-black">Conteúdos</button>-->
-    <div class="w3-dropdown-content w3-bar-block w3-border">
-      {% for c in site.data.capitulos.caps %}
-      <a href="/{{c.url}}.html" class="w3-bar-item w3-button">{{c.cap}}</a>
-      {% endfor %}
 
-    </div>
-  </div>
-
-  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ page.title }}</h2>
+  <h2>{{ page.title }}</h2>
   <div class="w3-display-topright"</div>
   {% include nav url = page.url %}
 </div>
@@ -94,8 +82,8 @@
   <a href="http://www.iscte-iul.pt" target="_blank" class="w3-padding-small w3-hover-black w3-display-topright"><img src="/iscte.png" class="w3-hover-opacity" style="max-height:50px"/></a>
 -->
 </header>
-{% include nav url = page.url %}
 
+{% include nav url = page.url %}
     <section>
       <div class="w3-container w3-padding-64">
         {% if page.image != null %}
@@ -111,7 +99,7 @@
 
 
     <footer class="w3-container w3-black w3-bottom">
-      &copy; André L. Santos, <a href="{{ site.url }}">{{site.data.capitulos.titulo}}</a>
+      &copy; André L. Santos</a>
 
 {% include nav url = page.url %}
 

@@ -1,5 +1,5 @@
 ---
-title: Programação Multi-Paradigma em Kotlin
+title: Programação Multiparadigma em Kotlin
 layout: default
 ---
 

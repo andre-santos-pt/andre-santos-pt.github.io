@@ -1,30 +1,28 @@
-titulo: Programação Multi-Paradigma em Kotlin
+root: kotlin
+titulo: Programação Multiparadigma em Kotlin
 caps:
 
-- cap: Introdução
-  url: 00_intro
-  secs:
-    - sec: Introdução
-      url: index
-
-    - sec: Princípios de Engenharia de Software
-      url: principios
-
-    - sec: Notas sobre Kotlin
-      url: historia
+#- cap: Introdução
+#  url: 00_intro
+#  secs:
+#    - sec: Introdução
+#      url: index
+#
+#    - sec: Princípios de Engenharia de Software
+#      url: principios
+#
+#    - sec: Notas sobre Kotlin
+#      url: historia
 
 - cap: Expressões
   url: 01_expressoes
   secs:
     - sec: Expressões constantes
       url: expressoescon
-
     - sec: Expressões dependentes
       url: expressoesdep
-
     - sec: "Prática: folha de cálculo (simples)"
       url: folhacalexp
-
     - sec: Valores compostos
       url: valorescompostos
 
@@ -33,28 +31,20 @@ caps:
   secs:
     - sec: Funções independentes
       url: funcoesind
-
     - sec: Funções dependentes
       url: funcoesdep
-
     - sec: "Prática: imagens (filtros preto e branco)"
       url: imagensbw
-
     - sec: "Memória: pilha de chamadas"
       url: memoriapilha
-
     - sec: Funções recursivas
       url: funcoesrec
-
     - sec: "Prática: folha de cálculo (funções)"
       url: folhacalfun1
-
     - sec: Funções associadas a valores compostos
       url: funcoescomp
-
     - sec: Funções de ordem superior
       url: funcoessup
-
     - sec: "Prática: folha de cálculo (funções)"
       url: folhacalfun2
 
@@ -106,23 +96,21 @@ caps:
 
 
 
-- cap: Objetos
-  url:
-  secs:
-  - sec: Objetos
-    url: 02_funcoes
-
-  - sec: Encapsulamento
-    url: 02_funcoes
-
+#- cap: Objetos
+#  url:
+#  secs:
+#  - sec: Objetos
+#    url: 02_funcoes
+#  - sec: Encapsulamento
+#    url: 02_funcoes
 
 
 
 
-- cap: Polimorfismo
-  secs:
-    - sec: Interfaces
-      url: 02_funcoes
+#- cap: Polimorfismo
+#  secs:
+#    - sec: Interfaces
+#      url: 02_funcoes
 
-    - sec: Herança
-      url: 02_funcoes
+#    - sec: Herança
+#      url: 02_funcoes
