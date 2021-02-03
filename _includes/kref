@@ -1,0 +1,3 @@
+<div class="w3-panel w3-border w3-border-blue w3-round w3-light-gray w3-padding-16">
+<img src="/kotlin.png"/> <b>Referência:</b> <a href="{{include.link}}">{{include.msg}}</a><br>
+</div>

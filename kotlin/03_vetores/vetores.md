@@ -1,4 +1,4 @@
----
+code---
 title: Vetores
 ---
 **Vetores** consistem na forma mais elementar de lidar com conjuntos de dados. Um vetor consiste numa sequência de elementos de determinado tipo. O **comprimento** do vetor corresponde ao número de elementos. Os elementos são acedidos mediante **índices**, tendo o primeiro elemento índice zero o últime comprimento menos um. No exemplo seguinte, temos um vetor com comprimento 5, sendo os índices válidos {0, 1, 2, 3, 4}. Nesta secção ilustraremos o conceito de vetor com vetores de números inteiros.
@@ -32,12 +32,12 @@ val zeroArray = IntArray(7)
 
 ## Inicialização com função para gerar elementos
 
-{% include code content="val naturals = IntArray(10) { it + 1 }" %}
+{% include code code="val naturals = IntArray(10) { it + 1 }" %}
 
 
 ## Inicialização com elementos
 
-{% include code content="val even = intArrayOf(2, 4, 6, 8)" %}
+{% include code code="val even = intArrayOf(2, 4, 6, 8)" %}
 
 
 ## Comprimento
@@ -45,7 +45,7 @@ O comprimento de um vetor é fixo. Uma vez alocado um vetor, já não é possív
 
 O comprimento pode ser zero, isto é, um vetor vazio sem elementos. Esta possibilidade é útil para representar conjuntos de dados vazios. Por exemplo, a interceção de {1, 2} com {3, 4} corresponde ao conjunto vazio. Uma pesquisa para a qual não foram encontrados resultados, também consiste num conjunto vazio.
 
-{% include code content="val empty = IntArray(0)" %}
+{% include code code="val empty = IntArray(0)" %}
 
 <code>
 val a = IntArray(0)

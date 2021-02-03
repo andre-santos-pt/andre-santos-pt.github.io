@@ -2,7 +2,9 @@
 title: Funções independentes
 ---
 
-Uma função, no sentido matemático do termo, permite obter um valor (contradomínio) dado um valor do seu domínio. Por exemplo, a função *f(x) = x*<sup>2</sup> fornece o quadrado de *x*, por exemplo, *f(4)* correspondendo a *16*, *f(5)* a *32*, etc. Em programação, *x* é designado por **parâmetro**, ao passo que valores concretos para o mesmo (4, 5, etc) são referidos como **argumentos**.
+# Definição
+
+Uma função, no sentido matemático do termo, permite obter um valor (contradomínio) dado um valor do seu domínio. Por exemplo, a função *f(x) = x*<sup>2</sup> fornece o quadrado de *x*, e desta forma, *f(4)* correspondendo a *16*, *f(5)* a *32*, etc. Em programação, *x* é designado por **parâmetro**, ao passo que valores concretos para o mesmo (4, 5, etc) são referidos como **argumentos**.
 
 Utilizando a palavra reservada **fun** (abreviatura de *function*), é possível definir a função acima. O identificador *f* corresponde ao nome da função, entre parêntesis está definido o parâmetro *x* do tipo *Double*. À direita do símbolo **=** está a expressão que define a função.
 
@@ -10,36 +12,35 @@ Utilizando a palavra reservada **fun** (abreviatura de *function*), é possível
 
 Note-se que enquanto que no [capítulo anterior](../01_expressoes/expressoesdep) as expressões podiam depender de outras definições de valores, aqui a situação é semelhante, no sentido em que a expressão que define a função depende dos seus parâmetros (*x* no exemplo).
 
-# Nome da função
+## Identificador da função
 
-Ao definir uma função, é necessário definir um nome que a identifica. No primeiro exemplo apresentado, a escolha do nome *f* baseou-se apenas no exemplo da Matemática. Na verdade, não é uma boa escolha, pois *f* não informa nada sobre o que a função calcula.
+Ao definir uma função, é necessário definir um identificador, i.e. um *nome* que a identifica. No primeiro exemplo apresentado, a escolha do nome *f* baseou-se apenas no exemplo da Matemática. Na verdade, não é uma boa escolha, pois *f* não informa nada sobre o que a função calcula.
 
 <u>O nome de uma função é muito importante, e deve refletir o que a mesma calcula.</u> Existem duas razões principais para esta importância:
 - Quando alguém tem que entender código escrito por terceiros, o nome da função será das primeiras coisas que lerá, e isso poderá fornecer uma pista para o propósito da função, e consequentemente, ajudar a entender a sua definição.
-- Uma função utilizada na definição de outras, irá ser identificada pelo seu nome, sendo que a qualidade do mesmo facilitará (ou não) a leitura e compreensão dessas funções que a utilizam. (Imagine-se por exemplo que nas fórmulas de uma folha de cálculo a funções para calcular o somatório e média se chamavam *f1* e *f2*.)
+- Uma função utilizada na definição de outras, irá ser identificada pelo seu nome, sendo que a qualidade do mesmo facilitará (ou não) a leitura e compreensão dessas funções que a utilizam. (Imagine-se a confusão que seria nas fórmulas de uma folha de cálculo se as funções para calcular o somatório e a média se chamassem *f1* e *f2*.)
 
-Posto isto, o último exemplo não tem um identificador apropriado. Algo como o seguinte seria uma escolha melhor, dado que *square* informa que se trata do quadrado de um número.
+À luz deste princípio, o último exemplo não tem certamente um identificador apropriado. Algo como o seguinte seria uma escolha melhor, dado que *square* informa que se trata do quadrado de um número.
 
 {% include code file="square2.kt" %}
 
 
-
-# Parâmetros
-tipos obrigatórios
-vários
+## Parâmetros
+Uma função poderá ter um ou mais parâmetros, sendo que cada um terá um identificador único no conjunto de parâmetros. É também obrigatório indicar qual o tipo de cada parâmetros.
 
 {% include code file="avg.kt" %}
 
-# Retorno
-
-inferência por vezes forçada
+## Tipo de retorno
+Uma função devolve um valor de um determinado tipo. Nalguns casos, como os exemplos acima, esse tipo pode ser inferido através da expressão. No caso de *square* o tipo de retorno será inteiro (*Int*), ao passo que o de *avg* será decimal (*Double*).
 
 ## Instrução de Retorno
 
 **return**
-fun square(n:Int) {
+{% include code code="
+fun square(n: Int): Int {
     return n * n
 }
+"%}
 
 
 # Funções baseadas em expressão condicional
@@ -87,4 +88,7 @@ val m = max(abs(4), abs(-2))
 
 # Sumário
 
-As funções independentes simples, tais como as baseadas em expressões, são bastante utilizadas em programas reais, apesar da sua simplicidade. Na [próxima secção](bwimages) ilustraremos a sua aplicação com efeitos simples sobre imagens.
+As funções independentes simples, tais como as baseadas em expressões, são bastante utilizadas em programas reais, apesar da sua simplicidade. A possibilidade de "dar um nome" a um simples cálculo pode facilita a comunicação da intenção do código. Por exemplo 
+
+Na próxima secção
+Na [próxima secção](bwimages) ilustraremos a sua aplicação com efeitos simples sobre imagens.

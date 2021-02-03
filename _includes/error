@@ -1,4 +1,10 @@
-<div class="w3-panel w3-red">
-<h2>Erro: {{include.title}}</h2>
-{{include.msg}}
+<div class="w3-panel w3-border w3-border-red w3-round w3-light-gray">
+
+<br><b>Erro:</b> {{include.msg}}<br><br>
+{% if include.code != null %}
+<kotlin data-highlight-only>{{include.code}}</kotlin>
+{% endif %}
+{% if include.exc != null %}
+<p class="w3-text-red">{{include.exc}}</p>
+{% endif %}
 </div>

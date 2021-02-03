@@ -1,9 +1,22 @@
 
-<div class="w3-panel w3-light-grey">
-{% if include.content != null %}
-<kotlin data-highlight-only>{{include.content}}</kotlin>
+{% if include.msg != null %}
+<div class="w3-panel w3-border w3-border-black w3-round w3-light-gray">
+<br><i>{{include.msg}}</i><br><br>
+{% else %}
+<div>
+{% endif %}
+{% if include.code != null %}
+<div width="50%"><kotlin data-highlight-only id="er">{{include.code}}
+
+</kotlin></div>
 {% else %}
 <kotlin data-highlight-only>{% include_relative code/{{include.file}} %}</kotlin>
 {% endif %}
-<button id="opener">Open Dialog</button>
+{% if include.img != null %}
+<img src="{{include.img}}" class="code"/><br>
+{% endif %}
 </div>
+
+<!--
+<button style="font-size:24px" onclick="copy('er')">Button <i class="fa fa-copy"></i></button>
+-->

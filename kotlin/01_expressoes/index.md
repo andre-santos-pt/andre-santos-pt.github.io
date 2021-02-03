@@ -2,7 +2,10 @@
 title: Expressões
 ---
 
-![excel](excel.png)
+Este capítulo aborda a definição de valores através de expressões.
 
-Este capítulo aborda a definição de valores através de expressões, introduzindo todos os operadores principais. A prática de conceitos é baseada em folhas de cálculo (bastante simplificadas nesta fase).
-O tema pode aparentar ser fácil, mas há diversos pormenores que é importante dominar.
+1. Começamos por introduzir as [expressões constantes](expressoescon), introduzindo os tipos de dados e operadores elementares.
+
+2. Em seguida, apresentamos [expressões dependentes](expressoesdep).
+
+3. Por fim, explicamos a definição de tipos de [valores compostos](valorescompostos).

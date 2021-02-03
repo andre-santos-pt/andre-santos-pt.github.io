@@ -1,31 +1,37 @@
 
 
   {% for c in site.data.capitulos.caps %}
-  {% assign capurl = "/" | append: c.url | append: "/" %}
+  {% assign capurl = "/kotlin/" | append: c.url | append: "/" %}
   {% if capurl == include.url %}
-      <a href="/{{ c.url }}/{{c.secs[0].url}}"><i class="fa fa-arrow-right w3-large w3-button w3-lightgray"></i></a>
+      <a href="/kotlin/{{ c.url }}/{{c.secs[0].url}}"><i class="fa fa-arrow-right w3-large w3-button w3-lightgray"></i></a>
       {% break %}
   {% endif %}
 
   {% for s in c.secs %}
-  {% assign u = "/" | append: c.url | append: "/" | append: s.url | append: ".html" %}
+  {% assign u = "/kotlin/" | append: c.url | append: "/" | append: s.url | append: ".html" %}
   {% if u == include.url %}
   {% if forloop.index0 != 0 %}
   {% assign p = forloop.index0 | minus: 1 %}
-  {% assign n = "/" | append: c.url | append: "/" | append: c.secs[p].url | append: ".html" %}
+  {% assign n = "/kotlin/" | append: c.url | append: "/" | append: c.secs[p].url | append: ".html" %}
+
     <div class="w3-tooltip">
       <a href="{{ n }}"><i class="fa fa-arrow-left w3-large w3-button w3-lightgray"></i></a>
+<!--
       <span style="position:absolute;left:0;bottom:18px"
       class="w3-text w3-tag w3-small">{{c.secs[p].sec}}</span>
       </div>
+      -->
   {% else %}
-      <a href="/{{ c.url }}"><i class="fa fa-arrow-left w3-large w3-button w3-lightgray"></i></a>
+      <a href="/kotlin/{{ c.url }}"><i class="fa fa-arrow-left w3-large w3-button w3-lightgray"></i></a>
   {% endif %}
   {% if forloop.index != c.secs.size %}
   {% assign i = forloop.index0 | plus: 1 %}
-  {% assign n = "/" | append: c.url | append: "/" | append: c.secs[i].url | append: ".html" %}
+  {% assign n = "/kotlin/" | append: c.url | append: "/" | append: c.secs[i].url | append: ".html" %}
       <a href="{{ n }}"><i class="fa fa-arrow-right w3-large w3-button w3-lightgray"></i></a>
+  {% else %}
+<b>?</b>
   {% endif %}
+
   {% endif %}
   {% endfor %}
   {% endfor %}

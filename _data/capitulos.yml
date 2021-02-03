@@ -21,78 +21,66 @@ caps:
       url: expressoescon
     - sec: Expressões dependentes
       url: expressoesdep
-    - sec: "Prática: folha de cálculo (simples)"
-      url: folhacalexp
     - sec: Valores compostos
       url: valorescompostos
 
-- cap: Funções
-  url: 02_funcoes
-  secs:
-    - sec: Funções independentes
-      url: funcoesind
-    - sec: Funções dependentes
-      url: funcoesdep
-    - sec: "Prática: imagens (filtros preto e branco)"
-      url: imagensbw
-    - sec: "Memória: pilha de chamadas"
-      url: memoriapilha
-    - sec: Funções recursivas
-      url: funcoesrec
-    - sec: "Prática: folha de cálculo (funções)"
-      url: folhacalfun1
-    - sec: Funções associadas a valores compostos
-      url: funcoescomp
-    - sec: Funções de ordem superior
-      url: funcoessup
-    - sec: "Prática: folha de cálculo (funções)"
-      url: folhacalfun2
+#- cap: Funções
+#  url: 02_funcoes
+#  secs:
+#    - sec: Funções independentes
+#      url: funcoesind
+#    - sec: Funções dependentes
+#      url: funcoesdep
+#    - sec: "Prática: imagens (filtros preto e branco)"
+#      url: imagensbw
+#    - sec: "Memória: pilha de chamadas"
+#      url: memoriapilha
+#    - sec: Funções recursivas
+#      url: funcoesrec
+#    - sec: "Prática: folha de cálculo (funções)"
+#      url: folhacalfun1
+#    - sec: Funções associadas a valores compostos
+#      url: funcoescomp
+#    - sec: Funções de ordem superior
+#      url: funcoessup
+#    - sec: "Prática: folha de cálculo (funções)"
+#      url: folhacalfun2
 
 
-- cap: Vetores
-  url: 03_vetores
-  secs:
-    - sec: Vetores
-      url: vetores
-
-    - sec: "Memória: alocação e referencias"
-      url: aloc
-
-    - sec: "Prática: folha de cálculo (vetores)"
-      url: 01_expressoes/expressoes
-
-    - sec: Matrizes
-      url: 07_vetores
-
-    - sec: "Aplicação: imagens (efeitos)"
-      url: 01_expressoes/expressoes
-
-    - sec: "Prática: folha de cálculo (matrizes)"
-      url: 01_expressoes/expressoes
+#- cap: Vetores
+#  url: 03_vetores
+#  secs:
+#    - sec: Vetores
+#      url: vetores
+#    - sec: "Memória: alocação e referencias"
+#      url: aloc
+#    - sec: "Prática: folha de cálculo (vetores)"
+#      url: 01_expressoes/expressoes
+#    - sec: Matrizes
+#      url: 07_vetores
+#    - sec: "Aplicação: imagens (efeitos)"
+#      url: 01_expressoes/expressoes
+#    - sec: "Prática: folha de cálculo (matrizes)"
+#      url: 01_expressoes/expressoes
 
 
 
 
-- cap: Variáveis
-  url: 04_variaveis
-  secs:
-    - sec: Variáveis e blocos de instruções
-      url: blocos
-
-    - sec: Ciclos
-      url: ciclos
-
-    - sec: "Prática: processador de texto"
-      url: proctexto
-
-    - sec: Procedimentos
-      url: procedimentos
-
-    - sec: "Prática: folha de cálculo (procedimentos)"
-      url: folhacalcproc
-
-    - sec: Simplificações de sintaxe
-      url: simplificacoes
+#- cap: Variáveis
+#  url: 04_variaveis
+#  secs:
+#    - sec: Variáveis e blocos de instruções
+#      url: blocos
+#    - sec: Ciclos
+#      url: ciclos
+#    - sec: "Prática: processador de texto"
+#      url: proctexto
+#    - sec: Procedimentos
+#      url: procedimentos
+#    - sec: "Prática: folha de cálculo (procedimentos)"
+#      url: folhacalcproc
+#    - sec: Simplificações de sintaxe
+#      url: simplificacoes
 
 
 
