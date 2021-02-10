@@ -44,6 +44,8 @@ img.code {
     padding: 10px;
   }
     </style>
+
+
     <script>
 
     document.addEventListener('selectionchange', () => {
@@ -154,7 +156,11 @@ img.code {
     </div>
   </div>
 
-  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ page.title }}</h2>
+  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ page.title }}
+  {% if page.exer == true %}
+  (Exercício)
+  {% endif %}
+  </h2>
   <div class="w3-display-topright">
 <!--
     <i class="fa fa-question-circle w3-xxlarge w3-button w3-black"

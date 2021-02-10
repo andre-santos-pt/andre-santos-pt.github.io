@@ -87,10 +87,10 @@ Uma função de ordem superior é caracterizada por ter pelo menos uma das segui
 Retomamos o exemplo inicial de motivação para ilustrar uma função que recebe outra como argumento. A ideia é ter uma função que efetua contagens num intervalo de números inteiros
 
 {% include code code="
-fun countIf(min: Int, max: Int, criterion: (Int) -> Boolean): Int =
+fun countIf(min: Int, max: Int, accept: (Int) -> Boolean): Int =
     if(min > max) 0
-    else if(criterion(min)) 1 + countIf(min + 1, max, criterion)
-    else countIf(min + 1, max, criterion)
+    else if(accept(min)) 1 + countIf(min + 1, max, accept)
+    else countIf(min + 1, max, accept)
 "
 msg="Exemplo: Função recursiva de ordem superior para contar quantos números inteiros num intervalo [min, max] obedecem a determinado critério variável."
 %}
