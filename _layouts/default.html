@@ -18,6 +18,7 @@
       max-width: 960px;
 
     }
+
     table{
     border-collapse: collapse;
     border-spacing: 0;
@@ -40,10 +41,30 @@ img.code {
   }
   footer {
     height: 40px;
-    margin-top: 10px;
+    padding: 10px;
   }
     </style>
     <script>
+
+    document.addEventListener('selectionchange', () => {
+
+      var sel = document.getSelection().toString()
+
+      if(sel.length > 0) {
+          document.getElementById('question').style.visibility = 'visible'
+          var parent = document.getSelection().anchorNode
+          console.log(parent.anchorNode)
+          if(parent instanceof Text) {
+            var t = "<i>..." + parent.data.toString() + "...</i>"
+            t = t.replace(sel, "<mark>" + document.getSelection().toString() + "</mark>")
+            document.getElementById('questionForm').innerHTML = t
+        }
+        }
+      else
+          document.getElementById('question').style.visibility = 'hidden'
+      //window.alert(document.getSelection().anchorNode.data);
+    });
+
     function copy(id) {
       /* Get the text field */
       var copyText = document.getElementById(id);
@@ -60,37 +81,27 @@ img.code {
     }
 
 
-
   $( function() {
     $("#dialog").dialog({
       autoOpen: false,
         modal: true,
-        title: "Invocação",
+        title: "Questão?",
+        width: 500,
+        height: 500,
         open: function() {
-          var markup = 'Hello World';
-          $(this).html(markup);
+
         },
         buttons: {
-          Ok: function() {
+          "Cancelar": function() {
+            $( this ).dialog( "close" );
+          },
+          "Enviar": function() {
             $( this ).dialog( "close" );
           }
         }
       });
 
-      /*
-    $( "#dialog" ).dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "explode",
-        duration: 1000
-      }
-    });
-*/
-    $( "#opener" ).on( "click", function() {
+    $( "#question" ).on( "click", function() {
       $( "#dialog" ).dialog( "open" );
     });
   } );
@@ -99,23 +110,33 @@ img.code {
 
 
   <body>
-
-
     <div id="dialog" title="">
-      <form>
+      <p id="questionForm"/>
+      <form border ="0">
           <fieldset>
+            <input type="radio" id="duvida" name="kind" value="duvida" checked>
+            <label for="duvida">Dúvida</label><br>
+            <input type="radio" id="gralha" name="kind" value="gralha">
+            <label for="gralha">Gralha</label><br>
+            <input type="radio" id="outra" name="kind" value="outra">
+            <label for="outra">Outra</label><br>
+
+            <textarea id="desc" rows="4" cols="50" class="text ui-widget-content ui-corner-all"></textarea>
+
+            <label for="email">Email (opcional, para resposta)</label>
+            <input type="text" id="email" name="kind" class="text ui-widget-content ui-corner-all">
+<!--
             <label for="name">Name</label>
             <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
             <label for="email">Email</label>
             <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
             <label for="password">Password</label>
             <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
-
+-->
             <!-- Allow form submission with keyboard without duplicating the dialog button -->
             <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
           </fieldset>
         </form>
-      <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
     </div>
 
 
@@ -135,6 +156,10 @@ img.code {
 
   <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ page.title }}</h2>
   <div class="w3-display-topright">
+<!--
+    <i class="fa fa-question-circle w3-xxlarge w3-button w3-black"
+    id="question" style="visibility: hidden"></i>
+  -->
   {% include nav url = page.url %}</div>
 </div>
 
@@ -157,8 +182,9 @@ img.code {
 
 
     <footer class="w3-container w3-black w3-bottom">
-
+<div class="w3-display-bottomleft">
       &copy; André L. Santos, <a href="{{site.url}}/kotlin">{{site.data.capitulos.titulo}}</a>
+  </div>
         <div class="w3-display-bottomright">
       <a href="http://www.iscte-iul.pt"><img src="/iscte.png" height="40px" target="_blank"/></a>
     </div>

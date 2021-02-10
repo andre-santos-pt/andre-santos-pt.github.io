@@ -7,4 +7,7 @@
 {% if include.exc != null %}
 <p class="w3-text-red">{{include.exc}}</p>
 {% endif %}
+{% if include.img != null %}
+<img src="{{include.img}}" class="code"/><br>
+{% endif %}
 </div>

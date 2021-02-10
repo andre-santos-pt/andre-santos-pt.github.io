@@ -67,7 +67,7 @@ Por fim, existe o tipo de valor elementar para caracteres, sendo que cada valor 
 
 {% include kref msg="Tipos de valor elementares" link="https://kotlinlang.org/docs/reference/basic-types.html" %}
 
-## Inferência de tipos
+## <a name="inferencia"> Inferência de tipos
 Cada expressão tem sempre um tipo associado, e o mesmo acontece para os valores definidos através de **val**. Ainda que o tipo de valor não esteja explícito, em Kotlin é feita
  *inferência de tipos*. Isto significa que com base no tipo da expressão atribuída, o tipo do valor é determinado. Ainda assim, é possível declarar o tipo pretendido junto com o valor que queremos definir.
 

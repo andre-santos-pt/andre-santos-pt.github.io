@@ -24,25 +24,23 @@ caps:
     - sec: Valores compostos
       url: valorescompostos
 
-#- cap: Funções
-#  url: 02_funcoes
-#  secs:
-#    - sec: Funções independentes
-#      url: funcoesind
-#    - sec: Funções dependentes
-#      url: funcoesdep
+- cap: Funções
+  url: 02_funcoes
+  secs:
+    - sec: Funções independentes
+      url: funcoesind
+    - sec: Funções dependentes
+      url: funcoesdep
 #    - sec: "Prática: imagens (filtros preto e branco)"
 #      url: imagensbw
-#    - sec: "Memória: pilha de chamadas"
-#      url: memoriapilha
-#    - sec: Funções recursivas
-#      url: funcoesrec
+    - sec: Funções recursivas
+      url: funcoesrec
 #    - sec: "Prática: folha de cálculo (funções)"
 #      url: folhacalfun1
-#    - sec: Funções associadas a valores compostos
-#      url: funcoescomp
-#    - sec: Funções de ordem superior
-#      url: funcoessup
+  #  - sec: Funções sobre valores compostos
+  #    url: funcoescomp
+    - sec: Funções de ordem superior
+      url: funcoessup
 #    - sec: "Prática: folha de cálculo (funções)"
 #      url: folhacalfun2
 

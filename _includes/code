@@ -1,13 +1,36 @@
 
-{% if include.msg != null %}
-<div class="w3-panel w3-border w3-border-black w3-round w3-light-gray">
-<br><i>{{include.msg}}</i><br><br>
-{% else %}
-<div>
-{% endif %}
-{% if include.code != null %}
-<div width="50%"><kotlin data-highlight-only id="er">{{include.code}}
 
+{% if include.msg != null %}
+  <div class="w3-panel w3-border w3-border-black w3-round w3-light-gray">
+  {% if include.anchor != null %}
+    <a id="{{include.anchor}}">
+  {% endif %}
+  <br><i>{{include.msg}}</i><br><br>
+  {% if include.anchor != null %}
+  </a>
+  {% endif %}
+  {% else %}
+  <div>
+{% endif %}
+
+{% if include.code != null %}
+<div><kotlin id="er" data-highlight-only folded-button="false" data-target-platform="jvm">
+{% if include.test != null %}
+import jquery.*
+import kotlin.browser.document
+import kotlin.browser.window
+//sampleStart
+{% endif %}
+{{include.code}}
+{% if include.test != null %}
+//sampleEnd
+
+fun main() {
+var p = window.prompt("Please enter your name", "Harry Potter");
+  println(divisorOf(p!!.toInt()))
+  //js("window.alert(test(3))")
+}
+{% endif %}
 </kotlin></div>
 {% else %}
 <kotlin data-highlight-only>{% include_relative code/{{include.file}} %}</kotlin>
@@ -15,8 +38,8 @@
 {% if include.img != null %}
 <img src="{{include.img}}" class="code"/><br>
 {% endif %}
-</div>
 
+</div>
 <!--
 <button style="font-size:24px" onclick="copy('er')">Button <i class="fa fa-copy"></i></button>
 -->

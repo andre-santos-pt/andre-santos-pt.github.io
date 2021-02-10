@@ -1,4 +1,4 @@
-code---
+---
 title: Vetores
 ---
 **Vetores** consistem na forma mais elementar de lidar com conjuntos de dados. Um vetor consiste numa sequência de elementos de determinado tipo. O **comprimento** do vetor corresponde ao número de elementos. Os elementos são acedidos mediante **índices**, tendo o primeiro elemento índice zero o últime comprimento menos um. No exemplo seguinte, temos um vetor com comprimento 5, sendo os índices válidos {0, 1, 2, 3, 4}. Nesta secção ilustraremos o conceito de vetor com vetores de números inteiros.
