@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/style.css"> -->
+    <link rel="stylesheet" href="{{ site.url }}/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://unpkg.com/kotlin-playground@1" data-selector="kotlin"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -143,7 +143,7 @@ img.code {
 
 
 <header class="w3-container w3-black w3-top">
-  <div class="w3-dropdown-hover w3-display-topleft">
+  <div class="w3-dropdown-hover">
     <a href="/kotlin/index">
     <i class="fa fa-bars w3-xxlarge w3-button w3-black"></i>
   </a>
@@ -156,7 +156,7 @@ img.code {
     </div>
   </div>
 
-  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ page.title }}
+  <h2>{{ page.title }}
   {% if page.exer == true %}
   (Exercício)
   {% endif %}
