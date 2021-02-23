@@ -6,3 +6,7 @@ header {
 header .w3-dropdown-hover {
   margin-right: 1em;
 }
+
+img .right {
+    float: right;
+}
