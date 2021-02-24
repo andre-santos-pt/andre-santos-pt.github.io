@@ -37,8 +37,13 @@ caps:
       url: funcoesrec
 #    - sec: "Prática: folha de cálculo (funções)"
 #      url: folhacalfun1
-  #  - sec: Funções sobre valores compostos
-  #    url: funcoescomp
+
+#    - sec: Funções sobre valores
+#      url: funcoesvalores
+
+#    - sec: Funções de extensão
+#      url: funcoesext
+
     - sec: Funções de ordem superior
       url: funcoessup
 #    - sec: "Prática: folha de cálculo (funções)"
@@ -79,6 +84,18 @@ caps:
 #      url: folhacalcproc
 #    - sec: Simplificações de sintaxe
 #      url: simplificacoes
+
+- cap: Coleções
+  url: 05_colecoes
+  secs:
+    - sec: Listas
+      url: listas
+    #- sec: Conjuntos
+    #    url: conjuntos
+    - sec: Coleções
+      url: colecoes
+    #- sec: Tabelas
+    #  url: tabelas
 
 
 

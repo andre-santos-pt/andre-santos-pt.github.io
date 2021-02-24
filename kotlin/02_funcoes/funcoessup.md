@@ -50,6 +50,17 @@ val e = isEven(7.2)
 msg="Não correspondência de argumentos/parâmetros."
 %}
 
+## Sequência de instruções
+Uma expressão lambda pode conter uma sequência de instruções, ao invés de apenas que determina o resultado. Nesse caso a última instrução deverá ser a expressão que corresponde ao resultado, sendo opcional a utilização de *return*.
+
+{% include code code="
+val isEven: (Int) -> Boolean = { n ->
+    val mod = n % 2
+    mod == 0
+}
+"
+%}
+
 ## Inferência de tipo
 
 Tal como na definição de valores simples, o tipo da expressão lambda foi inferido a partir da mesma. Ou seja, dado um inteiro, devolve um booleano. Porém, podemos também ser explícitos e de declarar o tipo do valor. A sintaxe para o fazer é a seguinte: **(** *lista de tipos* **) ->** *tipo de retorno*. Desta forma, a mesma definição acima poderia ser dada fornecendo explicitamente o tipo da lambda.
@@ -73,6 +84,7 @@ val isOdd: (Int) -> Boolean = {n: Int -> n % 2}
 "
 msg="Incompatibilidades de expressão lambda."
 %}
+
 
 
 # Função de ordem superior
@@ -151,6 +163,29 @@ fun isPrime(n: Int) = countIf(1, n, divisorOf(n)) == 2
 msg="Exemplo: Função baseada em funções de ordem superior, para verificar se um número é primo."
 %}
 
+
+# Simplificações sintáticas
+
+As invocações de funções com lambdas como argumentos podem revelar-se sintaticamente um pouco densas. Veja-se este caso apresentado anteriormente.
+
+{% include code code="
+val nOdd = countIf(1, 100, { n -> !isEven(n) })
+"
+%}
+
+Existe uma possibilidade para aligeirar a sintaxe que podemos aplicar quando o último argumento de uma invocação é uma expressão lambda, consistindo em extrair esse último argumento para fora dos parênteses da invocação.
+
+{% include code code="
+val nOdd = countIf(1, 100) { n -> !isEven(n) }
+"
+%}
+
+A maioria das expressões lambda têm apenas um argumento. Quando aplicada a simplificação acima, podemos ainda tornar a sintaxe mais leve, omitindo a parte esquerda e referimo-nos ao argumento único por **it** (a "coisa" em questão).
+
+{% include code code="
+val nOdd = countIf(1, 100) { !isEven(it) }
+"
+%}
 
 # Sumário
 As funções de ordem superior permitem definições adaptáveis, permitindo generalizar várias funções semelhantes. As bibliotecas de software quando oferecem formas de adaptabilidade/extensibilidade recorrem muito a este tipo de solução.
