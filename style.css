@@ -1,12 +1,65 @@
 header {
   display: flex;
   align-items: center;
+  height: 60px;
 }
 
 header .w3-dropdown-hover {
-  margin-right: 1em;
+  margin-right: 0.2em;
 }
 
-img .right {
-    float: right;
+footer {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+}
+
+div {
+  max-width: 960px;
+  text-align: justify;
+}
+
+div .w3-panel {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  border: 2px solid #000000;
+  padding: 5px;
+}
+
+td {
+  border: 1px solid #000000;
+  padding: 5px;
+}
+
+img.code {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

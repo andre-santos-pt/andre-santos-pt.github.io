@@ -1,7 +1,7 @@
 
 
 {% if include.msg != null %}
-  <div class="w3-panel w3-border w3-border-black w3-round w3-light-gray">
+  <div class="w3-panel w3-border w3-border-black w3-round-large w3-light-gray">
   {% if include.anchor != null %}
     <a id="{{include.anchor}}">
   {% endif %}

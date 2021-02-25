@@ -1,69 +1,35 @@
 <!doctype html>
 <html lang="pt">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="{{ site.url }}/style.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://unpkg.com/kotlin-playground@1" data-selector="kotlin"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
-    div {
-      text-align: justify;
-      max-width: 960px;
-
-    }
-
-    table{
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:2px solid gray;
-}
-th{
-    border:2px solid #000000;
-    padding: 5px;
-}
-
-td{
-    border:1px solid #000000;
-    padding: 5px;
-}
-img.code {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-  footer {
-    height: 40px;
-    padding: 10px;
-  }
-    </style>
+  <link rel="stylesheet" href="{{ site.url }}/style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://unpkg.com/kotlin-playground@1" data-selector="kotlin"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
-    <script>
-
+  <script>
     document.addEventListener('selectionchange', () => {
 
       var sel = document.getSelection().toString()
 
-      if(sel.length > 0) {
-          document.getElementById('question').style.visibility = 'visible'
-          var parent = document.getSelection().anchorNode
-          console.log(parent.anchorNode)
-          if(parent instanceof Text) {
-            var t = "<i>..." + parent.data.toString() + "...</i>"
-            t = t.replace(sel, "<mark>" + document.getSelection().toString() + "</mark>")
-            document.getElementById('questionForm').innerHTML = t
+      if (sel.length > 0) {
+        document.getElementById('question').style.visibility = 'visible'
+        var parent = document.getSelection().anchorNode
+        console.log(parent.anchorNode)
+        if (parent instanceof Text) {
+          var t = "<i>..." + parent.data.toString() + "...</i>"
+          t = t.replace(sel, "<mark>" + document.getSelection().toString() + "</mark>")
+          document.getElementById('questionForm').innerHTML = t
         }
-        }
-      else
-          document.getElementById('question').style.visibility = 'hidden'
+      } else
+        document.getElementById('question').style.visibility = 'hidden'
       //window.alert(document.getSelection().anchorNode.data);
     });
 
@@ -83,9 +49,9 @@ img.code {
     }
 
 
-  $( function() {
-    $("#dialog").dialog({
-      autoOpen: false,
+    $(function() {
+      $("#dialog").dialog({
+        autoOpen: false,
         modal: true,
         title: "Questão?",
         width: 500,
@@ -95,98 +61,89 @@ img.code {
         },
         buttons: {
           "Cancelar": function() {
-            $( this ).dialog( "close" );
+            $(this).dialog("close");
           },
           "Enviar": function() {
-            $( this ).dialog( "close" );
+            $(this).dialog("close");
           }
         }
       });
 
-    $( "#question" ).on( "click", function() {
-      $( "#dialog" ).dialog( "open" );
+      $("#question").on("click", function() {
+        $("#dialog").dialog("open");
+      });
     });
-  } );
   </script>
-  </head>
+</head>
 
 
-  <body>
-    <div id="dialog" title="">
-      <p id="questionForm"/>
-      <form border ="0">
-          <fieldset>
-            <input type="radio" id="duvida" name="kind" value="duvida" checked>
-            <label for="duvida">Dúvida</label><br>
-            <input type="radio" id="gralha" name="kind" value="gralha">
-            <label for="gralha">Gralha</label><br>
-            <input type="radio" id="outra" name="kind" value="outra">
-            <label for="outra">Outra</label><br>
+<body>
+  <div id="dialog" title="">
+    <p id="questionForm" />
+    <form border="0">
+      <fieldset>
+        <input type="radio" id="duvida" name="kind" value="duvida" checked>
+        <label for="duvida">Dúvida</label><br>
+        <input type="radio" id="gralha" name="kind" value="gralha">
+        <label for="gralha">Gralha</label><br>
+        <input type="radio" id="outra" name="kind" value="outra">
+        <label for="outra">Outra</label><br>
 
-            <textarea id="desc" rows="4" cols="50" class="text ui-widget-content ui-corner-all"></textarea>
+        <textarea id="desc" rows="4" cols="50" class="text ui-widget-content ui-corner-all"></textarea>
 
-            <label for="email">Email (opcional, para resposta)</label>
-            <input type="text" id="email" name="kind" class="text ui-widget-content ui-corner-all">
-            <!-- Allow form submission with keyboard without duplicating the dialog button -->
-            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-          </fieldset>
-        </form>
-    </div>
-
-
-<header class="w3-container w3-black w3-top" style="z-index:99">
-  <div class="w3-dropdown-hover">
-    <a href="/kotlin/index">
-    <i class="fa fa-bars w3-xxlarge w3-button w3-black"></i>
-  </a>
-    <!--<button class="w3-button w3-black">Conteúdos</button>-->
-    <div class="w3-dropdown-content w3-bar-block w3-border">
-      {% for c in site.data.capitulos.caps %}
-      <a href="/kotlin/{{c.url}}" class="w3-bar-item w3-button">{{c.cap}}</a>
-      {% endfor %}
-
-    </div>
+        <label for="email">Email (opcional, para resposta)</label>
+        <input type="text" id="email" name="kind" class="text ui-widget-content ui-corner-all">
+        <!-- Allow form submission with keyboard without duplicating the dialog button -->
+        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+      </fieldset>
+    </form>
   </div>
 
-  <h2>{{ page.title }}
-  {% if page.exer == true %}
-  (Exercício)
-  {% endif %}
-  </h2>
-  <div class="w3-display-topright">
-<!--
+
+  <header class="w3-container w3-black w3-top" style="z-index:99">
+    <div class="w3-dropdown-hover">
+      <a href="/kotlin/index">
+        <i class="fa fa-bars w3-xxlarge w3-button w3-black"></i>
+      </a>
+      <div class="w3-dropdown-content w3-bar-block w3-border">
+        {% for c in site.data.capitulos.caps %}
+        <a href="/kotlin/{{c.url}}" class="w3-bar-item w3-button">{{c.cap}}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div><h1>{{ page.title }}
+      {% if page.exer == true %}
+      (Exercício)
+      {% endif %}
+    </h1></div>
+
+    <div class="w3-display-right">
+      <!--
     <i class="fa fa-question-circle w3-xxlarge w3-button w3-black"
     id="question" style="visibility: hidden"></i>
   -->
-  {% include nav url = page.url %}</div>
-</div>
-
-  <!--
-  <a href="http://www.iscte-iul.pt" target="_blank" class="w3-padding-small w3-hover-black w3-display-topright"><img src="/iscte.png" class="w3-hover-opacity" style="max-height:50px"/></a>
--->
-</header>
-
-{% include nav url = page.url %}
-    <section>
-      <div class="w3-container w3-padding-64">
-        {% if page.image != null %}
-        <img src="{{ page.image }}"/>
-        {% endif %}
-        {{ content }}
-        <br>
-      </div>
-    </section>
-
-
-
-    <footer class="w3-container w3-black w3-bottom" style="z-index:99">
-<div class="w3-display-bottomleft">
-      &copy; André L. Santos, <a href="{{site.url}}/kotlin">{{site.data.capitulos.titulo}}</a>
-  </div>
-        <div class="w3-display-bottomright">
-      <a href="http://www.iscte-iul.pt"><img src="/iscte.png" height="40px" target="_blank"/></a>
+      {% include nav url = page.url %}
     </div>
-    </footer>
+  </div>
+  </header>
 
-  </body>
+
+
+  <section>
+    <div class="w3-container w3-padding-64">
+      {% if page.image != null %}
+      <img src="{{ page.image }}" />
+      {% endif %}
+      {{ content }}
+      <br>
+    </div>
+  </section>
+
+  <footer class="w3-container w3-black w3-bottom" style="z-index:99">
+      &copy; André L. Santos,&nbsp;<a href="{{site.url}}/kotlin">{{site.data.capitulos.titulo}}</a>
+      <a href="http://www.iscte-iul.pt" target="_blank"><img src="/iscte.png" height="40px" class="w3-display-right"/></a>
+  </footer>
+
+</body>
 </html>

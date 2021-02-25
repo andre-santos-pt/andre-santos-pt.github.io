@@ -176,7 +176,7 @@ Valores booleanos podem ser combinados através de expressões lógicas, obtendo
 ### Negação
 Os valores lógicos podem ser **negados**, com vista a obter o valor simétrico, através do operador unário **!**.
 
-{% include code msg="O resultado é falso, pois é negada a avaliação de 3 > 0 (true), obtendo o  (false)." code="val negative = !(3 > 0)" %}
+{% include code msg="O resultado é falso, pois é negada a avaliação de 3 > 0 (verdadeiro)." code="val negative = !(3 > 0)" %}
 
 
 

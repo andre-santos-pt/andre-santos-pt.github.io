@@ -13,28 +13,37 @@ Tal como nas listas, temos uma abstração para leitura de conjuntos e outra par
 # Conjuntos para leitura (*read-only*)
 
 {% include code code="
-val list = setOf(\"um\", \"dois\", \"tres\")"
+val stringSet = setOf(\"um\", \"dois\", \"tres\")
+"
 %}
 
-Nas operações, temos algumas idênticas à lista, mas note-se que não existem operações com indexação (pois não existe tal concepção em conjuntos).
+Nas operações, temos algumas idênticas à lista, mas note-se que não existem operações com indexação (pois não existe tal concepção em conjuntos). Na verdade, o Kotlin fornece algumas funções adicionais (via extensões) que manipulam índices em conjuntos. Porém, essas operações são desaconselhadas em termos de desempenho, pois têm um custo linear.
 
-| Operação/Propriedade       | Descrição      | Exemplo |
+| Operação       | Descrição     | Custo | Exemplo | Resultado |
 | ----------- | ----------- |--------|
-| size | Número de elementos | list.size |
-| isEmpty | Lista é vazia? | list.isEmpty
-| contains(*) | Lista contém elemento? | list.contains("B") |
+| size | Número de elementos | Constante | stringSet.size | 3 |
+| isEmpty | Conjunto é vazio? | Constante | stringSet.isEmpty | false |
+| contains(*) | Conjunto contém elemento? | Constante | list.contains("quatro") | false |
 
 
-# Conjuntos imutáveis
+# Conjuntos mutáveis
 
-Também no caso dos conjuntos imutáveis, algumas operações são equivalentes às listas imutáveis, mas não temos operações com base em índices.
+Também no caso dos conjuntos mutáveis, algumas operações são equivalentes às listas mutáveis, mas não temos operações com base em índices. A principal diferença é que invocar *add* com um elemento que já existe não terá efeito no conjunto. Relativamente a desempenho, de realçar que o custo de *remove* é constante.
 
-| Operação/Propriedade       | Descrição      | Exemplo |
+| Operação       | Descrição   | Custo   | Exemplo | Resultado |
 | ----------- | ----------- |--------|
-| add(*) | Adiciona elemento | list.add(5) |
-| remove(*)
-| clear()
+| add(*) | Adiciona elemento | Constante | stringSet.add("quatro") | ["um", "dois", "tres", "quatro"] |
+| remove(*) | Remove elemento | Constante | stringSet.remove("dois") | ["um", "tres"] |
+| clear() | Remove todos os elementos | Constante | stringSet.clear() | [] |
 
-# Iteração
 
-A iteração num conjunto po
+{% include code code="
+fun <T> removeDuplicates(list: List<T>) : Set<T> {
+    val s = mutableSetOf<T>()
+    for(e in list)
+        s.add(e)
+    return s
+}
+"
+msg="Exemplo: Função para obter os elementos de uma lista sem duplicados (num conjunto). O custo temporal é linear: a lista é iterada na totalidade, mas a inserção no conjunto tem um custo constante."
+%}

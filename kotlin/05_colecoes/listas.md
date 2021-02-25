@@ -51,7 +51,7 @@ msg="Exemplo: função para calcular a média dos valores de uma lista."
 %}
 
 
-# Listas mutável
+# Listas mutáveis
 
 Uma lista mutável (*MutableList*) é uma abstração que estende *List* com operações para modificar a lista. Ou seja, temos disponíveis todas as operações de *List*, mais um conjunto de operações para modificar a lista.
 

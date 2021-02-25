@@ -90,8 +90,8 @@ caps:
   secs:
     - sec: Listas
       url: listas
-    #- sec: Conjuntos
-    #    url: conjuntos
+    - sec: Conjuntos
+      url: conjuntos
     - sec: Coleções
       url: colecoes
     #- sec: Tabelas

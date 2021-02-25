@@ -59,4 +59,4 @@ class MultiMap<K, V> {
 %}
 
 ### 2. Função para indexar Strings pela primeira letra
-Escreva uma função com o propósito idêntico à ao exemplo inicial, utilizando a classe desenvolvida.
+Escreva uma função com o propósito idêntico à do exemplo inicial, utilizando a classe desenvolvida.
