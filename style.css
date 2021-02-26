@@ -4,6 +4,10 @@ header {
   height: 60px;
 }
 
+.ontop {
+    z-index: 10;
+}
+
 header .w3-dropdown-hover {
   margin-right: 0.2em;
 }
@@ -22,11 +26,6 @@ footer {
   align-items: center;
   height: 40px;
   padding: 10px;
-}
-
-footer,
-header {
-  z-index: 10;
 }
 
 .w3-panel,
