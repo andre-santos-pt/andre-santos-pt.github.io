@@ -15,6 +15,7 @@
 
 
   <script>
+    /* Disable to prevent error on selecting text
     document.addEventListener('selectionchange', () => {
 
       var sel = document.getSelection().toString()
@@ -32,6 +33,7 @@
         document.getElementById('question').style.visibility = 'hidden'
       //window.alert(document.getSelection().anchorNode.data);
     });
+    */
 
     function copy(id) {
       /* Get the text field */
@@ -100,7 +102,7 @@
   </div>
 
 
-  <header class="w3-container w3-black w3-top" style="z-index:99">
+  <header class="w3-container w3-black w3-top">
     <div class="w3-dropdown-hover">
       <a href="/kotlin/index">
         <i class="fa fa-bars w3-xxlarge w3-button w3-black"></i>
@@ -130,7 +132,7 @@
 
 
 
-  <section>
+  <main>
     <div class="w3-container w3-padding-64">
       {% if page.image != null %}
       <img src="{{ page.image }}" />
@@ -138,9 +140,9 @@
       {{ content }}
       <br>
     </div>
-  </section>
+  </main>
 
-  <footer class="w3-container w3-black w3-bottom" style="z-index:99">
+  <footer class="w3-container w3-black w3-bottom">
       &copy; André L. Santos,&nbsp;<a href="{{site.url}}/kotlin">{{site.data.capitulos.titulo}}</a>
       <a href="http://www.iscte-iul.pt" target="_blank"><img src="/iscte.png" height="40px" class="w3-display-right"/></a>
   </footer>
