@@ -8,6 +8,15 @@ header .w3-dropdown-hover {
   margin-right: 0.2em;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main > div {
+  max-width: 960px;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -18,11 +27,6 @@ footer {
 footer,
 header {
   z-index: 10;
-}
-
-div {
-  max-width: 960px;
-  text-align: justify;
 }
 
 .w3-panel,
