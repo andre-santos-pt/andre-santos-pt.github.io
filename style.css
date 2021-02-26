@@ -20,21 +20,9 @@ div {
   text-align: justify;
 }
 
-div .w3-panel {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-p {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-h2 {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
+.w3-panel,
+p,
+h2,
 h3 {
   margin-left: 20px;
   margin-right: 20px;
