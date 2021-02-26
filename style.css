@@ -15,6 +15,11 @@ footer {
   padding: 10px;
 }
 
+footer,
+header {
+  z-index: 10;
+}
+
 div {
   max-width: 960px;
   text-align: justify;
