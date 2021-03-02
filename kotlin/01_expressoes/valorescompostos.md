@@ -73,7 +73,7 @@ msg="Ao tentar obter o valor em tempo de execução, a validação não o permit
 exc="java.lang.IllegalArgumentException: Failed requirement."%}
 
 
-## Campos valores compostos
+## Campos de valores compostos
 
 Nos exemplos acima, os campos são sempre de tipo elementar. Porém, podemos definir campos também eles de tipo de valor composto.
 
@@ -133,4 +133,4 @@ msg="Ambos os valores <b>areSame</b> e <b>areDifferent</b> serão verdadeiros."
 %}
 
 # Sumário
-Esta secção abordou a definição de tipos de valor compostos. Esta primeira abordagem focou-se apenas no elementar, mais à frente mostraremos como é possível enriquecer os [tipos de valores com funções](../02_funcoes/funcoescomp).
+Esta secção abordou a definição de tipos de valor compostos. Esta primeira abordagem focou-se apenas no elementar, mais à frente mostraremos como é possível enriquecer os [tipos de valores com funções](../02_funcoes/funcoesvalores).
