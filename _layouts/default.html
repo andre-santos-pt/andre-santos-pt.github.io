@@ -9,73 +9,6 @@
 
   <link rel="stylesheet" href="{{ site.url }}/style.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://unpkg.com/kotlin-playground@1" data-selector="kotlin"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
-  <script>
-    /* Disable to prevent error on selecting text
-    document.addEventListener('selectionchange', () => {
-
-      var sel = document.getSelection().toString()
-
-      if (sel.length > 0) {
-        document.getElementById('question').style.visibility = 'visible'
-        var parent = document.getSelection().anchorNode
-        console.log(parent.anchorNode)
-        if (parent instanceof Text) {
-          var t = "<i>..." + parent.data.toString() + "...</i>"
-          t = t.replace(sel, "<mark>" + document.getSelection().toString() + "</mark>")
-          document.getElementById('questionForm').innerHTML = t
-        }
-      } else
-        document.getElementById('question').style.visibility = 'hidden'
-      //window.alert(document.getSelection().anchorNode.data);
-    });
-    */
-
-    function copy(id) {
-      /* Get the text field */
-      var copyText = document.getElementById(id);
-
-      /* Select the text field */
-      copyText.select();
-      copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-      /* Copy the text inside the text field */
-      document.execCommand("copy");
-
-      /* Alert the copied text */
-      alert("Copied the text: " + copyText.value);
-    }
-
-
-    $(function() {
-      $("#dialog").dialog({
-        autoOpen: false,
-        modal: true,
-        title: "Questão?",
-        width: 500,
-        height: 500,
-        open: function() {
-
-        },
-        buttons: {
-          "Cancelar": function() {
-            $(this).dialog("close");
-          },
-          "Enviar": function() {
-            $(this).dialog("close");
-          }
-        }
-      });
-
-      $("#question").on("click", function() {
-        $("#dialog").dialog("open");
-      });
-    });
-  </script>
 </head>
 
 
@@ -146,6 +79,70 @@
       &copy; André L. Santos,&nbsp;<a href="{{site.url}}/kotlin">{{site.data.capitulos.titulo}}</a>
       <a href="http://www.iscte-iul.pt" target="_blank"><img src="/iscte.png" height="40px" class="w3-display-right"/></a>
   </footer>
+  <script src="https://unpkg.com/kotlin-playground@1" data-selector="kotlin"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    /* Disable to prevent error on selecting text
+    document.addEventListener('selectionchange', () => {
 
+      var sel = document.getSelection().toString()
+
+      if (sel.length > 0) {
+        document.getElementById('question').style.visibility = 'visible'
+        var parent = document.getSelection().anchorNode
+        console.log(parent.anchorNode)
+        if (parent instanceof Text) {
+          var t = "<i>..." + parent.data.toString() + "...</i>"
+          t = t.replace(sel, "<mark>" + document.getSelection().toString() + "</mark>")
+          document.getElementById('questionForm').innerHTML = t
+        }
+      } else
+        document.getElementById('question').style.visibility = 'hidden'
+      //window.alert(document.getSelection().anchorNode.data);
+    });
+    */
+
+    function copy(id) {
+      /* Get the text field */
+      var copyText = document.getElementById(id);
+
+      /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+      /* Copy the text inside the text field */
+      document.execCommand("copy");
+
+      /* Alert the copied text */
+      alert("Copied the text: " + copyText.value);
+    }
+
+
+    $(function() {
+      $("#dialog").dialog({
+        autoOpen: false,
+        modal: true,
+        title: "Questão?",
+        width: 500,
+        height: 500,
+        open: function() {
+
+        },
+        buttons: {
+          "Cancelar": function() {
+            $(this).dialog("close");
+          },
+          "Enviar": function() {
+            $(this).dialog("close");
+          }
+        }
+      });
+
+      $("#question").on("click", function() {
+        $("#dialog").dialog("open");
+      });
+    });
+  </script>
 </body>
 </html>
