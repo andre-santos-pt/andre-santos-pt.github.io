@@ -31,10 +31,19 @@ footer {
 .w3-panel,
 p,
 h2,
-h3 {
+h3,
+h4,
+h5,
+code {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+code {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
 
 table {
   border-collapse: collapse;
@@ -54,7 +63,7 @@ td {
   padding: 5px;
 }
 
-img.code {
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;

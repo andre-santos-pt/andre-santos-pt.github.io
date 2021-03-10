@@ -35,7 +35,6 @@ caps:
       url: funcoesrec
     - sec: Funções sobre valores
       url: funcoesvalores
-
 #    - sec: Funções de extensão
 #      url: funcoesext
     - sec: Funções de ordem superior
@@ -99,6 +98,13 @@ caps:
   - sec: Classes
     url: classes
 
+- cap: Metaprogramação
+  url: metaprogramacao
+  secs:
+  - sec: Reflexão
+    url: reflexao
+#  - sec: Anotações
+#    url: anotacoes
 
 
 #- cap: Polimorfismo

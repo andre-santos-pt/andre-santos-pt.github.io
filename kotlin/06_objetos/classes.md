@@ -197,8 +197,8 @@ class CounterBounded(max: Int) {
     }
 
     constructor(max: Int, start: Int) : this(max) {
-        value = start
         require(start >= 0) { \"start value must be >= 0\"}
+        value = start
     }
 }
 "

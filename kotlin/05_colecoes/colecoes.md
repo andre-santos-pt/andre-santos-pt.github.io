@@ -2,7 +2,7 @@
 title: Coleções e iteradores
 ---
 
-Nas secções anteriores abordámos as abstrações de **lista** e **conjunto**. É possível constatar que ambas têm uma natureza semelhante, e partilham operações comuns (pe. `size`, `contains`, `add`). Embora com propriedades ligeiramente diferentes, tanto uma lista como um conjunto consiste numa **coleção** de elementos.
+Nas secções anteriores abordámos as abstrações de **lista** e **conjunto**. É possível constatar que ambas têm uma natureza semelhante, e partilham operações comuns (pe. *size*, *contains*, *add*). Embora com propriedades ligeiramente diferentes, tanto uma lista como um conjunto consiste numa **coleção** de elementos.
 
 Desta forma, temos a abstração de *Collection* para representar as características comuns a listas e conjuntos (e possivelmente outros).
 

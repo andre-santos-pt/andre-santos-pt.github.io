@@ -9,13 +9,13 @@ O tipo mais elementar de coleção é a **lista**, que consiste numa sequência 
 
 # Listas para leitura (*read-only*)
 
-Uma lista apenas para leitura (*read-only List*) pode ser criada desta seguinte forma (o tipo de `val` pode ser omitido, pois isso pode ser inferido da enumeração de elementos).
+Uma lista apenas para leitura (*read-only List*) pode ser criada desta seguinte forma (o tipo de *val* pode ser omitido, pois isso pode ser inferido da enumeração de elementos).
 
 {% include code code="
 val list: List<Double> = listOf(0.2, 0.4, 0.6, 0.8, 1.0)"
 %}
 
-A tabela seguinte apresenta as operações principais para List\<T\>, explicitando o seu custo temporal, e com exemplos sobre a lista `list` acima (List\<Double\>). Realçamos as operações com custo linear, pois numa situação onde estas sejam utilizadas intensivamente, deverá ser ponderada outra abstração.
+A tabela seguinte apresenta as operações principais para List\<T\>, explicitando o seu custo temporal, e com exemplos sobre a lista *list* acima (List\<Double\>). Realçamos as operações com custo linear, pois numa situação onde estas sejam utilizadas intensivamente, deverá ser ponderada outra abstração.
 
 | Operação | Descrição | Custo | Exemplo | Resultado |
 | ----------- | ----------- |--------|
@@ -122,7 +122,7 @@ val list = List(100) { it + 1 }"
 Por vezes temos necessidade de trabalhar com uma cópia de outra lista. Esta necessidade será no sentido de a alterar, pois caso apenas precisemos de leitura, não faz sentido efetuar cópias.
 
 Se a lista original seja de leitura, teremos necessariamente que fazer uma cópia. O outro caso é termos uma lista mutável original que queremos preservar.
-Para tal, temos a operação `toMutableList()`, que efetua uma cópia da lista original.
+Para tal, temos a operação *toMutableList()*, que efetua uma cópia da lista original.
 
 {% include code code="
 val original = listOf(1, 2, 3)
