@@ -1,6 +1,6 @@
 ---
 title: Programação Multiparadigma em Kotlin
-layout: default
+layout: single
 ---
 
 <div class="index">

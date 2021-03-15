@@ -13,28 +13,6 @@
 
 
 <body>
-  <div id="dialog" title="">
-    <p id="questionForm" />
-    <form border="0">
-      <fieldset>
-        <input type="radio" id="duvida" name="kind" value="duvida" checked>
-        <label for="duvida">Dúvida</label><br>
-        <input type="radio" id="gralha" name="kind" value="gralha">
-        <label for="gralha">Gralha</label><br>
-        <input type="radio" id="outra" name="kind" value="outra">
-        <label for="outra">Outra</label><br>
-
-        <textarea id="desc" rows="4" cols="50" class="text ui-widget-content ui-corner-all"></textarea>
-
-        <label for="email">Email (opcional, para resposta)</label>
-        <input type="text" id="email" name="kind" class="text ui-widget-content ui-corner-all">
-        <!-- Allow form submission with keyboard without duplicating the dialog button -->
-        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-      </fieldset>
-    </form>
-  </div>
-
-
   <header class="w3-container w3-black w3-top ontop">
     <div class="w3-dropdown-hover">
       <a href="/kotlin/index">
@@ -76,7 +54,7 @@
   </main>
 
   <footer class="w3-container w3-black w3-bottom ontop">
-      &copy; André L. Santos,&nbsp;<a href="{{site.url}}/kotlin">{{site.data.capitulos.titulo}}</a>
+      &copy;&nbsp;<a href="/">André L. Santos</a>,&nbsp;<a href="{{site.url}}/kotlin">{{site.data.capitulos.titulo}}</a>
       <a href="http://www.iscte-iul.pt" target="_blank"><img src="/iscte.png" height="40px" class="w3-display-right"/></a>
   </footer>
   <script src="https://unpkg.com/kotlin-playground@1" data-selector="kotlin"></script>
@@ -144,5 +122,25 @@
       });
     });
   </script>
+  <div id="dialog" title="">
+    <p id="questionForm" />
+    <form border="0">
+      <fieldset>
+        <input type="radio" id="duvida" name="kind" value="duvida" checked>
+        <label for="duvida">Dúvida</label><br>
+        <input type="radio" id="gralha" name="kind" value="gralha">
+        <label for="gralha">Gralha</label><br>
+        <input type="radio" id="outra" name="kind" value="outra">
+        <label for="outra">Outra</label><br>
+
+        <textarea id="desc" rows="4" cols="50" class="text ui-widget-content ui-corner-all"></textarea>
+
+        <label for="email">Email (opcional, para resposta)</label>
+        <input type="text" id="email" name="kind" class="text ui-widget-content ui-corner-all">
+        <!-- Allow form submission with keyboard without duplicating the dialog button -->
+        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+      </fieldset>
+    </form>
+  </div>
 </body>
 </html>

@@ -5,103 +5,28 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="{{ site.url }}/style.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   </head>
 
 
   <body>
 
 
-    <div id="dialog" title="">
-      <form>
-          <fieldset>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
-
-            <!-- Allow form submission with keyboard without duplicating the dialog button -->
-            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-          </fieldset>
-        </form>
-      <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-    </div>
-
-
 <header class="w3-container w3-black w3-top">
 
   <h2>{{ page.title }}</h2>
   <div class="w3-display-topright"</div>
-  {% include nav url = page.url %}
 </div>
 
-  <!--
-  <a href="http://www.iscte-iul.pt" target="_blank" class="w3-padding-small w3-hover-black w3-display-topright"><img src="/iscte.png" class="w3-hover-opacity" style="max-height:50px"/></a>
--->
 </header>
 
-{% include nav url = page.url %}
-    <section>
-      <div class="w3-container w3-padding-64">
-        {% if page.image != null %}
-        <img src="{{ page.image }}"/>
-        {% endif %}
+    <div class="w3-panel w3-padding-64">
         {{ content }}
-        <br>
-      </div>
-    </section>
-
-
-
+    </div>
 
 
     <footer class="w3-container w3-black w3-bottom">
-      &copy; André L. Santos</a>
-
-{% include nav url = page.url %}
-
+      &copy;&nbsp;<a href="/">André L. Santos</a><a href="http://www.iscte-iul.pt" target="_blank"><img src="/iscte.png" height="40px" class="w3-display-right"/></a>
     </footer>
-    <script src="https://unpkg.com/kotlin-playground@1" data-selector="kotlin"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-      $( function() {
-        $("#dialog").dialog({
-          autoOpen: false,
-            modal: true,
-            title: "Invocação",
-            open: function() {
-              var markup = 'Hello World';
-              $(this).html(markup);
-            },
-            buttons: {
-              Ok: function() {
-                $( this ).dialog( "close" );
-              }
-            }
-          });
-
-          /*
-        $( "#dialog" ).dialog({
-          autoOpen: false,
-          show: {
-            effect: "blind",
-            duration: 1000
-          },
-          hide: {
-            effect: "explode",
-            duration: 1000
-          }
-        });
-    */
-        $( "#opener" ).on( "click", function() {
-          $( "#dialog" ).dialog( "open" );
-        });
-      } );
-    </script>
   </body>
 </html>

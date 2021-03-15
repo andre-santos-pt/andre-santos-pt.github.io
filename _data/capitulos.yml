@@ -103,8 +103,8 @@ caps:
   secs:
   - sec: Reflexão
     url: reflexao
-#  - sec: Anotações
-#    url: anotacoes
+  - sec: Anotações
+    url: anotacoes
 
 
 #- cap: Polimorfismo

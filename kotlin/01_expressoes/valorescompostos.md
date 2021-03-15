@@ -9,7 +9,7 @@ Nas secções anteriores abordámos valores simples, isto é, que consistem num 
 
 Para ilustrar a definição de um tipo de valor composto vamos utilizar a noção de ponto bi-dimensional de coordenadas inteiras. Ao definir um tipo de valor teremos que escolher um nome para o mesmo. O nome deve refletir aquilo que um valor do tipo em questão representa. Neste caso utilizaremos *Point*. Atenção que por norma o nome deve referir-se a um valor no singular, ao invés do conjunto (por exemplo, *Points* poderá dar a entender que o valor representa um conjunto de vários pontos).
 
-A sintaxe consiste em utilizar a declaração **data class**, seguido do nome do tipo de valor, e de uma lista de valores que o compõem, utilizando **val**. Designaremos estes valores do tipo composto por *campos*. Atenção que neste caso, cada campo tem que explicitamente indicar qual o seu tipo.
+A sintaxe consiste em utilizar a declaração **data class**, seguido do nome do tipo de valor, e de uma lista de valores que o compõem, utilizando **val**. Designaremos estes valores do tipo composto por *propriedades*. Atenção que neste caso, cada campo tem que explicitamente indicar qual o seu tipo.
 
 {% include code code="
 data class Point(val x: Int, val y: Int)
@@ -24,7 +24,7 @@ val p = Point(3, 4)
 
 
 ## Valores por omissão
-Os valores compostos podem definir valores por omissão para alguns dos seus campos. Quando assim é, o fornecimento de valores pode ser omitido, sendo que será utilizado o valor por omissão.
+Os valores compostos podem definir valores por omissão para algumas das suas propriedades. Quando assim é, o fornecimento de valores pode ser omitido, sendo que será utilizado o valor por omissão.
 
 {% include code code="
 data class Color(val red: Int = 0, val green: Int = 0, val blue: Int = 0)
@@ -40,16 +40,16 @@ val black = Color()
 msg="Temos quatro formas de inicializar o tipo de valor acima (isto sem recorrer à possibilidade da secção seguinte), pois a omissão de valores tem que ser feita de forma contínua da direita para a esquerda. Os três valores para a cor vermelho são equivalentes."
 %}
 
-## Atribuição de campos por nome
+## Atribuição de propriedades por nome
 
-Para efeitos de legibilidade, especialmente quanto estamos perante valores com diversos campos, é possível utilizar uma sintaxe que ao invés de utilizar apenas a ordem de valores passados para os atribuir aos campos, permite que os mesmos sejam identificados por nome.
+Para efeitos de legibilidade, especialmente quanto estamos perante valores com diversas propriedades, é possível utilizar uma sintaxe que ao invés de utilizar apenas a ordem de valores passados para os atribuir às propriedades, permite que os mesmos sejam identificados por nome.
 
 {% include code code="
 val red = Color(red = 255)
 val yellow = Color(green = 255, red = 255)
 val gray = Color(red = 128, green = 128, blue = 128)
 "
-msg="Perante valores para cores RGB, poderíamos utilizar a atribuição de campos por nome, oferecendo maior legibilidade. Podemos utilizar uma ordem diferente da dos campos, embora isso não seja muito comum, podendo até confundir quem lê o código, dadas as diferentes formas para o mesmo propósito. "%}
+msg="Perante valores para cores RGB, poderíamos utilizar a atribuição de propriedades por nome, oferecendo maior legibilidade. Podemos utilizar uma ordem diferente da declaração das propriedades, embora isso não seja muito comum, podendo até confundir quem lê o código, dadas as diferentes formas para o mesmo propósito. "%}
 
 
 ## Validação de valores
@@ -73,9 +73,9 @@ msg="Ao tentar obter o valor em tempo de execução, a validação não o permit
 exc="java.lang.IllegalArgumentException: Failed requirement."%}
 
 
-## Campos de valores compostos
+## Propriedades de valor composto
 
-Nos exemplos acima, os campos são sempre de tipo elementar. Porém, podemos definir campos também eles de tipo de valor composto.
+Nos exemplos acima, as propriedades são sempre de tipo elementar. Porém, podemos definir propriedades também elas de valor composto.
 
 {% include code code="
 data class Line(val from: Point, val to: Point)
@@ -88,11 +88,11 @@ msg="Exemplo: Tipo de dados para representar linhas entre dois pontos."
 
 # Manipulação de valores compostos
 
-Esta forma de definir valores faz com que os mesmos sejam **imutáveis**, isto é, o valor dos seus campos não pode ser alterado (**val**). Embora seja possível definir tipos de valores **mutáveis**, onde os seus campos podem ser alterados após a definição do valor, desencorajamos essa possibilidade, pois é considerada uma boa prática ter tipos de valor imutáveis.
+Esta forma de definir valores faz com que os mesmos sejam **imutáveis**, isto é, o valor das suas propriedades é constante (nunca muda). Embora seja possível definir tipos de valores **mutáveis**, onde os suas propriedades podem ser alteradas após a definição do valor, desencorajamos essa possibilidade, pois é considerada uma boa prática ter tipos de valor imutáveis.
 
 ## Consulta
 
-Dado um valor composto, podemos consultar o valor dos seus campos individualmente, utilizando um ponto (**.**) entre o valor e o seu campo.
+Dado um valor composto, podemos consultar o valor das suas propriedades individualmente, utilizando um ponto (**.**) entre o valor e a propriedade.
 
 {% include code code="
 val p = perc.value
@@ -113,7 +113,7 @@ val b = yellow.b
 "
 %}
 
-A consulta de campos pode ser feita encadeando consultas de campos sucessivamente com a mesma sintaxe acima.
+A consulta de propriedades pode ser feita encadeando consultas de propriedades sucessivamente com a mesma sintaxe acima.
 
 {% include code code="
 val line = Line(Point(0,0), Point(10,  15))
