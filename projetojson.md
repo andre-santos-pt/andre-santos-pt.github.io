@@ -7,7 +7,7 @@ Este projeto consiste em desenvolver uma biblioteca para produzir dados no forma
 
 Será assumida a perspectiva de quem está a desenvolver algo para terceiros utilizarem (biblioteca). Assim sendo, aspetos de **API (forma e documentação)** deverão ser tidos em conta. Por outro lado, a biblioteca deverá oferecer alguma flexibilidade na sua utilização para permitir aplicá-la num leque alargado de situações.
 
-Por forma a garantir uma boa arquitetura da solução, e simultaneamente ter um "guia" para o desenvolvimento, o projeto deverá ser faseado de acordo com o que se propõe neste enunciado. A funcionalidade terá que ser feita de raiz, **não é permitida a utilização de quaisquer bibliotecas externas**.
+Por forma a garantir uma boa arquitetura da solução, e simultaneamente ter um "guia" para o desenvolvimento, o projeto deverá ser faseado de acordo com o que se propõe neste enunciado. A funcionalidade terá que ser feita de raiz, **não é permitida a utilização de quaisquer bibliotecas externas** (exceto as coleções e JUnit).
 
 As funcionalidades principais deverão ter **casos de teste** correspondentes, como forma de controlar a qualidade e demonstrar a funcionalidade.
 
@@ -36,6 +36,7 @@ Deverá haver uma forma padrão de instanciação que suporte:
 - coleções (*Collection*)
 - tabelas (*Map*)
 - tipos primitivos
+- strings
 - enumerados
 
 Como forma de adaptar a instanciação, deverão ser definidas anotações para permitir:
