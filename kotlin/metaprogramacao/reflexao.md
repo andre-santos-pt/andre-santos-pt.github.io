@@ -85,7 +85,7 @@ Ao consultar os parâmetros com *valueParameters* estamos a excluir o parâmetro
 # Reflexão dinâmica
 A reflexão dinâmica é aquela que, dados os elementos estáticos recolhidos da forma explicada anteriormente, os utiliza de forma indireta, isto é, sem *depender* dos identificadores concretos.  
 
-## Atributos
+## Propriedades
 O seguinte exemplo recolhe o nome de cada propriedade, sendo invocado *call* com o objeto do qual se pretende a propriedade. Se for passado um objeto cuja classe não tem a propriedade teremos um erro de execução.
 
 {% include code code="
