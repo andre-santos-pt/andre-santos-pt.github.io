@@ -111,6 +111,8 @@ caps:
   secs:
   - sec: Visitante
     url: visitante
+  - sec: Comandos
+    url: comandos
 
 #- cap: Polimorfismo
 #  secs:
