@@ -14,13 +14,12 @@ Neste ponto de partida, a classe *Window* depende de *DefaultSetup* (que impleme
 *di.properties*
 <pre>
 Window.setup=DefaultSetup
-Window.actions=Center,Size
+Window.actions=Move,Size
 </pre>
 
 Este ficheiro indica que a propriedade *setup* dos objetos *Window* será inicializada com um objeto *DefaultSetup*, e que a lista da propriedade *actions* será populada com um objeto *Center* e outro *Size*.
 
 Desta forma, embora num caso muito simplificado, a nossa é agora uma micro-*framework* onde podemos acrescentar *plugins* através do ficheiro de configuração.
-
 
 
 ### 1. Injeção de propriedade
@@ -50,6 +49,7 @@ Por forma a carregar uma classe dinamicamente dado o seu nome, podemos fazer o s
 val clazz: KClass<*> = Class.forName(\"NomeQualificado\").kotlin
 "
 %}
+
 
 
 ### 2. Injeção de elemento em propriedade (coleção)
