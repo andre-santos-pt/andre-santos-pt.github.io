@@ -14,7 +14,7 @@ Your browser does not support the video tag.
 
 1. Descarregar o [código esqueleto](FileTreeSkeleton.kt) que exemplifica a utilização de SWT, e incluir no projeto. Não deverá compilar dada a ausência da biblioteca.
 
-2. Descarregar o [JAR](swt-module.jar) da biblioteca, e incluir nas dependências do projeto.
+2. Descarregar o [JAR](https://download.eclipse.org/eclipse/downloads/drops4/R-4.19-202103031800/) da biblioteca (secção *SWT Binary and Source*), e incluir nas dependências do projeto.
 
 3. Executar o *main* presente no ficheiro.
 
