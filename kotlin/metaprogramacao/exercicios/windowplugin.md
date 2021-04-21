@@ -52,6 +52,8 @@ val clazz: KClass<*> = Class.forName(\"NomeQualificado\").kotlin
 
 
 
+
+
 ### 2. Injeção de elemento em propriedade (coleção)
 Como forma de complementar a anotação anterior, pretende-se agora outra anotação semelhante **@InjectAdd** cujo o propósito é anotar propriedades que consistam numa coleção de elementos, indicando que na mesma serão adicionados vários objetos consoante o conteúdo do ficheiro de configuração.
 

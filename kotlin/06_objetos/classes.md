@@ -103,7 +103,7 @@ val c = Counter()
 c.value = -5
 val v = c.value
 "
-msg="Cannot access 'current': it is private in 'Counter'"
+msg="Cannot access 'value': it is private in 'Counter'"
 %}
 
 Ao tornar um atributo privado, o mesmo não pode ser nem alterado, nem tão pouco consultado. No caso do contador, embora não seja desejável que o valor do atributo de contagem seja alterado externamente, faz sentido poder consultar o seu valor. Desta forma, podemos restringir o acesso apenas de escrita, anotando a definição com **private set**. A alteração do valor da contagem apenas poderá ser feita no código interno da classe, e assim sendo, apenas é modificado mediante o procedimento *inc*.
