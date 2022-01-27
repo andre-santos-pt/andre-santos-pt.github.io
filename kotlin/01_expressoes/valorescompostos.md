@@ -1,8 +1,9 @@
 ---
 title: Valores compostos
+image: dimensao.png
 ---
 
-Nas secções anteriores abordámos valores simples, isto é, que consistem num único número/valor. Dependendo do problema que estamos a resolver, um valor representará alguma coisa (uma tonalidade, temperatura, dimensão, etc). Porém é frequente que os elementos com que temos que lidar sejam definidos como uma composição de valores. Por exemplo, um ponto num espaço bi-dimensional será composto por dois valores (*x* e *y*), ao passo que num espaço tri-dimensional serão três (acresce *z*). Outros exemplos são as cores RGB (*red*, *green*, *blue*) com três valores, dimensões, intervalos, etc.
+>Nas secções anteriores abordámos valores simples, isto é, que consistem num único número/valor. Dependendo do problema que estamos a resolver, um valor representará alguma coisa (uma tonalidade, temperatura, dimensão, etc). Porém é frequente que os elementos com que temos que lidar sejam definidos como uma composição de valores. Por exemplo, um ponto num espaço bi-dimensional será composto por dois valores (*x* e *y*), ao passo que num espaço tri-dimensional serão três (acresce *z*). Outros exemplos: dimensões, intervalos, cores RGB (*red*, *green*, *blue*) compostas por três valores.
 
 
 # Definição de tipos de valor
@@ -132,5 +133,5 @@ val areDifferent = yellow != black
 msg="Ambos os valores <b>areSame</b> e <b>areDifferent</b> serão verdadeiros."
 %}
 
-# Sumário
-Esta secção abordou a definição de tipos de valor compostos. Esta primeira abordagem focou-se apenas no elementar, mais à frente mostraremos como é possível enriquecer os [tipos de valores com funções](../02_funcoes/funcoesvalores).
+
+>Esta secção abordou a definição de tipos de valor compostos. Esta primeira abordagem focou-se apenas no elementar, mais à frente mostraremos como é possível enriquecer os [tipos de valores com funções](../02_funcoes/funcoesvalores).

@@ -2,8 +2,7 @@
 title: Funções dependentes
 ---
 
-Na [secção anterior](funcoesind) foram apresentadas funções independentes que dependem apenas da sua própria lógica. Nesta secção abordamos **funções dependentes**, ou seja, que se baseiam noutras funções para calcular o seu resultado.
-
+>Na [secção anterior](funcoesind) foram apresentadas funções independentes que dependem apenas da sua própria definição. Nesta secção abordamos **funções dependentes**, ou seja, que se baseiam noutras funções para calcular o seu resultado.
 
 
 
@@ -64,7 +63,7 @@ Iremos utilizar o termo **profundidade** para nos referirmos ao número de bloco
 
  Dado que a pilha ocupa espaço em memória, a capacidade da pilha de chamadas não é infinita, sendo que depende do ambiente de execução que utilizamos (memória disponível, sistema operativo, linguagem, configuração de execução). Assim sendo, quando a profundidade limite é atingida devido a um número muito elevado de chamadas encadeadas ocorre um erro de *stack overflow* ("transbordo" da pilha). Curiosidade: esta designação deu origem ao popular *website* <https://www.stackoverflow.com>, uma plataforma de esclarecimento de dúvidas de programação.
 
-{% include code code="
+{% include error code="
 fun gato(n: Int): Int = rato(n + 1)
 fun rato(n: Int): Int = gato(n + 1)
 "
@@ -73,6 +72,4 @@ img="gatorato.png"
 %}
 
 
-
-# Conclusão
-As funções podem ser definidas à custa de outras funções, e essa possibilidade é indispensável para economia de esforço e decomposição de complexidade. Na secção seguinte será abordado um tipo de funções caracterizadas por serem dependentes de si próprias, as [funções recursivas](funcoesrec).
+>As funções podem ser definidas à custa de outras funções, e essa possibilidade é indispensável para economia de esforço e decomposição de complexidade. Na secção seguinte será abordado um tipo de funções cujas definições dependem de si próprias, as [funções recursivas](funcoesrec).

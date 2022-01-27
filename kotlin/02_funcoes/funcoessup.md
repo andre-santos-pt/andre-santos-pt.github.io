@@ -2,7 +2,7 @@
 title: Funções de ordem superior
 ---
 
-Uma função de **ordem superior**, herda seu nome pomposo da Matemática, onde também existe essa categorização. A ideia consiste numa função que ao invés de manipular valores (numéricos, etc), manipula também funções como se de valores se tratassem.
+>Uma função de **ordem superior**, herda seu nome da Matemática, onde também existe essa categorização. A ideia consiste numa função que ao invés de manipular valores (numéricos, etc), manipula também funções como se de valores se tratassem.
 
 # Motivação
 
@@ -187,5 +187,5 @@ val nOdd = countIf(1, 100) { !isEven(it) }
 "
 %}
 
-# Sumário
-As funções de ordem superior permitem definições adaptáveis, permitindo generalizar várias funções semelhantes. As bibliotecas de software quando oferecem formas de adaptabilidade/extensibilidade recorrem muito a este tipo de solução.
+
+>As funções de ordem superior permitem definições adaptáveis, permitindo generalizar várias funções semelhantes. As bibliotecas de software quando oferecem formas de adaptabilidade/extensibilidade recorrem muito a este tipo de solução. Ainda que um programador possa não as definir frequentemente, irá certamente utilizar constantemente este tipo de funções quando recorre a bibliotecas.

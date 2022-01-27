@@ -1,8 +1,9 @@
 ---
 title: Expressões dependentes
+image: excel.png
 ---
 
-A [secção anterior](expressoescon) abordou expressões, apenas utilizando valores concretos. Nesta secção introduzimos expressões **dependentes**, isto é que dependem de valores externos, por sua vez obtidos por via de avaliação de expressões.
+> A [secção anterior](expressoescon) abordou expressões, apenas utilizando valores concretos. Nesta secção introduzimos expressões **dependentes**, isto é que dependem de valores externos, por sua vez obtidos por via de avaliação de expressões. As aplicações de folha de cálculo baseiam-se nesta noção, onde cada célula define uma expressão que pode utilizar valores provenientes de outras células.
 
 # Sequência de definição de valores
 Na secção anterior foi introduzida a definição de valores através de **val**, sendo cada expressão independente. Num programa, podemos definir uma sequência de valores, sendo que as expressões podem referir-se a valores definidos anteriormente. No seguinte exemplo temos a definição do valor *n*, seguida da definição de *nSquare* (*n* ao quadrado).
@@ -28,7 +29,8 @@ val n = 3
 val nSquare = n * n
 val nCube = nSquare * n
 "
-msg="Sendo <b>n</b> igual a 3, em <b>nSquare</b> <b>n</b> será substituído por 3, e teremos 3 x 3, ou seja, 9. Caso fosse acrescentada a definição seguinte de <b>nCube</b>, que depende das duas anteriores, <b>nSquare</b> seria substituído por 9 e <b>n</b> por 3, resultando em 9 x 3, ou seja, 27. Caso o valor de *n* fosse outro, as outras duas avaliações seriam afetadas." %}
+msg="Sendo <b>n</b> igual a 3, em <b>nSquare</b> <b>n</b> será substituído por 3, e teremos 3 x 3, ou seja, 9. Caso fosse acrescentada a definição seguinte de <b>nCube</b>, que depende das duas anteriores, <b>nSquare</b> seria substituído por 9 e <b>n</b> por 3, resultando em 9 x 3, ou seja, 27. Caso o valor de <b>n</b> fosse outro, as outras duas avaliações seriam afetadas."
+img="deps1.png" %}
 
 
 {% include code code="
@@ -37,15 +39,14 @@ val r = 4.5
 val area = pi * r * r
 val perimeter = 2 * pi * r
 "
-msg="Exemplo: cálculo de área e perímetro de circunferência."%}
+msg="Exemplo: cálculo de área e perímetro de circunferência."
+img="deps2.png" %}
 
 
 
-### Grafo de dependência de expressões
+Os dois últimos exemplos consistem na definição de valores com dependências, ilustrados nas figuras com uma seta a tracejado. Uma seta de *a* para *b* denota que *a* depende de *b*, ou seja, necessita que *b* seja avaliada previamente. No primeiro caso, as dependências não permitem que as definições dos valores sejam ordenadas de outra forma. Já no segundo caso, existem quatro formas de ordenar as definições.
 
-Os dois últimos exemplos consistem na definição de valores com dependências, ilustradas na seguinte figura (uma seta a tracejado de *a* para *b* denota que *a* depende de *b*). No primeiro caso, as dependências não permitem que as definições dos valores sejam ordenadas de outra forma. Já no segundo caso, existem quatro formas de ordenar as definições.
 
-![dependências de expressões](deps.png)
 
 
 # Expressões condicionais
@@ -90,7 +91,5 @@ img="iftree.png"
 
 
 
-# Sumário
-Esta secção introduziu sequências de expressões, tendo em conta que existem dependências entre definições, e essas dependências condicionam a ordem pela qual a sequência deve ser definida. Foi também introduzido o conceito de expressão condicional, que determina que expressões com base na avaliação de outras expressões (guardas).
 
-A utilização somente de valores elementares é normalmente insuficiente para gerir a complexidade de um problema. A próxima secção aborda a definição de [valores compostos](valorescompostos).
+>Esta secção introduziu sequências de expressões, tendo em conta que existem dependências entre definições, e essas dependências condicionam a ordem pela qual a sequência deve ser definida. Foi também introduzido o conceito de expressão condicional, que determina que expressões com base na avaliação de outras expressões (guardas). A utilização somente de valores elementares é normalmente insuficiente para gerir a complexidade de um problema. A próxima secção aborda a definição de [valores compostos](valorescompostos).

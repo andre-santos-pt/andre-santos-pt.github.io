@@ -2,9 +2,8 @@
 title: Funções
 ---
 
-No [capítulo anterior](../01_expressoes) foi abordada a definição de valores através de **expressões**. Este capítulo aborda a definição de **funções**, um conceito fundamental em programação, pois sem definir funções apenas conseguiremos escrever pequenos programas sequenciais (os chamados *scripts*). Embora seja possível escrever programas com alguma dimensão (digamos com mais de 1000 linhas) sem definir funções, a qualidade dos mesmos, no que toca à sua legibilidade e facilidade de adaptação, não será certamente a melhor.
+>No [capítulo anterior](../01_expressoes) foi abordada a definição de valores através de **expressões**. Este capítulo aborda a definição de **funções**, um conceito fundamental em programação, pois sem definir funções apenas conseguiremos escrever pequenos programas sequenciais (os chamados *scripts*). Embora seja possível escrever programas com alguma dimensão (digamos com mais de 1000 linhas) sem definir funções, a qualidade dos mesmos (legibilidade e facilidade de adaptação) não será certamente a melhor.
 
-## Objetivo: abstrair, decompor, e reutilizar
 
 Fazendo uma analogia com notações utilizadas em Matemática:
 
@@ -19,5 +18,3 @@ Quais as vantagens de utilizar as primeiras ao invés das segundas?
   - beneficiar das operações conhecidas para manipular a operações
 
 A definição de funções está presente em todas as linguagens de programação (de âmbito não especializado), sempre com os mesmos propósitos: **abstrair** um cálculo (ou procedimento) que é recorrente, ou para **decompor** um processo complexo em sub-processos. Abstrair neste contexto significa dar-lhe uma notação (tal como em Matemática), para que a mesma possa ser **reutilizada** em diversos contextos do programa (ou até de outros programas).
-
-Numa primeira abordagem às funções, vamos cingir-nos à definição de funções baseadas em expressões, que é o tema da [primeira secção](funcoesind).

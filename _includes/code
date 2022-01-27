@@ -2,19 +2,26 @@
 
 {% if include.msg != null %}
   <div class="w3-panel w3-border w3-border-black w3-round-large w3-light-gray">
+  {% if include.img != null %}
+  <img src="{{include.img}}" class="code"/><br>
+  {% endif %}
   {% if include.anchor != null %}
     <a id="{{include.anchor}}">
   {% endif %}
-  <br><i>{{include.msg}}</i><br><br>
+{% if include.img == null %}
+<br>
+{% endif %}
+  <i>{{include.msg}}</i><br><br>
   {% if include.anchor != null %}
   </a>
   {% endif %}
   {% else %}
-  <div>
+<div class="kotlincode">
 {% endif %}
 
+
 {% if include.code != null %}
-<div><kotlin id="er" data-highlight-only folded-button="false" data-target-platform="jvm">
+<kotlin id="er" data-highlight-only folded-button="false" data-target-platform="jvm">
 {% if include.test != null %}
 import jquery.*
 import kotlin.browser.document
@@ -31,15 +38,14 @@ var p = window.prompt("Please enter your name", "Harry Potter");
   //js("window.alert(test(3))")
 }
 {% endif %}
-</kotlin></div>
+</kotlin>
 {% else %}
 <kotlin data-highlight-only>{% include_relative code/{{include.file}} %}</kotlin>
 {% endif %}
-{% if include.img != null %}
-<img src="{{include.img}}" class="code"/><br>
-{% endif %}
 
 </div>
+
+
 <!--
 <button style="font-size:24px" onclick="copy('er')">Button <i class="fa fa-copy"></i></button>
 -->

@@ -1,9 +1,8 @@
 ---
 title: Expressões constantes
+image: calculator.png
 ---
-As expressões constantes consistem provavelmente no aspeto da programação mais familiar à generalidade das pessoas, pois estamos habituados a lidar com as mesmas nas calculadoras. Numa calculadora podemos inserir a expressão *(12 + 13.2 + 15.7) / 3* para saber que ficaremos com 14 na nota final de uma disciplina, obtida através da média de 3 testes (*13.6*).
-
-Designamos por **avaliação** o processo de obtenção do valor resultante de uma expressão. Designamos estas expressões como sendo **constantes**, pois o valor da sua avaliação nunca muda. A expressão acima resultará sempre em *13.6*.
+>As expressões constantes consistem provavelmente no aspeto da programação mais familiar à generalidade das pessoas, pois estamos habituados a lidar com as mesmas nas calculadoras. Numa calculadora podemos inserir a expressão *(12 + 13,2 + 15,7) / 3* para saber que ficaremos com 14 na nota final de uma disciplina, obtida através da média de 3 testes (*13,6*).  Designamos estas expressões como sendo **constantes**, pois o valor da sua avaliação nunca muda. Designamos por **avaliação** o processo de obtenção do valor resultante de uma expressão.
 
 # Expressões literais
 Um simples número é considerado uma expressão *literal*. Isto é, não carece de avaliação, dado que o próprio número corresponde ao valor da expressão. Tal como quando afirmamos *significado literal*, pretendendo transmitir uma palavra ou frase no sentido exato do que ela representa, sem interpretações adicionais.
@@ -180,7 +179,7 @@ Os valores lógicos podem ser **negados**, com vista a obter o valor simétrico,
 
 
 
-
+>Esta secção abordou expressões apenas utilizando valores literais, mas ilustrando todos os operadores principais para manipular e relacionar valores. Escrever expressões constantes não reflete a atividade de programar, pois tipicamente lidamos com expressões que dependem de valores externos, que é o tópico da [secção seguinte](expressoesdep).
 
 <!--
 ## Ordem de operações
@@ -191,6 +190,3 @@ Os operadores relacionais comparam valores...
 
 # Conversão entre valores de diferentes tipos
 -->
-
-# Sumário
-Esta secção abordou expressões apenas utilizando valores literais, mas ilustrando todos os operadores principais para manipular e relacionar valores. Escrever expressões constantes não reflete a atividade de programar, pois tipicamente lidamos com expressões que dependem de valores externos, que é o tópico da [secção seguinte](expressoesdep).

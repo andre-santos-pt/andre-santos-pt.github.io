@@ -14,7 +14,8 @@ header .w3-dropdown-hover {
 
 main {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 20px;
 }
 
 main > div {
@@ -64,9 +65,12 @@ td {
 }
 
 img.code {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  float: right;
+  margin-top: 20px;
+    margin-right: 10px;
+
+      margin-left: 10px;
+      margin-bottom: 10px;
 }
 
 img.pagefigure {
@@ -86,4 +90,19 @@ pre {
 
 ol {
   margin-left: 20px;
+}
+
+blockquote {
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #ededed;
+  padding: 5px;
+  font-style: oblique;
+}
+
+div.kotlincode {
+  display: flex;
+  flex-grow: 2;
 }

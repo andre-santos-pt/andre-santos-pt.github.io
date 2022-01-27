@@ -2,7 +2,7 @@
 title: Funções sobre valores compostos
 ---
 
-No primeiro capítulo, abordámos [valores compostos](../01_expressoes/valorescompostos). Nesta secção iremos abordar como enriquecer tipos de valores compostos com funções.
+>No primeiro capítulo, abordámos [valores compostos](../01_expressoes/valorescompostos). Nesta secção iremos abordar como enriquecer tipos de valores compostos com funções.
 
 Para ilustração, utilizaremos o tipo de valor *Point* que representa uma coordenada cartesiana.
 
@@ -128,3 +128,5 @@ val p1 = Point(3.1, 2.0) + Point(3.3, 1.0)
 val p2 = p1 - Point(0.1, 0.1)
 "
 %}
+
+>Associar funções a tipos de valores permite uma estruturação do código que está na base da [**programação orientada por objetos**](../06_objetos), a desenvolver mais à frente.

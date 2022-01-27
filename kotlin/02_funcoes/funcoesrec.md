@@ -2,7 +2,7 @@
 title: Funções recursivas
 ---
 
-A noção de *recursivo* pode ser visto como algo que se repete, potencialmente até ao infinito, utilizando a mesma forma. Nesta secção abordaremos **funções recursivas**, que são caracterizadas por serem definidas recorrendo à sua própria definição.
+>A noção de *recursivo* pode ser visto como algo que se repete, potencialmente até ao infinito, utilizando a mesma forma. Nesta secção abordaremos **funções recursivas**, que são caracterizadas por serem definidas recorrendo à sua própria definição.
 
 # Recursão
 Comecemos por ilustrar o conceito de função recursiva com um exemplo clássico para este assunto, o cálculo do fatorial de um número natural. Ao seguir à letra a definição Matemática recursiva, obtemos a seguinte função.
@@ -85,6 +85,4 @@ msg="Exemplo: Função para cálculo do factorial com recurso a função recursi
 %}
 
 
-# Sumário
-
-Utilizando funções recursivas é possível em teoria efetuar qualquer cálculo, e estas são a base do paradigma de programação **funcional**. Porém, por razões práticas ou necessidade de desempenho nalguns tipos de aplicação, torna-se necessário utilizar programação **procedimental**.
+>Utilizando funções recursivas é possível em teoria efetuar qualquer cálculo, e estas são a base do paradigma de programação **funcional**. Porém, por razões práticas ou necessidade de desempenho nalguns tipos de aplicação, torna-se necessário utilizar programação [procedimental](../04_estado).

@@ -1,5 +1,8 @@
 <div class="w3-panel w3-border w3-border-red w3-round w3-light-gray">
 
+{% if include.img != null %}
+<img src="{{include.img}}" class="code"/><br>
+{% endif %}
 <br><b>Erro:</b> {{include.msg}}<br><br>
 {% if include.code != null %}
 <kotlin data-highlight-only>{{include.code}}</kotlin>
@@ -7,7 +10,5 @@
 {% if include.exc != null %}
 <p class="w3-text-red">{{include.exc}}</p>
 {% endif %}
-{% if include.img != null %}
-<img src="{{include.img}}" class="code"/><br>
-{% endif %}
+
 </div>

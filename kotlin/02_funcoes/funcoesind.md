@@ -3,6 +3,8 @@ title: Funções independentes
 layout: default
 ---
 
+>Começaremos por abordar o tema das funções com casos simples onde as funções são definidas à custa de uma expressão ([capítulo anterior](../01_expressoes)). Designamos as funções desta secção como **independentes** pois não dependem de outras funções.
+
 # Definição
 
 Uma função, no sentido matemático do termo, permite obter um valor (contradomínio) dado um valor do seu domínio. Por exemplo, a função *f(x) = x*<sup>2</sup> fornece o quadrado de *x*, e desta forma, *f(4)* correspondendo a *16*, *f(5)* a *32*, etc. Em programação, *x* é designado por **parâmetro**, ao passo que valores concretos para o mesmo (4, 5, etc) são referidos como **argumentos**.
@@ -129,9 +131,4 @@ msg="Exemplo: Função para verificar se um número <b>n</b> está contido num i
 
 
 
-
-
-
-# Sumário
-
-As funções independentes simples, tais como as baseadas em expressões, são bastante utilizadas em programas reais, apesar da sua simplicidade. A possibilidade de "dar um nome" a um simples cálculo pode facilita a comunicação da intenção do código. À medida que lidamos com situações mais complexas, necessitaremos de [funções dependentes](funcoesdep) que se baseiam noutras funções.
+>As funções independentes simples, tais como as baseadas em expressões, são bastante utilizadas em programas reais, apesar da sua simplicidade. A possibilidade de "dar um nome" a um simples cálculo pode facilita a comunicação da intenção do código. À medida que lidamos com situações mais complexas, necessitaremos de [funções dependentes](funcoesdep) que se baseiam noutras funções.
