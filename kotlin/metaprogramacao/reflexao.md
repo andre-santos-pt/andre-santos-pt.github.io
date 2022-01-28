@@ -1,5 +1,6 @@
 ---
 title: Reflexão
+image: mirror.png
 ---
 
 As primitivas de reflexão em Kotlin têm como base as do Java, sendo possível utilizar diretamente as deste. Contudo, são definidas classes adicionais próprias de Kotlin, que sumarizamos no diagrama UML.

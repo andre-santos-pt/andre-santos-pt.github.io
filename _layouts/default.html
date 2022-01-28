@@ -32,15 +32,16 @@
     </h1></div>
 
     <div class="w3-display-right">
-      <!--
-    <i class="fa fa-question-circle w3-xxlarge w3-button w3-black"
-    id="question" style="visibility: hidden"></i>
-  -->
       {% include nav url = page.url %}
     </div>
+
+  </div>
+
+  <div style="position:fixed;top:10;right:150px">
+    <i class="fa fa-question-circle w3-xxlarge w3-button w3-black"
+    id="question" style="visibility:hidden"></i>
   </div>
   </header>
-
 
 
   <main>
@@ -61,15 +62,12 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-    /* Disable to prevent error on selecting text
-    document.addEventListener('selectionchange', () => {
-
+  /* for question
+    document.addEventListener('selectionchange', (e) => {
       var sel = document.getSelection().toString()
-
       if (sel.length > 0) {
         document.getElementById('question').style.visibility = 'visible'
         var parent = document.getSelection().anchorNode
-        console.log(parent.anchorNode)
         if (parent instanceof Text) {
           var t = "<i>..." + parent.data.toString() + "...</i>"
           t = t.replace(sel, "<mark>" + document.getSelection().toString() + "</mark>")
@@ -77,9 +75,25 @@
         }
       } else
         document.getElementById('question').style.visibility = 'hidden'
-      //window.alert(document.getSelection().anchorNode.data);
     });
-    */
+*/
+
+
+    function checkboxClick(e, file) {
+      if(e.checked)
+          document.getElementById(file).style='display:inline';
+        else {
+          document.getElementById(file).style='display:none';
+        }
+    }
+
+    function hide(files) {
+      var split = files.split(",")
+      split.forEach((e) => {
+          document.getElementById(e).style='display:none';
+      });
+    }
+
 
     function copy(id) {
       /* Get the text field */

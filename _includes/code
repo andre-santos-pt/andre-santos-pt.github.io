@@ -1,49 +1,70 @@
 
 
 {% if include.msg != null %}
-  <div class="w3-panel w3-border w3-border-black w3-round-large w3-light-gray">
-  {% if include.img != null %}
-  <img src="{{include.img}}" class="code"/><br>
+  <div class="w3-panel w3-border w3-border-black w3-round-large w3-light-gray" style="display:flex">
+
+  {% if include.ani != null %}
+    <div style="display:absolute; right:20px"><i class="fa fa-bars" alt="Exemplo interativo: selecionar opções"></i></div>
   {% endif %}
-  {% if include.anchor != null %}
-    <a id="{{include.anchor}}">
-  {% endif %}
-{% if include.img == null %}
-<br>
-{% endif %}
-  <i>{{include.msg}}</i><br><br>
-  {% if include.anchor != null %}
-  </a>
-  {% endif %}
+
+  {% if include.img == null and include.ani == null %}
+      <div>
   {% else %}
-<div class="kotlincode">
-{% endif %}
+      <div class="split left">
+  {% endif %}
 
+    <p><i>{{include.msg}}</i></p>
 
-{% if include.code != null %}
-<kotlin id="er" data-highlight-only folded-button="false" data-target-platform="jvm">
-{% if include.test != null %}
-import jquery.*
-import kotlin.browser.document
-import kotlin.browser.window
-//sampleStart
-{% endif %}
-{{include.code | escape}}
-{% if include.test != null %}
-//sampleEnd
+    {% if include.code != null %}
+        <kotlin data-highlight-only folded-button="false" data-target-platform="jvm">
+          {{ include.code | escape}}
+        </kotlin>
+    {% endif %}
 
-fun main() {
-var p = window.prompt("Please enter your name", "Harry Potter");
-  println(divisorOf(p!!.toInt()))
-  //js("window.alert(test(3))")
-}
-{% endif %}
-</kotlin>
+    {% if include.items != null %}
+      {% assign anit = include.ani | split: "," %}
+      {% assign items = include.items | split: "," %}
+      <p>
+    {% for i in items %}
+      {% if forloop.index0 == 0 %}
+        <input type="checkbox" id="{{forloop.index0}}" onclick="checkboxClick(this,'{{anit[forloop.index0]}}')" checked disabled>
+      {% else %}
+        <input type="checkbox" id="{{forloop.index0}}" onclick="checkboxClick(this,'{{anit[forloop.index0]}}')">
+      {% endif %}
+        <label>{{i}}</label><br>
+      {% endfor %}
+      </p>
+    {% endif %}
+  </div>
+
+  {% if include.img != null %}
+    <div class="imageWrapper split right">
+      <img src="{{include.img}}"/>
+    </div>
+  {% endif %}
+
+  {% if include.ani != null %}
+      {% assign ani = include.ani | split: "," %}
+      <div class="imageWrapper split right">
+        {% for a in ani %}
+          {% if forloop.index0 == 0 %}
+            <img src="{{a}}" id="{{a}}" class="overlayImageBase"/>
+          {% else %}
+            <img src="{{a}}" id="{{a}}" class="overlayImage"/>
+            {% endif %}
+        {% endfor %}
+      </div>
+  {% endif %}
+  </div>
 {% else %}
-<kotlin data-highlight-only>{% include_relative code/{{include.file}} %}</kotlin>
+{% if include.code != null %}
+<kotlin data-highlight-only folded-button="false" data-target-platform="jvm">
+  {{ include.code | escape}}
+</kotlin>
+  {% endif %}
 {% endif %}
 
-</div>
+
 
 
 <!--

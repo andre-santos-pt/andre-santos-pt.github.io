@@ -51,7 +51,7 @@ Suponhamos que temos três caixotes (*A*, *B*, *C*) e vamos organizá-los numa p
 
 Esta é a metáfora de pilha que é utilizada em software, e veremos por agora como é aplicada no encadeamento de invocação de funções.
 
-A **pilha de chamadas** (*call stack*) é a estrutura de armazenamento de valores que é utilizada durante a execução de um programa. Quando uma função executa é colocado um pedaço de memória na pilha de chamadas. A quantidade de memória está relacionada com o número e tipo dos valores que a função manipula. Ao ser invocada outra função, é reservado outro espaço no topo da pilha tendo em conta a memória necessária para a mesma, e assim sucessivamente. Quando uma função retorna, o seu espaço no topo da pilha é libertado, e a função que a invocou prossegue.
+A **pilha de chamadas** (*call stack*) é a estrutura de armazenamento de valores que é utilizada durante a execução de um programa. Quando uma função executa é colocado um segmento de memória na pilha de chamadas. A quantidade de memória está relacionada com o número e tipo dos valores que a função manipula. Ao ser invocada outra função, é reservado outro segmento no topo da pilha tendo em conta a memória necessária para a mesma, e assim sucessivamente. Quando uma função retorna, o seu espaço no topo da pilha é libertado, e a função que a invocou prossegue.
 
 Com base no exemplo apresentado anteriormente, ilustramos o funcionamento da pilha de chamadas para a avaliação de *constrain(120, 0, 100)*.
 

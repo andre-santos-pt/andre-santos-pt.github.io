@@ -79,6 +79,7 @@ img.pagefigure {
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+  width: 300px;
 }
 
 pre {
@@ -105,4 +106,47 @@ blockquote {
 div.kotlincode {
   display: flex;
   flex-grow: 2;
+}
+
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 50%;
+}
+
+.overlayImageBase {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.overlayImage {
+  position: absolute;
+  display: none;
+  top: 20px;
+  right: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.split {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  top: 0px;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  margin-right: 10px;
+}
+
+.right {
+  right: 0;
 }
