@@ -20,6 +20,11 @@
           {{ include.code | escape}}
         </kotlin>
     {% endif %}
+    {% if include.file != null %}
+    <kotlin data-highlight-only folded-button="false" data-target-platform="jvm">
+      {% include_relative code/{{include.file}} %}
+    </kotlin>
+      {% endif %}
 
     {% if include.items != null %}
       {% assign anit = include.ani | split: "," %}
@@ -62,6 +67,11 @@
   {{ include.code | escape}}
 </kotlin>
   {% endif %}
+  {% if include.file != null %}
+  <kotlin data-highlight-only folded-button="false" data-target-platform="jvm">
+      {% include_relative code/{{include.file}} %}
+  </kotlin>
+    {% endif %}
 {% endif %}
 
 
