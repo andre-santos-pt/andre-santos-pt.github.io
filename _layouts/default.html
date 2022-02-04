@@ -25,22 +25,23 @@
       </div>
     </div>
 
-    <div><h1>{{ page.title }}
-      {% if page.exer == true %}
-      (Exercício)
-      {% endif %}
-    </h1></div>
+    <div>
+      <h1>{{ page.title }}
+        {% if page.exer == true %}
+        (Exercício)
+        {% endif %}
+      </h1>
+    </div>
 
     <div class="w3-display-right">
       {% include nav url = page.url %}
     </div>
 
-  </div>
+    </div>
 
-  <div style="position:fixed;top:10;right:150px">
-    <i class="fa fa-question-circle w3-xxlarge w3-button w3-black"
-    id="question" style="visibility:hidden"></i>
-  </div>
+    <div id="feedbackIcon" style="position:fixed;top:10px;left:-7px">
+      <i class="fa 	fa fa-edit w3-xlarge w3-button w3-white" id="question" style="visibility:hidden"></i>
+    </div>
   </header>
 
 
@@ -55,42 +56,53 @@
   </main>
 
   <footer class="w3-container w3-black w3-bottom ontop">
-      &copy;&nbsp;<a href="/">André L. Santos</a>,&nbsp;<a href="{{site.url}}/kotlin">{{site.data.capitulos.titulo}}</a>
-      <a href="http://www.iscte-iul.pt" target="_blank"><img src="/iscte.png" height="40px" class="w3-display-right"/></a>
+    &copy;&nbsp;<a href="/">André L. Santos</a>,&nbsp;<a href="{{site.url}}/kotlin">{{site.data.capitulos.titulo}}</a>
+    <a href="http://www.iscte-iul.pt" target="_blank"><img src="/iscte.png" height="40px" class="w3-display-right" /></a>
   </footer>
   <script src="https://unpkg.com/kotlin-playground@1" data-selector="kotlin"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-  /* for question
     document.addEventListener('selectionchange', (e) => {
       var sel = document.getSelection().toString()
-      if (sel.length > 0) {
+
+      document.getElementById('feedbackIcon').style.top="50%";
+
+      if (sel.length > 0 && sel.trim() !== "") {
         document.getElementById('question').style.visibility = 'visible'
         var parent = document.getSelection().anchorNode
         if (parent instanceof Text) {
-          var t = "<i>..." + parent.data.toString() + "...</i>"
-          t = t.replace(sel, "<mark>" + document.getSelection().toString() + "</mark>")
+          var plain = parent.parentNode.innerHTML;
+          var t = "<i>..." + plain.substring(0, document.getSelection().anchorOffset) +
+          "<mark>" + document.getSelection().toString() + "</mark>" +
+          plain.substring(document.getSelection().focusOffset) + "...</i>";
           document.getElementById('questionForm').innerHTML = t
         }
       } else
         document.getElementById('question').style.visibility = 'hidden'
     });
-*/
 
+
+    function getOffset(el) {
+      const rect = el.getBoundingClientRect();
+      return {
+        left: rect.left + window.scrollX,
+        top: rect.top + window.scrollY
+      };
+    }
 
     function checkboxClick(e, file) {
-      if(e.checked)
-          document.getElementById(file).style='display:inline';
-        else {
-          document.getElementById(file).style='display:none';
-        }
+      if (e.checked)
+        document.getElementById(file).style = 'display:inline';
+      else {
+        document.getElementById(file).style = 'display:none';
+      }
     }
 
     function hide(files) {
       var split = files.split(",")
       split.forEach((e) => {
-          document.getElementById(e).style='display:none';
+        document.getElementById(e).style = 'display:none';
       });
     }
 
@@ -111,11 +123,13 @@
     }
 
 
+
+
     $(function() {
       $("#dialog").dialog({
         autoOpen: false,
         modal: true,
-        title: "Questão?",
+        title: "Dúvida / Comentário?",
         width: 500,
         height: 500,
         open: function() {
@@ -126,6 +140,8 @@
             $(this).dialog("close");
           },
           "Enviar": function() {
+              //$("#page").value=document.URL;
+            $("#sendFeedback").submit();
             $(this).dialog("close");
           }
         }
@@ -135,26 +151,32 @@
         $("#dialog").dialog("open");
       });
     });
+
+
+
   </script>
   <div id="dialog" title="">
     <p id="questionForm" />
-    <form border="0">
+    <form border="0" id="sendFeedback" target="_blank" method="post"
+    action="https://script.google.com/macros/s/AKfycbwz6t50GI9gePj_ooswmsxzrLfhZfFp6PCUx_oyLvwL2h3b2-u08fjuqdV9fj1itr0mFQ/exec">
       <fieldset>
+        <input type="hidden" id="page" name="page">
         <input type="radio" id="duvida" name="kind" value="duvida" checked>
         <label for="duvida">Dúvida</label><br>
         <input type="radio" id="gralha" name="kind" value="gralha">
         <label for="gralha">Gralha</label><br>
         <input type="radio" id="outra" name="kind" value="outra">
-        <label for="outra">Outra</label><br>
-
-        <textarea id="desc" rows="4" cols="50" class="text ui-widget-content ui-corner-all"></textarea>
-
-        <label for="email">Email (opcional, para resposta)</label>
+        <label for="outra">Outra</label><br><br>
+        <label for="msg">Descrição</label>
+        <textarea name="msg" id="msg" rows="4" cols="50" class="text ui-widget-content ui-corner-all"></textarea>
+        <br>
+        <label for="email">Email</label>
         <input type="text" id="email" name="kind" class="text ui-widget-content ui-corner-all">
-        <!-- Allow form submission with keyboard without duplicating the dialog button -->
+        <label for="email">(opcional, para resposta)</label>
         <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
       </fieldset>
     </form>
   </div>
 </body>
+
 </html>

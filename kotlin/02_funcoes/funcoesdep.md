@@ -31,9 +31,7 @@ constrain(-10, 1, 100) &rarr; max(1, <u>min(-10, 100)</u>) &rarr; <u>max(1, -10)
  %}
 
 
-{% include code anchor="approxEqual" code="
-fun approxEqual(a: Double, b: Double) = abs(a - b) < 0.000001
-"
+{% include code anchor="approxEqual" file="approxEqual.kt"
 msg="Exemplo: Função para verificar se dois números são aproximadamente iguais, recorrendo ao valor absoluto.
 <br>
 approxEqual(2.1, 2.2) &rarr; abs(<u>2.1 - 2.2</u>) < 0.000001 &rarr; <u>abs(-0.1)</u> < 0.000001  &rarr; <u>0.1 < 0.000001</u> &rarr; false"

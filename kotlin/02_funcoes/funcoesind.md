@@ -101,7 +101,7 @@ msg="Desalinhamento entre tipo de valor e invocação. A função devolve um int
 Muitas funções simples podem ser definidas utilizando uma expressão condicional (**if-else**). Apresentamos aqui três exemplos de tais funções.
 
 {% include code file="abs.kt"
-msg="Exemplo: Função para obter o valor absoluto (módulo) de um número inteiro."%}
+msg="Exemplo: Funções para obter o valor absoluto (módulo) de um número inteiro ou decimal."%}
 
 {% include code file="max.kt"
 msg="Exemplo: Função para obter o valor máximo entre dois inteiros."%}
@@ -119,9 +119,7 @@ msg="Exemplo: Obter código de escalão etário com base numa idade. Este caso r
 
 # Funções baseadas em expressão booleana
 
-{% include code anchor="isEven" code="
-fun isEven(n: Int): Int = n % 2 == 0
-"
+{% include code anchor="isEven" file="isEven.kt"
 msg="Exemplo: Função para verificar se um número é par, recorrendo ao resto da divisão por 2."
 %}
 

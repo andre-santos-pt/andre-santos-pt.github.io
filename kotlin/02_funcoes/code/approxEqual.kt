@@ -1,0 +1,1 @@
+fun approxEqual(a: Double, b: Double) = abs(a - b) < 0.000001

@@ -2,7 +2,7 @@
 title: Funções de ordem superior
 ---
 
->Uma função de **ordem superior**, herda seu nome da Matemática, onde também existe essa categorização. A ideia consiste numa função que ao invés de manipular valores (numéricos, etc), manipula também funções como se de valores se tratassem.
+>Uma função de **ordem superior**, herda seu nome da Matemática, onde também existe essa categorização. A ideia consiste numa função que ao invés de manipular apenas valores (numéricos, etc), manipula também funções como se se tratassem de valores.
 
 # Motivação
 

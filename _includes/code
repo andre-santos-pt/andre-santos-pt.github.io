@@ -4,7 +4,13 @@
   <div class="w3-panel w3-border w3-border-black w3-round-large w3-light-gray" style="display:flex">
 
   {% if include.ani != null %}
-    <div style="display:absolute; right:20px"><i class="fa fa-bars" alt="Exemplo interativo: selecionar opções"></i></div>
+    <div style="display:absolute; margin-right:0px; margin-top:10px"><i class="fa w3-large fa-film"></i></div>
+  {% endif %}
+
+  {% if include.file != null %}
+  <div style="display:absolute; margin-right:0px; margin-top:10px">
+    <a href="code/{{include.file}}"><i class="fa w3-large fa-cloud-download"></i></a>
+    </div>
   {% endif %}
 
   {% if include.img == null and include.ani == null %}
@@ -12,6 +18,8 @@
   {% else %}
       <div class="split left">
   {% endif %}
+
+
 
     <p><i>{{include.msg}}</i></p>
 
@@ -29,10 +37,11 @@
     {% if include.items != null %}
       {% assign anit = include.ani | split: "," %}
       {% assign items = include.items | split: "," %}
+        
       <p>
     {% for i in items %}
       {% if forloop.index0 == 0 %}
-        <input type="checkbox" id="{{forloop.index0}}" onclick="checkboxClick(this,'{{anit[forloop.index0]}}')" checked disabled>
+        <input type="checkbox" id="{{forloop.index0}}" onclick="return false;" checked>
       {% else %}
         <input type="checkbox" id="{{forloop.index0}}" onclick="checkboxClick(this,'{{anit[forloop.index0]}}')">
       {% endif %}

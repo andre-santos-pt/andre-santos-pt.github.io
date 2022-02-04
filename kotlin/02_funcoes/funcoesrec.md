@@ -8,13 +8,9 @@ title: Funções recursivas
 Comecemos por ilustrar o conceito de função recursiva com um exemplo clássico para este assunto, o cálculo do fatorial de um número natural. Ao seguir à letra a definição Matemática recursiva, obtemos a seguinte função.
 A função diz-se **recursiva** quando inclui na sua definição uma invocação a si própria.
 
-{% include code code="
-fun factorial(n: Int) =
-    if(n <= 1) 1
-    else n * factorial(n - 1)
-"
+{% include code file="factorial.kt"
 msg="Exemplo: Função (recursiva) para calcular o factorial de um número natural.<br>
-factorial(4) &rarr; 4 * <u>factorial(3)</u> &rarr; 4 * 3 * <u>factorial(2)</u> &rarr; 4 * 3 * 2 * <u>factorial(1)</u> &rarr; 4 * 3 * 2 * 1 &rarr; 24
+factorialRec(4) &rarr; 4 * <u>factorialRec(3)</u> &rarr; 4 * 3 * <u>factorialRec(2)</u> &rarr; 4 * 3 * 2 * <u>factorialRec(1)</u> &rarr; 4 * 3 * 2 * 1 &rarr; 24
 "
 %}
 
@@ -66,23 +62,16 @@ O exemplo inicial de cálculo de factorial *não* é recursivo na cauda, pois o 
 Apresentamos agora adaptação da função inicial, por forma a que seja recursiva na cauda, evitando o problema de desempenho explicado anteriormente. Em muitos casos, as funções recursivas na cauda requerem que um parâmetro tenha um papel de variável que vai transitando o resultado de chamada em chamada.
 
 {% include code file="factorialTail.kt"
-msg="Exemplo: Função recursiva na cauda para cálculo de factorial. A segunda função, baseada na primeira, será a que é invocada por código cliente.<br>
-factorial(3) &rarr; factTail(3, 1) &rarr; factTail(2, 1 * 3) &rarr; factTail(1, 3 * 2) &rarr; 6
+msg="Exemplo: Função para cálculo de factorial baseada em recursão na cauda com a função auxiliar <b>factTailRec</b>.<br>
+factorialTail(3) &rarr; factTailRec(3, 1) &rarr; factTailRec(2, 1 * 3) &rarr; factTailRec(1, 3 * 2) &rarr; 6
 " %}
 
 ## Funções aninhadas
-Dado que em vários vários utilizar as funções recursivas por si só faz pouco sentido, podemos utilizar **funções aninhadas**. A definição de uma função aninhada é feita dentro do corpo de outra função, sendo que apenas poderá ser invocada por esta. A função aninhada pode aceder aos parâmetros da função "mãe".
+Dado que em várias situações utilizar as funções recursivas por si só faz pouco sentido, podemos utilizar **funções aninhadas**. A definição de uma função aninhada é feita dentro do corpo de outra função, sendo que apenas poderá ser invocada por esta. A função aninhada pode aceder aos parâmetros da função "mãe".
 
-{% include code code="
-fun factorial(n: Int): Int {
-    tailrec fun aux(i: Int, r: Int): Int =
-        if(i <= 1) r
-        else aux(i - 1,r * i)
-    return aux(n, 1)
-}
-"
+{% include code file="factorialTailNested.kt"
 msg="Exemplo: Função para cálculo do factorial com recurso a função recursiva na cauda aninhada."
 %}
 
 
->Utilizando funções recursivas é possível em teoria efetuar qualquer cálculo, e estas são a base do paradigma de programação **funcional**. Porém, por razões práticas ou necessidade de desempenho nalguns tipos de aplicação, torna-se necessário utilizar programação [procedimental](../04_estado).
+>Utilizando funções recursivas é possível em teoria efetuar qualquer cálculo, e estas são a base do paradigma de programação **funcional**. Porém, por razões práticas ou necessidade de desempenho nalguns tipos de aplicação, torna-se necessário utilizar programação procedimental ([a abordar noutro capítulo](../04_estado)).
