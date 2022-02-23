@@ -63,24 +63,22 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-    document.addEventListener('selectionchange', (e) => {
-      var sel = document.getSelection().toString()
-
-      document.getElementById('feedbackIcon').style.top="50%";
-
-      if (sel.length > 0 && sel.trim() !== "") {
-        document.getElementById('question').style.visibility = 'visible'
-        var parent = document.getSelection().anchorNode
-        if (parent instanceof Text) {
-          var plain = parent.parentNode.innerHTML;
-          var t = "<i>..." + plain.substring(0, document.getSelection().anchorOffset) +
-          "<mark>" + document.getSelection().toString() + "</mark>" +
-          plain.substring(document.getSelection().focusOffset) + "...</i>";
-          document.getElementById('questionForm').innerHTML = t
-        }
-      } else
-        document.getElementById('question').style.visibility = 'hidden'
-    });
+    //document.addEventListener('selectionchange', (e) => {
+      //var sel = document.getSelection().toString()
+      //document.getElementById('feedbackIcon').style.top="50%";
+      //if (sel.length > 0 && sel.trim() !== "") {
+      //  document.getElementById('question').style.visibility = 'visible'
+      //  var parent = document.getSelection().anchorNode
+      //  if (parent instanceof Text) {
+      //    var plain = parent.parentNode.innerHTML;
+      //    var t = "<i>..." + plain.substring(0, document.getSelection().anchorOffset) +
+      //    "<mark>" + document.getSelection().toString() + "</mark>" +
+      //    plain.substring(document.getSelection().focusOffset) + "...</i>";
+      //    document.getElementById('questionForm').innerHTML = t
+      //  }
+      //} else
+      //  document.getElementById('question').style.visibility = 'hidden'
+    //});
 
 
     function getOffset(el) {
