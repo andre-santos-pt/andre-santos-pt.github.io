@@ -2,11 +2,11 @@
 title: Classes
 ---
 
-Ao passo que na secção anterior abordámos a definição de *objeto*, nesta trataremos da noção de **classe**. Num dicionário, *classe* pode ser definida como "grupo de pessoas, animais ou coisas com atributos semelhantes" ou "categoria de funções da mesma natureza". Fazendo o paralelo para a programação, as coisas são os objetos e os atributos semelhantes são os dados neles contidos. A segunda definição é útil para enfatizar que as coisas podem ser simplesmente funções/procedimentos (e não conter dados necessariamente, veja-se os comparadores).
+> Ao passo que na secção anterior abordámos a definição de *objeto*, nesta trataremos da noção de **classe**. Num dicionário, *classe* pode ser definida como "grupo de pessoas, animais ou coisas com atributos semelhantes" ou "categoria de funções da mesma natureza". Fazendo o paralelo para a programação, as coisas são os objetos e os atributos semelhantes são os dados neles contidos. A segunda definição é útil para enfatizar que as coisas podem ser simplesmente funções/procedimentos.
 
 As classes são um mecanismo, fulcral em programação orientada para objetos, que visa resolver o problema da incoerência de dados através da definição de tipos de dados que garantem que a sua a coerência seja mantida. Esta possibilidade é considerada uma mais-valia que ajuda a gerir a complexidade na implementação de sistemas e coordenação entre módulos. Ao definir uma classe de objetos, a mesma deverá ser desenhada por forma a impossibilitar que as suas instâncias tenham um estado incoerente face àquilo que o objeto é suposto representar. Se tal acontece, então o objeto "sai fora" da classe pois já não obedece às características esperadas, e logo, a classe não estará bem desenhada. As condições que definem o que é considerado um estado válido do objeto são denominadas de *invariantes*, pois deverão ser sempre verdade (daí o nome invariante: são sempre verdadeiras, nunca variam).
 
-A implementação de classes caracteriza-se por agregar dados (atributos) e operações válidas para esses mesmos dados. No momento imediato após a sua criação, um objeto deverá estar num estado coerente. Por outro lado, as operações disponíveis nunca deverão permitir que o objeto fique com dados incoerentes. Desta forma, as operações podem assumir que os dados estão coerentes, e produzirão resultados válidos com base neste pressuposto.
+
 
 
 # Definição de classes
@@ -17,7 +17,7 @@ Como exemplo, suponhamos um objeto contador (para já sem limite máximo). Um co
 
 
 ## Propriedades
-Os objetos são compostos apenas por um inteiro (variável *current*), que começa com o valor zero. Vamos referirmo-nos a estas características que definem o objeto como **propriedades**. Estas são definidas no corpo da classe, embora hajam outras possibilidades sintáticas.
+Os objetos são compostos apenas por um inteiro (variável *value*), que começa com o valor zero. Vamos referirmo-nos a estas características que definem o objeto como **propriedades**. Estas são definidas no corpo da classe, embora hajam outras possibilidades sintáticas.
 
 {% include code code="
 class CounterUnbound {
@@ -61,7 +61,7 @@ Uma função sem parâmetros pode ser definida como uma **propriedade calculada*
 class Counter {
     var value: Int = 0
 
-    val isZero: Boolean = value == 0
+    val isZero: Boolean get() = value == 0
 }
 "
 %}
@@ -76,6 +76,8 @@ val zero = c.isZero // true
 %}
 
 ## Encapsulamento de propriedades
+
+A implementação de classes caracteriza-se por agregar dados (atributos) e operações válidas para esses mesmos dados. No momento imediato após a sua criação, um objeto deverá estar num estado coerente. Por outro lado, as operações disponíveis nunca deverão permitir que o objeto fique com dados incoerentes. Desta forma, as operações podem assumir que os dados estão coerentes, e produzirão resultados válidos com base neste pressuposto.
 
 A versão da classe apresentada até ao momento tem um problema, pois a lógica de um contador pode facilmente ser comprometida. No código seguinte, começamos por fazer uma incrementação (sem problemas), mas de seguida alteramos o valor para -5 (que não faz sentido como contagem). Ora, isto compromete a coerência do objeto face ao que se pretendia, e logo, é indesejável. O que gostaríamos é que a propriedade *value* não pudesse ser alterada arbitrariamente, mas sim apenas por incrementação.
 
@@ -134,7 +136,7 @@ O exemplo apresentado anteriormente consiste em objetos que são criados sem for
 Por forma a ilustrar a inicialização, consideremos uma versão do objeto contador anterior onde é possível fixar um valor máximo para a contagem, acima do qual não deverão ser permitidas incrementações. Sendo assim, ao criar um contador iremos fornecer um valor inteiro positivo para o máximo.
 
 ## Construtor
-A passagem de valores para a criação de um objeto é feita mediante o **construtor**, composto por parâmetros, enumerados da mesma forma que nas funções. Este é o construtor *primário* (principal), e podem ser definidos outros alternativos. Esses parâmetros podem ser utilizados nos valores iniciais das propriedades.
+A passagem de valores para a criação de um objeto é feita mediante o **construtor**, composto por parâmetros, enumerados da mesma forma que nas funções. Esses parâmetros podem ser utilizados nos valores iniciais das propriedades. Desta forma estamos a definir construtor *primário* (principal), mas contudo podem ser definidos outros alternativos.
 
 {% include code code="
 class CounterBounded constructor(max: Int) {
@@ -151,7 +153,7 @@ class CounterBounded constructor(max: Int) {
 "
 %}
 
-Ao inicializar o objeto passamos o valor desejado, da mesma forma que passaríamos argumento a uma função.
+ Ao inicializar o objeto passamos o valor desejado, da mesma forma que passaríamos argumento a uma função.
 
 {% include code code="
 val c = CounterBounded(10)
@@ -159,7 +161,7 @@ val m = c.max // 10
 "
 %}
 
-Normalmente, a palavra reservada **constructor** pode ser omitida. Por outro lado, no caso frequente de o valor do argumento ser diretamente atribuído a uma propriedade, podemos utilizar a forma dos campos dos [valores compostos](../01_expressoes/valorescompostos), declarando diretamente **val** no parâmetro, e dispensando a definição da propriedade.
+A palavra reservada **constructor** pode ser, e frequentemente é, omitida. Por outro lado, no caso frequente de o valor do argumento ser diretamente atribuído a uma propriedade, podemos utilizar a forma dos campos dos [valores compostos](../01_expressoes/valorescompostos), declarando diretamente **val** no parâmetro, e dispensando a definição da propriedade.
 
 {% include code code="
 class CounterBounded(val max: Int) {
@@ -169,6 +171,10 @@ class CounterBounded(val max: Int) {
 }
 "
 %}
+
+
+
+
 
 ### Bloco de inicialização
 Para efeitos de inicializações mais complexas ou para validação de argumentos, podemos utilizar o bloco de inicialização (**init**). Este bloco executará após o construtor primário.
@@ -184,7 +190,7 @@ class CounterBounded(val max: Int) {
 %}
 
 ### Construtores secundários
-Para além do construtor primário, podemos ter outros alternativos, que forçosamente serão baseados no primário. Todos os construtores *secundários* têm que invocar o construtor primário (**this(...)**). Estes construtores executam após o bloco de inicialização (caso exista).
+Para além do construtor primário, podemos ter outros alternativos, que forçosamente terão que ser baseados no primário. Todos os construtores *secundários* têm que invocar o construtor primário (**this(...)**). Estes construtores executam após o bloco de inicialização (caso exista).
 
 {% include code code="
 class CounterBounded(max: Int) {

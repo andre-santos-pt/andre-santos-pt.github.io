@@ -2,9 +2,9 @@
 title: Objetos
 ---
 
-Em capítulos anteriores lidámos com valores (simples ou compostos), os quais são manipulados com vista a calcular algo. Por exemplo, dado um valor inteiro, podemos invocar uma função para o exponenciar, obtendo um novo valor. Este último é outra coisa que não o primeiro, e não foi feita uma transformação ao valor original.
+> Os valores não têm identidade. Isto é, quanto por exemplo referimos "aqueles dois carros são de cor vermelho": os carros têm uma identidade, e embora possam exatamente o mesmo modelo, distinguimo-los (identidade); por outro lado, o vermelho é tratado como sendo o mesmo, e não é feita a distinção ainda que esteja nos dois carros. O vermelho é um valor, ao passo que cada carro é um objeto.
 
-Porém, quando lidamos com entidades mais complexas que representam algo que tem um tempo de vida prolongado ao longo de um aplicação, tais como, uma base de dados, a janela de uma aplicação, uma imagem que está a ser editada interativamente. Neste caso será apropriado utilizar **objetos**, que podem ser vistos como entidades que têm identidade, bem como estado próprio que é alterado ao longo do tempo. Frequentemente, os objetos são compostos por valores, bem como por outros objetos.
+É apropriado utilizar **objetos** quando lidamos com entidades mais complexas que representam algo que tem um tempo de vida prolongado ao longo de um aplicação, tais como, uma base de dados, a janela de uma aplicação, uma imagem que está a ser editada interativamente. Nestes casos, os objetos podem ser vistos como entidades que têm identidade, bem como estado próprio que é alterado ao longo do tempo.
 
 
 # Instanciação e tipo
@@ -47,7 +47,7 @@ usernames.add(newUser)
 %}
 
 # Objetos imutáveis
-Um objeto **imutável** é aquele que não permite ser alterado após a instanciação. Isto é, não existem procedimentos disponíveis para tal. No contexto de um objeto imutável não faz sentido falar em procedimentos, pois estes implicariam que o objeto fosse *mutável*.
+Um objeto **imutável** é aquele que não permite ser alterado após a instanciação. Isto é, não existem procedimentos disponíveis para tal. No contexto de um objeto imutável não faz sentido falar em procedimentos, pois estes implicariam que o objeto fosse *mutável*. Muito frequentemente, os objetos imutáveis são utilizados para representar [valores compostos](../01_expressoes/valorescompostos).
 
 
 # Objetos únicos (*singletons*)
@@ -86,4 +86,4 @@ SystemUsers.logout(\"Tony\")
 "
 %}
 
-O recurso a objetos únicos para representar partes de um sistema deve ser evitado, pois o tipo de desenho baseado nestas soluções tende a ser pouco flexível.
+> O recurso a objetos únicos para representar partes de um sistema deve ser evitado, pois o tipo de desenho baseado nestas soluções tende a ser pouco flexível. Na maioria das situações são definidas [classes](classes) de objetos.
