@@ -2,10 +2,10 @@
 title: Listas
 ---
 
-O tipo mais elementar de coleção é a **lista**, que consiste numa sequência de valores, passíveis de serem indexados com base zero (o primeiro elemento tem índice zero). Existem duas abstrações para manipular listas: apenas leitura e leitura e escrita.
+> A lista é a estrutura de dados mais comum quando programamos, sendo essencial dominar a sua utilização, mas igualmente importante estar ciente das suas limitações.
 
+Uma **list** consiste numa sequência de valores, passíveis de serem indexados com base zero (o primeiro elemento tem índice zero). Existem duas abstrações para manipular listas: apenas leitura ou leitura e escrita.
 
-![](UML-List.png)
 
 # Listas para leitura (*read-only*)
 
@@ -24,7 +24,7 @@ A tabela seguinte apresenta as operações principais para List\<T\>, explicitan
 | first | Primeiro elemento (requer lista não vazia) | Constante | list.first | 0.2 |
 | last | Último elemento (requer lista não vazia) | Constante | list.last | 1.0 |
 | lastIndex | Último índice (-1 caso lista vazia) | Constante | list.lastIndex | 4 |
-| indices | Intervalo de índices válidos | Constante | list.indices | 0..4 |
+| indices | Intervalo de índices válidos | Constante | list.indices | 0..4 |
 | get(Int) | Valor em índice | Constante | list.get(0) | 0.2 |
 | indexOf(T) | Índice de elemento (-1 caso não exista) | Linear | list.indexOf(0.6) | 2 |
 | contains(T) | Lista contém elemento? | Linear | list.contains(1.0) | true |
@@ -51,6 +51,8 @@ msg="Exemplo: função para calcular a média dos valores de uma lista."
 %}
 
 
+![](UML-List.png)
+
 # Listas mutáveis
 
 Uma lista mutável (*MutableList*) é uma abstração que estende *List* com operações para modificar a lista. Ou seja, temos disponíveis todas as operações de *List*, mais um conjunto de operações para modificar a lista.
@@ -59,7 +61,7 @@ Uma lista mutável (*MutableList*) é uma abstração que estende *List* com ope
 val mutablelist: MutableList<Double> = mutableListOf(0.2, 0.4, 0.6, 0.8, 1.0)"
 %}
 
-As operações principais adicionais às da tabela anterior são apresentadas em baixo, à semelhança da tabela anterior. Tal como nalgumas operações de leitura, neste caso também temos operações lineares.
+As operações principais adicionais às da tabela anterior são apresentadas em baixo. Tal como nalgumas operações de leitura, neste caso também temos operações lineares.
 
 | Operação       | Descrição      | Custo | Exemplo | Estado da lista|
 | ----------- | ----------- |--------|
@@ -94,11 +96,11 @@ msg="Exemplo: Procedimento para alterar os elementos de uma lista para o seu val
 
 # Criação
 
-A forma utilizada atrás para criar listas consiste numa enumeração de elementos. Porém, para além de casos de teste, normalmente criamos listas de uma forma diferente.
+A forma utilizada atrás para criar listas consiste numa enumeração de elementos. Porém, normalmente criamos listas de uma forma diferente, a não ser que estejamos a definir casos de teste.
 
 ## Listas vazias
 
-Por vezes é necessário representar listas vazias. Neste caso, dado que não são fornecidos elementos concretos, não é possível inferir o tipo dos seus elementos. Desta forma, torna-se necessário ser explícito.
+Por vezes é necessário representar listas vazias. Neste caso, dado que não são fornecidos elementos concretos, não é possível inferir o tipo dos seus elementos. Desta forma, torna-se necessário ser explícito em relação ao tipo de elementos.
 
 {% include code code="
 val list: List<Int> = emptyList()"
@@ -121,7 +123,7 @@ val list = List(100) { it + 1 }"
 ## Cópia
 Por vezes temos necessidade de trabalhar com uma cópia de outra lista. Esta necessidade será no sentido de a alterar, pois caso apenas precisemos de leitura, não faz sentido efetuar cópias.
 
-Se a lista original seja de leitura, teremos necessariamente que fazer uma cópia. O outro caso é termos uma lista mutável original que queremos preservar.
+Caso a lista original seja de leitura, teremos necessariamente que fazer uma cópia. Outra situação possível é termos uma lista mutável original que queremos preservar.
 Para tal, temos a operação *toMutableList()*, que efetua uma cópia da lista original.
 
 {% include code code="
@@ -131,6 +133,4 @@ val copy = original.toMutableList()
 %}
 
 
-
-# Sumário
-A lista é a estrutura de dados mais comum quando programamos. Porém, convém estar ciente das suas propriedades, em especial às operações com custo linear que poderão causar problemas de escalabilidade.
+> A lista é a estrutura de dados mais comum quando programamos. Porém, convém ter especial atenção às operações com custo linear, pois poderão causar problemas de desempenho. Perante a necessidade de pesquisas intensivas, poderá ser mais adequado utilizar [Conjuntos](conjuntos) ou Tabelas (*hash tables*).

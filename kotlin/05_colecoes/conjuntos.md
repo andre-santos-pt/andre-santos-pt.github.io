@@ -2,11 +2,11 @@
 title: Conjuntos
 ---
 
-Um **conjunto** é uma coleção de elementos sem duplicados. Por comparação a uma lista, a inserção de um elemento repetido não terá efeito.
+> Uma das desvantagens das listas é o custo linear das operações de pesquisa e remoção. A utilização de conjuntos não tem o mesmo custo nestas operações, e poderá ser uma alternativa adequada.
 
-A principal vantagem do conjunto é a eficiência da operação de verificação de existência de elemento (*contains*), pois a concretização baseia-se numa tabela de dispersão (custo constante, por comparação a custo linear numa lista).
+Um **conjunto** é uma coleção de elementos sem duplicados. Por comparação a uma lista, a inserção de um elemento repetido não terá efeito. A principal vantagem do conjunto é a eficiência da operação de verificação de existência de elemento (*contains*), pois a concretização baseia-se numa tabela de dispersão (custo constante, por comparação a custo linear numa lista).
 
-Normalmente, num conjunto a ordem pela qual os elementos são inseridos não dá garantias sobre a ordem de interação.  Por conseguinte, um conjunto não é adequado para manter informação de algo onde a relação de ordem dos elementos é relevante. Porém, se utilizarmos a implementação por omissão em Kotlin, o conjunto mantém informação sobre a ordem de inserção dos elementos.
+Normalmente, num conjunto a ordem pela qual os elementos são inseridos não dá garantias sobre a ordem de interação.  Por conseguinte, um conjunto não é adequado para manter informação de algo onde a relação de ordem dos elementos é relevante. Porém, se utilizarmos a implementação por omissão em Kotlin, o conjunto mantém a ordem de inserção, por forma a que uma iteração pelos elementos corresponde à ordem pela qual foram adicionados.
 
 Tal como nas listas, temos uma abstração para leitura de conjuntos e outra para alteração.
 

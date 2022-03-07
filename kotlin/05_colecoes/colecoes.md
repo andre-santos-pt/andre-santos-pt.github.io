@@ -2,13 +2,15 @@
 title: Coleções e iteradores
 ---
 
-Nas secções anteriores abordámos as abstrações de **lista** e **conjunto**. É possível constatar que ambas têm uma natureza semelhante, e partilham operações comuns (pe. *size*, *contains*, *add*). Embora com propriedades ligeiramente diferentes, tanto uma lista como um conjunto consiste numa **coleção** de elementos.
+> Nas secções anteriores abordámos as abstrações de **lista** e **conjunto**. É possível constatar que ambas têm uma natureza semelhante, e partilham operações comuns (pe. *size*, *contains*, *add*). Embora com propriedades ligeiramente diferentes, tanto uma lista como um conjunto consiste numa **coleção** de elementos.
 
-Desta forma, temos a abstração de *Collection* para representar as características comuns a listas e conjuntos (e possivelmente outros).
+
 
 
 # Iteradores
-Muito frequentemente processamos uma coleção através de um "varrimento", i.e. uma passagem pelos seus elementos. Este tipo de processo designa-se por **iteração**. *Collection* é por sua vez baseada noutra abstração chamada *Iterable*, para representar algo iterável de onde possamos obter elementos.
+A abstração *Collection* representa as características comuns a listas e conjuntos (e possivelmente outros). Muito frequentemente processamos uma coleção através de um "varrimento", i.e. uma passagem pelos seus elementos. Este tipo de processo designa-se por **iteração**. *Collection* é por sua vez baseada noutra abstração chamada *Iterable*, para representar algo iterável de onde possamos obter elementos.
+
+![](UML-Iterable.png)
 
 O processo de iteração é representado na abstração *Iterator*. Este objeto controla o progresso da iteração, solicitando sucessivamente o próximo elemento até que não existam mais para processar. A estrutura típica de utilização de um iterador na sua forma mais elementar é a seguinte.
 
@@ -75,11 +77,11 @@ Desta forma, poderíamos efetuar os cálculos do somatório e produto da seguint
 
 {% include code code="
 val l = listOf(1, 2, 3)
-val sum = 0
+var sum = 0
 iterate(l) { sum += it }
 
 val s = setOf(4, 5, 6)
-val prod = 1
+var prod = 1
 iterate(s) { prod *= it }
 "
 %}
@@ -97,12 +99,12 @@ fun <T> iterate(col: Iterable<T>, action:(T) -> Unit) {
 %}
 
 {% include code code="
-val sum = 0
+var sum = 0
 iterate(1..10) { sum += it }
 "
 %}
 
-Dado que a necessidade de iterações é muito comum, existe na linguagem uma função pré-definida para tal chamada *forEach* ("para cada"). Esta função é muito semelhante a *iterate*, apenas difere em ser invocada em objetos.
+Dado que a necessidade de iterações é muito comum, existe na linguagem uma função pré-definida para esse processo chamada *forEach* ("para cada"). Esta função é muito semelhante a *iterate*, apenas difere em estar definida como sendo de instância.
 
 {% include code code="
 list.forEach { sum += it }
@@ -112,7 +114,7 @@ list.forEach { sum += it }
 
 # Transformações
 
-As bibliotecas de Kotlin incluem muitas funções para processamento de coleções, das quais detalharemos as mais frequentes. A lógica de funcionamento segue o princípio *map-reduce* originário da programação funcional.
+As bibliotecas de Kotlin incluem muitas funções para processamento de coleções, das quais abordaremos aqui as mais frequentes. A lógica de funcionamento segue o princípio *map-reduce* originário da programação funcional.
 
 ## Mapeamento
 Por vezes é necessário transformar os elementos de uma coleção de forma uniforme. Para este propósito existe a operação de mapeamento.
@@ -125,11 +127,11 @@ val powers = list.map { it * it } // [1, 4, 9, 16]
 %}
 
 ## Seleção
-Frequentemente temos que selecionar elementos de uma coleção, deixando outros for do processo. Isto pode ser feito com a operação *filter* que recebe uma função booleana que decide quais os elementos a incluir.
+Frequentemente temos que selecionar elementos de uma coleção, deixando outros fora do processo. Isto pode ser feito com a operação *filter* que recebe uma função booleana que decide quais os elementos a incluir.
 
 {% include code code="
 val list = listOf(1, -1, -3, 4)
-val positive = list.filter { it % 2 == 0 } // [1, 4]
+val positive = list.filter { it > 0 } // [1, 4]
 "
 %}
 
@@ -194,8 +196,8 @@ A operação *fold* oferece outra forma de fazer redução semelhante, porém, o
 
 {% include code code="
 fun <T> join(list: List<T>, separator: String = \", \") =
-   list.drop(1).fold(list.first().toString()) { result, e ->
-       result + separator + e.toString()
+   list.drop(1).fold(list.first().toString()) {
+     result, e -> result + separator + e.toString()
    }
 "
 msg="Exemplo: Junção de elementos numa String com separador por redução. A ilustração é referente à execução de join(listOf(1, 2, 3, 4, 5))."
@@ -204,7 +206,7 @@ img="fold.png"
 
 
 # Funções auxiliares
-As bibliotecas de Kotlin oferecem algumas funções auxiliares comuns sobre coleções, das quais destacamos aqui algumas das que serão utilizadas com mais frequência. Muitas destas funções têm variantes com nomes relacionados que não são ilustradas aqui.
+As bibliotecas de Kotlin oferecem algumas funções auxiliares comuns sobre coleções, das quais destacamos aqui algumas das que serão utilizadas com mais frequência. Muitas destas funções têm variantes com nomes relacionados que não ilustramos aqui.
 
 
 ## Contagem
@@ -224,7 +226,7 @@ val firstNegative = listOf(1, 2, -3, -4, 5).find { it < 0 } // -3
 %}
 
 
-## Mínimo e máximo
+## Caracterização
 
 Ao lidarmos com coleções numéricas, é muito frequente necessitarmos de procurar por valores mínimos ou máximos, bem como calcular somatórios e médias. Existem funções de extensão para estes objetivos que apresentamos na tabela em baixo.
 

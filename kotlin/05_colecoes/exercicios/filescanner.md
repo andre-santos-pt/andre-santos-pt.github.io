@@ -30,7 +30,7 @@ O objetivo desta sequência de exercícios é desenvolver uma função para obte
 ### 1. Função recursiva
 
 Escreva uma função para obter a listagem de ficheiros incluindo subdiretórios.
-Será útil recorrer a um procedimento auxiliar recursivo, que poderá ser definida internamente.
+Será útil recorrer a um procedimento auxiliar recursivo, que poderá ser definido internamente.
 
 {% include code code="
 fun dirFilesRec(dir: File): List<File> {
@@ -41,9 +41,9 @@ fun dirFilesRec(dir: File): List<File> {
 
 ### 2. Função com critério de aceitação opcional
 
-Evolua a função anterior por forma a permitir fornecer um critério de aceitação de ficheiros a incluir na filtragem. Por omissão, todos o ficheiros são aceites.
+Evolua a função anterior por forma a permitir fornecer um critério de aceitação de ficheiros a incluir na filtragem. Por omissão, todos o ficheiros serão aceites.
 
-Isto permitirá por exemplo obter todos os ficheiros que têm determinada extensão.
+O código permitiria por exemplo obter todos os ficheiros que têm determinada extensão.
 
 {% include code code="
 dirFilesRec(File(path)) {
