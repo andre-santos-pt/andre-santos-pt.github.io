@@ -33,45 +33,35 @@ caps:
       url: funcoesdep
     - sec: Funções recursivas
       url: funcoesrec
-    - sec: Funções sobre valores
+    - sec: Funções sobre valores compostos
       url: funcoesvalores
-#    - sec: Funções de extensão
-#      url: funcoesext
     - sec: Funções de ordem superior
       url: funcoessup
 
-
-
-#- cap: Vetores
-#  url: 03_vetores
+#- cap: Memória
+#  url: 03_memoria
 #  secs:
-#    - sec: Vetores
+#    - sec: Vetores de valores
 #      url: vetores
-#    - sec: "Memória: alocação e referencias"
-#      url: aloc
-#    - sec: "Prática: folha de cálculo (vetores)"
-#      url: 01_expressoes/expressoes
+#    - sec: Referências e gestão de memória
+#      url: referencias
+#    - sec: Vetores de referências
+#      url: vetoresref
+
 #    - sec: Matrizes
-#      url: 07_vetores
-#    - sec: "Aplicação: imagens (efeitos)"
-#      url: 01_expressoes/expressoes
-#    - sec: "Prática: folha de cálculo (matrizes)"
-#      url: 01_expressoes/expressoes
+#      url: matrizes
 
 
-#- cap: Variáveis
-#  url: 04_variaveis
+#- cap: Estado
+#  url: 04_estado
 #  secs:
-#    - sec: Variáveis e blocos de instruções
-#      url: blocos
+#    - sec: Variáveis
+#      url: variaveis
 #    - sec: Ciclos
 #      url: ciclos
-#    - sec: "Prática: processador de texto"
-#      url: proctexto
 #    - sec: Procedimentos
 #      url: procedimentos
-#    - sec: "Prática: folha de cálculo (procedimentos)"
-#      url: folhacalcproc
+
 #    - sec: Simplificações de sintaxe
 #      url: simplificacoes
 
@@ -89,7 +79,6 @@ caps:
     #  url: tabelas
 
 
-
 - cap: Objetos
   url: 06_objetos
   secs:
@@ -98,21 +87,8 @@ caps:
   - sec: Classes
     url: classes
 
-- cap: Metaprogramação
-  url: metaprogramacao
-  secs:
-  - sec: Reflexão
-    url: reflexao
-  - sec: Anotações
-    url: anotacoes
-
-- cap: Padrões de desenho
-  url: padroesdesenho
-  secs:
-  - sec: Visitante
-    url: visitante
-  - sec: Comandos
-    url: comandos
+#    - sec: Funções de extensão
+#      url: funcoesext
 
 #- cap: Polimorfismo
 #  secs:
@@ -121,3 +97,25 @@ caps:
 
 #    - sec: Herança
 #      url: 02_funcoes
+
+- cap: Metaprogramação
+  url: metaprogramacao
+  secs:
+  - sec: Reflexão
+    url: reflexao
+  - sec: Anotações
+    url: anotacoes
+# DSLs
+
+- cap: Padrões de desenho
+  url: padroesdesenho
+  secs:
+  - sec: Estratégia
+    url: estrategia
+  - sec: Objetos compostos
+    url: objetoscompostos
+  - sec: Visitante
+    url: visitante
+  - sec: Comandos
+    url: comandos
+# Observador

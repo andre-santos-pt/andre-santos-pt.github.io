@@ -3,7 +3,7 @@ title: File/Directory Composite
 exer: true
 ---
 
-A organização de ficheiros em diretórios consiste numa árvore, onde os diretórios são nós compostos (que contêm filhos) e os ficheiros são nós folha. Este tipo de estrutura pode ser representada através de uma estrutura de dados recursiva (padrão de desenho Objetos Compostos), tal como ilustrado na figura. Os elementos podem ser de dois tipos: ficheiros ou diretórios (a class Element é abstrata). Os diretórios contêm outros elementos, os quais podem ser outros diretórios ou ficheiros. Todos os elementos terão o seu pai definido (diretório), porém há a possibilidade do pai não estar definido (para o caso da raiz).
+A organização de ficheiros em diretórios consiste numa árvore, onde os diretórios são nós compostos (que contêm filhos) e os ficheiros são nós folha. Este tipo de estrutura pode ser representada através de uma estrutura de dados recursiva (padrão de desenho [Objetos Compostos](../../padroesdesenho/objetoscompostos)), tal como ilustrado na figura. Os elementos podem ser de dois tipos: ficheiros ou diretórios (a class Element é abstrata). Os diretórios contêm outros elementos, os quais podem ser outros diretórios ou ficheiros. Todos os elementos terão o seu pai definido (diretório), porém há a possibilidade do pai não estar definido (para o caso da raiz).
 
 ![](filecomposite.png)
 

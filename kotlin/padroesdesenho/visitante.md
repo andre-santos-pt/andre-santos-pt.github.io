@@ -1,11 +1,12 @@
 ---
 title: Visitante (padrão de desenho)
-image: visitante.png
 ---
 
 Ao passo que será simples escrever código para um varrimento pelos elementos de uma estrutura de dados linear cujos elementos têm o mesmo tipo (pe. uma lista), quando estamos perante uma estrutura de objetos hierárquica, potencialmente com diferentes tipos de objetos, a tarefa poderá não ser trivial.
 
 O padrão de desenho **Visitante** (*Visitor*) consiste num tipo de solução para facilitar o varrimento de estruturas de dados hierárquicas. A metáfora associada é a do objeto "visitante" que consegue fazer uma visita por todos os elementos (ou parte) da estrutura, sem que tenha que entender como navegar de uns elementos para os outros. Um caso típico são estruturas recursivas (ver diagrama), onde é formada uma árvore com nós folha (terminais) e nós compostos (que contêm outros nós).
+
+![](visitante.png)
 
 # Interface dos visitantes
 O elemento central quando aplicamos este padrão é um interface que incluí uma operação para cada elemento visitável da estrutura com que estamos a trabalhar. Tipicamente, é utilizado o identificador *visit* sobreposto para os vários tipos de elementos.
