@@ -217,3 +217,5 @@ val c = CounterBounded(10, 5)
 val m = c.value // 5
 "
 %}
+
+> Quando utilizamos uma biblioteca é frequente não lidar diretamente com classes, mas sim através de interfaces (que facilitam a evolução da biblioteca).
