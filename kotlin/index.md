@@ -6,13 +6,6 @@ layout: single
 <div class="index">
 <br>
 {% for c in site.data.capitulos.caps %}
-{% comment %}
-  {% for p in site.pages %}
-        {% if (p.dir | remove: '/') == c.url %}
-          {{p.dir | escape}}
-        {% endif %}
-      {% endfor %}
-{% endcomment %}
 
 <section>
 <b><a href="{{c.url}}">{{ c.cap }}</a></b>
