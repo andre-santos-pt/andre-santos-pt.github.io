@@ -140,7 +140,7 @@
           },
           "Enviar": function() {
             $("#page").val(window.location.pathname);
-            $("#snippet").val($("#questionForm").innerHTML);
+            $("#snippet").val(document.getElementById('questionForm').innerHTML);
             $("#sendFeedback").submit();
             $(this).dialog("close");
             dialog = false;
