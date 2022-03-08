@@ -13,6 +13,7 @@ Implementar a estrutura de dados de acordo com o que é apresentado no diagrama.
 
 - *nElements* significa número total elementos, considerando a contagem recursivamente (pelos subdiretórios).
 - *depth* refere-se à profundidade na árvore (elemento raiz (*root*) terá profundidade zero).
+- *path* é o caminho absoluto do ficheiro (pe. */Users/andre/Desktop/file.txt*)
 - *print* imprime a árvore de ficheiros na consola.
 
 Experimente a instanciação destas classes com pelo menos três níveis de profundidade, testando as propriedades.
