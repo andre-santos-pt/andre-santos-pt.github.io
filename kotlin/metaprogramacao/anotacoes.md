@@ -49,7 +49,7 @@ Tipos de alvos (*targets*) principais para uma anotação são:
 - função
 
 
-Ao definir uma anotação podemos (e na maior parte dos casos, devemos) definir quais os elementos alvo no programa. Isso é feito através de uma anotação (*@Target*) à definição da anotação. Para o exemplo acima iriamos restringir anotação a funções. *AnnotationTarget* é um enumerado como todos os tipos de elementos possíveis. Podemos listar diferentes alvos separados por vírgula.
+Ao definir uma anotação podemos (e na maior parte dos casos, devemos) definir quais os elementos alvo no programa. Isso é feito através de uma anotação (*@Target*) à definição da anotação. Para o exemplo acima iriamos restringir a anotação a funções. *AnnotationTarget* é um enumerado com todos os tipos de elementos possíveis. Podemos listar diferentes alvos separados por vírgula.
 
 {% include code code="
 @Target(AnnotationTarget.FUNCTION)
