@@ -3,10 +3,9 @@ title: Reflexão
 image: mirror.png
 ---
 
-As primitivas de reflexão em Kotlin têm como base as do Java, sendo possível utilizar diretamente as deste. Contudo, são definidas classes adicionais próprias de Kotlin, que sumarizamos no diagrama UML.
+As primitivas de reflexão em Kotlin têm como base as do Java, sendo possível utilizar diretamente as deste. Contudo, são definidas classes adicionais próprias de Kotlin, que sumarizamos no seguinte diagrama UML.
 
-*KType* representa a presença de um tipo, que pode estar marcado como *nullable* ou não (utilizando **?**). O tipo propriamente dito é dado por *KClass* (ou *KTypeParameter* para os genéricos). Uma classe é composta por membros, sejam propriedades (*KProperty*) ou funções (*KFunction*), bem como construtores (que são tratados como funções). Todos estes são subtipos de *KCallable*, isto é, algo que se pode invocar e devolvem algo (*returnType*), e o primeiro argumento da invocação é o próprio objeto.
-As funções e construtores poderão ter mais parâmetros (*KParameter*). As classes e os seus membros podem ter diferentes níveis de visibilidade (*KVisibility*).
+*KType* representa a presença de um tipo, que pode estar marcado como *nullable* ou não (utilizando **?**). O tipo propriamente dito é dado por *KClass* (ou *KTypeParameter* para os genéricos).  As classes e os seus membros podem ter diferentes níveis de visibilidade (*KVisibility*). Uma classe é composta por membros, sejam propriedades (*KProperty*) ou funções (*KFunction*), bem como construtores (que são tratados como funções). Todos estes são subtipos de *KCallable*, isto é, algo que se pode invocar e devolve algo (*returnType*), sendo o primeiro argumento da invocação o objeto alvo. As funções e construtores poderão ter parâmetros (*KParameter*).
 
 ![](uml.png)
 
@@ -28,29 +27,22 @@ val clazz: KClass<String> = String::class
 "
 %}
 
-No exemplo acima a classe é conhecida, porém muitas vezes queremos trabalhar de forma genérica com objetos cujas classes não conhecemos.
+No exemplo acima a classe é conhecida, porém muitas vezes queremos trabalhar de forma genérica com objetos cujas classes não conhecemos. Desta forma, podemos interrogar um objeto pela sua classe.
 
 
 {% include code code="
+class Point(val x: Int, val y: Int) {
+    constructor() : this(0, 0)
 
-class CounterBounded(max: Int) {
-    val max: Int = max
-    var value: Int = 0
-        private set
-    val isZero get() = value == 0
+    val isOrigin: Boolean get() = x == 0 && y == 0
 
-    constructor(): this(10)
-
-    fun inc() {
-        value++
-    }
+    fun moveDown() = Point(x, y + 1)
+    fun moveRight() = Point(x + 1, y)
+    fun sum(x: Int, y: Int) = Point(this.x + x, this.y + y)
 }
-"
-%}
 
-{% include code code="
-val obj: Any = CounterBounded(10)
-val clazz: KClass<Any> = obj::class as KClass<Any>
+val obj = Point(3, 2)
+val clazz = obj::class
 "
 %}
 
@@ -58,13 +50,13 @@ val clazz: KClass<Any> = obj::class as KClass<Any>
 Podemos aceder às propriedades da classe através de *declaredMemberProperties*, contendo objetos *KProperty*. Esta forma de consulta excluí as propriedades herdadas (para tal, utilizar *memberProperties*).
 
 {% include code code="
-val propNames = clazz.declaredMemberProperties.map { it.name } // [isZero, max, value]
+val propNames = clazz.declaredMemberProperties.map { it.name } // [x, y, isOrigin]
 "
 %}
 
 
 ## Construtores
-Os construtores de uma classe podem ser obtidos através de *constructors*, sendo que existirá sempre pelo menos um construtor. Ainda que a classe não defina um construtor, existirá um primário por omissão. O código seguinte obtém o número de construtores da classe.
+Os construtores de uma classe podem ser obtidos através de *constructors*, sendo que existirá sempre pelo menos um construtor. Ainda que a classe não defina um construtor, existirá sempre um primário por omissão. O código seguinte obtém o número de construtores da classe.
 
 {% include code code="
 val nConstructors = clazz.constructors.size // 2
@@ -72,10 +64,10 @@ val nConstructors = clazz.constructors.size // 2
 %}
 
 ## Operações
-As operações disponíveis de uma classe podem ser obtidas através de *declaredMemberFunctions*. Tal como nas propriedades, esta forma de consulta excluí as funções herdadas (para tal, utilizar *memberFunctions*). O seguinte exemplo faz uma procura de uma função que não tenha parâmetros (encontrando *inc()*).
+As operações disponíveis de uma classe podem ser obtidas através de *declaredMemberFunctions*. Tal como nas propriedades, esta forma de consulta excluí as funções herdadas (para tal, utilizar *memberFunctions*). O seguinte exemplo faz uma procura de funções que não tenham parâmetros.
 
 {% include code code="
-val f: KFunction<*>? = clazz.declaredMemberFunctions.find { it.valueParameters.isEmpty() } // inc()
+val funNoParams = clazz.declaredMemberFunctions.filter {it.valueParameters.isEmpty()} // moveDown(), moveRight()
 "
 %}
 
@@ -90,7 +82,7 @@ A reflexão dinâmica é aquela que, dados os elementos estáticos recolhidos da
 O seguinte exemplo recolhe o nome de cada propriedade, sendo invocado *call* com o objeto do qual se pretende a propriedade. Se for passado um objeto cuja classe não tem a propriedade teremos um erro de execução.
 
 {% include code code="
-val propValues = clazz.declaredMemberProperties.map { Pair(it.name, it.call(counter)) } // [(isZero, true), (max, 10), (value, 0)]
+val propValues = clazz.declaredMemberProperties.map { Pair(it.name, it.call(point)) } // [(isOrigin, false), (x, 2), (y, 3)]
 "
 %}
 
@@ -98,16 +90,15 @@ val propValues = clazz.declaredMemberProperties.map { Pair(it.name, it.call(coun
 No seguinte exemplo apresentamos duas formas de invocar construtores por reflexão. No primeiro caso, é obtido o construtor primário (*primaryConstructor*), e invocado como uma função. O segundo caso consiste numa operação de conveniência para invocar o construtor sem argumentos. Caso não exista, teremos um erro de execução. Logicamente, os argumentos passados na chamadata
 
 {% include code code="
-val c1 = clazz.primaryConstructor!!.call(10)  // equivalente: CounterBounded(10)
-val c2 = clazz.createInstance()           // equivalente: CounterBounded()
+val c1 = clazz.primaryConstructor!!.call(2, 3)  // equivalente: Point(2, 3)
+val c2 = clazz.createInstance()           // equivalente: Point()
 "
 %}
 
 ## Operações
-Por fim, ilustramos como invocar uma operação por reflexão, que é semelhante à invocação de construtor. Contudo, realçamos que perante uma operação num objeto é necessário passar o mesmo como primeiro argumento.
+Por fim, ilustramos como invocar uma operação por reflexão, que é semelhante à invocação de construtor. Contudo, realçamos que perante uma operação num objeto é necessário passar o mesmo (instância) como primeiro argumento.
 
 {% include code code="
-val f: KFunction<*>? = clazz.declaredMemberFunctions.find { it.valueParameters.isEmpty() } // inc()
-f?.call(counter)   // equivalente: counter.inc()
+val p = clazz.declaredMemberFunctions.find {it.name == \"sum\"}?.call(Point(2, 3), 2, 1)  // Point(4, 4)
 "
 %}

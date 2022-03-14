@@ -33,9 +33,8 @@ val sql: String = createTable(clazz)
 "
 %}
 
-```
-CREATE TABLE Student (number INT NOT NULL, name VARCHAR(255) NOT NULL, type VARCHAR(8));
-```
+
+> CREATE TABLE Student (number INT NOT NULL, name VARCHAR(255) NOT NULL, type VARCHAR(8));
 
 
 ### 2. INSERT INTO
@@ -47,15 +46,14 @@ val sql: String = insertInto(s)
 "
 %}
 
-```
-INSERT INTO Student (name, number, type) VALUES ('Cristiano', 7, 'Doctoral');
-```
+
+> INSERT INTO Student (name, number, type) VALUES ('Cristiano', 7, 'Doctoral');
 
 
 ### 3. Variabilidade de tecnologia SQL
-O SQL dado acima é suportado pelas bases de dados [MySQL](https://www.mysql.com). Porém, diferentes tecnologias podem ter tipos de dados diferentes. O objetivo desta alínea é flexibilizar a geração das instruções SQL ao nível dos tipos de destino. Ou seja, iremos permitir que as chamadas acima possam ser feitas para diferentes tecnologias, sem ter que as antecipar todas as possíveis na implementação base.
+O SQL apresentado acima é suportado pelas bases de dados [MySQL](https://www.mysql.com). Porém, diferentes tecnologias têm designações de tipos de dados diferentes (pe. inteiros representados por NUMBER). O objetivo desta alínea é flexibilizar a geração das instruções SQL ao nível dos tipos de destino. Ou seja, iremos permitir que as chamadas acima possam ser feitas para diferentes tecnologias, sem ter que as antecipar todas as possíveis na implementação base.
 
-A solução pode ser concretizada tendo uma interface para representar uma estratégia de mapeamento, que é utilizada para configurar o objeto gerador.  As duas funções também podiam ser tratadas isoladamente, mas umas interface única será mais explícita na relação entre ambas.
+A solução pode ser concretizada tendo uma interface para representar uma estratégia de mapeamento, que é utilizada para configurar o objeto gerador.
 
 {% include code code="
 interface TypeMapping {
@@ -67,16 +65,15 @@ class SQLGenerator(val typeMapping: TypeMapping) { ...
 "
 %}
 
-Este tipo de solução é uma instância do padrão de desenho Estratégia (*Strategy*), muito utilizado quando queremos fazer variar a forma de concretizar uma funcionalidade. Um aspeto chave neste padrão é *não ter dependência* entre o código cliente da estratégia e as suas várias variantes, mas sim depender da interface.
+ As duas funções também podiam ser tratadas isoladamente, mas uma interface única será mais explícita em termos da estreita relação entre ambas. Este tipo de solução é uma instância do padrão de desenho [Estratégia](../../padroesdesenho/estrategia), muito utilizado quando queremos fazer variar a forma de concretizar uma funcionalidade.
 
-![](strategy.png)
 
 
 
 ### 4. Anotações
-Nos casos anteriores não são tratadas especificidades de SQL, tais como o controlo de utilização *NULL* e chaves primárias. Por outro lado, os identificadores são obtidos diretamente do nome das propriedades, não permitindo flexibilizar este aspeto.
+Nos casos anteriores não são tratadas especificidades de SQL, tais como o controlo de utilização de *NULL* e chaves primárias. Por outro lado, os identificadores são obtidos diretamente do nome das propriedades, não permitindo flexibilizar este aspeto.
 
-A ideia desta alínea é fazer evoluir a solução anterior por forma a permitir tratar destes aspetos anotando as classes com anotações dedicadas para o efeito, fazendo com que o SQL gerado tenha isso em conta.
+O objetivo desta alínea é fazer evoluir a solução anterior por forma a permitir tratar destes aspetos anotando as classes com anotações dedicadas para o efeito, por forma a que o SQL gerado tenha isso em conta.
 
 
 {% include code code="
@@ -92,9 +89,8 @@ data class Student(
 "
 %}
 
-```
-CREATE TABLE STUDENT (number INT PRIMARY KEY, name VARCHAR(50) NOT NULL, degree VARCHAR(8));
-```
+
+> CREATE TABLE STUDENT (number INT PRIMARY KEY, name VARCHAR(50) NOT NULL, degree VARCHAR(8));
 
 - **@DbName**: pode ser aplicada na classe ou numa propriedade, e tem ela própria uma propriedade para definir o identificador a utilizar no SQL.
 
