@@ -20,6 +20,25 @@ enum class StudentType {
 "
 %}
 
+Dado que a reflexão no que toca a enumerados não é óbvia, as seguintes funções de extensão poderão facilitar a solução deste exercício.
+
+{% include code code="
+// saber se um KClassifier é um enumerado
+fun KClassifier?.isEnum() = this is KClass<*> && this.isSubclassOf(Enum::class)
+
+// obter uma lista de constantes de um tipo enumerado
+fun <T : Any> KClass<T>.enumConstants(): List<T> {
+    require(isEnum()) { \"class must be enum\" }
+    return this.java.enumConstants.toList()
+}
+
+fun test() {
+  println(StudentType::class.isEnum())
+  println(StudentType::class.enumConstants())
+}
+"
+%}
+
 <hr>
 
 
@@ -34,7 +53,7 @@ val sql: String = createTable(clazz)
 %}
 
 
-> CREATE TABLE Student (number INT NOT NULL, name VARCHAR(255) NOT NULL, type VARCHAR(8));
+> CREATE TABLE Student (number INT NOT NULL, name VARCHAR(255) NOT NULL, type ENUM('Bachelor', 'Master','Doctoral'));
 
 
 ### 2. INSERT INTO
