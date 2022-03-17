@@ -53,7 +53,7 @@ val sql: String = createTable(clazz)
 %}
 
 
-> CREATE TABLE Student (number INT NOT NULL, name VARCHAR(255) NOT NULL, type ENUM('Bachelor', 'Master','Doctoral'));
+> CREATE TABLE Student (number INT NOT NULL, name CHAR NOT NULL, type ENUM('Bachelor', 'Master','Doctoral'));
 
 
 ### 2. INSERT INTO
@@ -76,7 +76,7 @@ A solução pode ser concretizada tendo uma interface para representar uma estra
 
 {% include code code="
 interface TypeMapping {
-    fun mapType(c: KClass<*>): String
+    fun mapType(c: KType): String
     fun mapObject(o: Any?): String
 }
 
@@ -109,7 +109,7 @@ data class Student(
 %}
 
 
-> CREATE TABLE STUDENT (number INT PRIMARY KEY, name VARCHAR(50) NOT NULL, degree VARCHAR(8));
+> CREATE TABLE STUDENT (number INT PRIMARY KEY, name VARCHAR(50) NOT NULL, degree ENUM('Bachelor', 'Master','Doctoral'));
 
 - **@DbName**: pode ser aplicada na classe ou numa propriedade, e tem ela própria uma propriedade para definir o identificador a utilizar no SQL.
 
