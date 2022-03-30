@@ -20,3 +20,15 @@ k.runTests()
 A execução deverá apresentar uma lista contendo todos os casos de teste, indicando se passaram ou falharam (e neste caso com a possível mensagem).
 
 Para além das anotações, será útil também fornecer operações de *assertTrue* e *assertFalse* para serem utilizadas dentro dos casos de teste, lançando uma exceção quando as condições não se verificam.
+
+**Dica:** Quando é lançada uma exceção no contexto de uma chamada de método efetuada por reflexão (por exemplo, *AssertionError* no falhar dos testes), é lançada uma exceção *InvocationTargetException*. A exceção que causou o erro pode ser obtida numa propriedade da última.
+
+{% include code code="
+try {
+  kFunction.call(obj)
+}
+catch(e: InvocationTargetException) {
+  println(e.cause?.message)
+}
+"
+%}

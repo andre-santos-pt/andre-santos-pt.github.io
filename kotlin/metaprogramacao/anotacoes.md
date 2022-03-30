@@ -69,7 +69,7 @@ msg="Não compila por utilização de anotação em elemento inválido."
 
 
 ## Propriedades
-As anotações podem ter propriedades para enriquecer um pouco a informação para além de uma mera "marca" que sinaliza algo. A forma definir propriedades é igual à dos [valores compostos](../01_expressoes/valorescompostos), porém, apenas podemos utilizar alguns tipos de dados, nomeadamente:
+As anotações podem ter propriedades para enriquecer um pouco a informação para além de uma mera "marca" que sinaliza algo. A forma de definir propriedades é igual à dos [valores compostos](../01_expressoes/valorescompostos), porém, apenas podemos utilizar alguns tipos de dados, nomeadamente:
 - tipos numéricos
 - strings
 - classes (através de **::class**)
