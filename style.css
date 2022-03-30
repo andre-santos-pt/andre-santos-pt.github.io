@@ -150,3 +150,7 @@ div.kotlincode {
 .right {
   right: 0;
 }
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}

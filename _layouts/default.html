@@ -70,16 +70,31 @@
         document.getElementById('question').style.visibility = 'visible'
         var parent = document.getSelection().anchorNode
         if (parent instanceof Text) {
-          var plain = parent.parentNode.innerHTML;
-          var t = "<i>..." + plain.substring(0, document.getSelection().anchorOffset) +
-          "<mark>" + document.getSelection().toString() + "</mark>" +
-          plain.substring(document.getSelection().focusOffset) + "...</i>";
+          var parag = containingP(parent.parentNode)
+          var plain = parag == null ? "HEADER: " + parent.parentNode.innerHTML : parag.innerHTML;
+          plain = plain.replace(/<\/?("[^"]*"|'[^']*'|[^>])*(>|$)/g, "");
+          var t = plain.replaceAll(document.getSelection().toString(), "<mark>" + document.getSelection().toString() + "</mark>");
+
+          //var t = "<i>..." + plain.substring(0, document.getSelection().anchorOffset) +
+          //"<mark>" + document.getSelection().toString() + "</mark>" +
+          //plain.substring(document.getSelection().focusOffset) + "...</i>";
           document.getElementById('questionForm').innerHTML = t
         }
       } else
         document.getElementById('question').style.visibility = 'hidden'
     });
 
+
+    function containingP(node) {
+      var n = node
+      while(n.localName != "p" && n.localName != "div")
+          n = n.parentNode;
+
+      if(n.localName != "p")
+        return null;
+
+      return n;
+    }
 
     function getOffset(el) {
       const rect = el.getBoundingClientRect();
@@ -125,6 +140,7 @@
     $(function() {
       $("#dialog").dialog({
         autoOpen: false,
+        dialogClass: "no-close",
         modal: true,
         title: "Dúvida / Comentário?",
         width: 500,
