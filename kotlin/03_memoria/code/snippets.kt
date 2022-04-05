@@ -6,9 +6,11 @@ fun sizeIteration(a: IntArray, i: Int = 0): Int =
 
 fun main() {
     val a = intArrayOf(1, 2, 3)
+
     println(sizeIteration(a, 0))
 
     val sel = Array(9) { Position(it / 3, it % 3) }
+
 
     println(sel.contentToString())
 

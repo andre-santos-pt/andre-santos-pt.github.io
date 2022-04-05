@@ -1,3 +1,0 @@
----
-title: Alocação de memória
----
