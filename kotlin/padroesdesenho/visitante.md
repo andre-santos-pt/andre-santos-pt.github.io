@@ -9,7 +9,7 @@ O padrão de desenho **Visitante** (*Visitor*) consiste num tipo de solução pa
 ![](visitante.png)
 
 # Interface dos visitantes
-O elemento central quando aplicamos este padrão é um interface que incluí uma operação para cada elemento visitável da estrutura com que estamos a trabalhar. Tipicamente, é utilizado o identificador *visit* sobreposto para os vários tipos de elementos.
+O elemento central quando aplicamos este padrão é uma interface que incluí uma operação para cada elemento visitável da estrutura com que estamos a trabalhar. Tipicamente, é utilizado o identificador *visit* sobreposto para os vários tipos de elementos.
 
 {% include code code="
 interface Visitor {
@@ -34,7 +34,7 @@ interface Visitor {
 
 # Adaptação da estrutura
 
-Uma vez tendo a interface dos visitantes, é necessário adaptar a estrutura para permitir o varrimento. Tipicamente, é utilizado o identificar *accept* ("aceitar o visitante") para a operação que desencadeia o varrimento.
+Uma vez tendo a interface dos visitantes, é necessário adaptar a estrutura para permitir o varrimento. Tipicamente, é utilizado o identificador *accept* ("aceitar o visitante") para a operação que desencadeia o varrimento.
 
 {% include code code="
 abstract class Element {
