@@ -14,7 +14,7 @@ O objetivo deste exercício é aplicar o padrão de desenho Visitante (*Visitor*
 Escrever funções sobre a estrutura para:
 1. procurar ficheiro com um dado nome
 2. contar quantos ficheiros existem com uma dada extensão
-3. saber qual a profundidade da árvore diretórios
+3. saber qual a profundidade da árvore de ficheiros
 
 
 ### 2. Desenvolver infraestrutura para visitantes

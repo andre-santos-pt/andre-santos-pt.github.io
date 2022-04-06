@@ -78,6 +78,7 @@ Uma vez tendo a estrutura de dados adaptada, podemos em qualquer um dos seus ele
 
 {% include code code="
 val c: Composite = ...
+
 val countLeafs = object : Visitor {
   var count = 0
   override fun visit(l: Leaf) {
@@ -87,5 +88,21 @@ val countLeafs = object : Visitor {
 c.accept(countLeafs)
 val n = countLeafs.count
 
+val depth = object : Visitor {
+  var depth = 0
+  var max = 0
+  override fun visit(c: Composite): Boolean {
+    depth++
+    if(depth > max)
+      max = depth
+      return true
+    }
+
+    override fun endVisit(c: Composite) {
+      depth--
+    }
+  }
+a.accept(depth)
+val dept = depth.max
 "
 %}
