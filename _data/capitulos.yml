@@ -105,6 +105,8 @@ caps:
     url: reflexao
   - sec: Anotações
     url: anotacoes
+  - sec: Linguagens de domínio internas (DSL)
+    url: dsls
 # DSLs
 
 - cap: Padrões de desenho
