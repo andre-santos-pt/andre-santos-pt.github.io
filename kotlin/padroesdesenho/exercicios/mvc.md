@@ -22,9 +22,9 @@ Vamos partir de uma aplicação incompleta com algumas partes de uma arquitetura
 
 ### Classes fornecidas
 
-- A interface (com comportamento) *IObservable* serve para reutilizar operações relacionadas com o registo/remoção de observadores.
+- A interface (com comportamento) *IObservable* serve para reutilizar operações relacionadas com o registo/remoção de [Observadores](../observador).
 
-- Os objetos *PairDataSet* representam o modelo, e os mesmos são [observáveis](../observador); apenas a operação para adicionar está implementada.
+- Os objetos *PairDataSet* representam o modelo, e os mesmos são observáveis. Apenas a operação para adicionar está implementada.
 
 - A classe *PairDataSetLabel* representa a vista do modelo num *label*, mas ainda não reage a alterações no modelo.
 
