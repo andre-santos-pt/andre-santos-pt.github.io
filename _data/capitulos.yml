@@ -118,6 +118,8 @@ caps:
     url: objetoscompostos
   - sec: Visitante
     url: visitante
+  - sec: Observador
+    url: observador
   - sec: Comandos
     url: comandos
 # Observador
