@@ -78,10 +78,38 @@ Como forma de adaptar a instanciação por reflexão, deverão ser definidas as 
 - **@XmlIgnore** para marcar propriedades dos objetos a ignorar na geração de XML.
 
 
-## Fase 3
 
-(a publicar)
 
-## Fase 4
+## Fase 3 - Editor
+
+Nesta fase pretende-se desenvolver um editor de XML, utilizando como base o modelo de dados da Fase 1.
+
+### Requisitos
+
+1. A arquitetura do editor deve ser baseada no padrão MVC, sendo as classes da Fase 1 adaptadas para efeito.
+2. As funcionalidades do editor devem permitir:
+  - Edição de atributos
+  - Renomear entidades
+  - Adicionar e remover atributos
+  - Adicionar e remover entidades
+  - Histórico de acções com *undo/redo*
+  - Gravar o estado para um ficheiro
+
+
+### Interface gráfica
+A interface gráfica de uma aplicação é muito relevante para a sua usabilidade. Contudo, dado que nem as interfaces gráficas nem usabilidade aplicacional são matérias da UC, neste projeto as mesmas podem ficar "toscas" (ou "feias" mesmo ☺), dado que essa característica não terá peso na avaliação. Boas interfaces gráficas implicam um esforço de desenvolvimento considerável, e neste projeto pretende-se que o esforço incida nas partes relacionadas com a matéria.
+
+O seguinte vídeo ilustra a ideia do editor. Este aspeto é só para referência, o trabalho a desenvolver pode ter outro aspeto.
+
+<video width="500" controls>
+  <source src="demofase3.mov" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+Recomenda-se a utilização de Java Swing, por razões práticas e por a GUI em si não ser o mais relevante no projeto. Podem ser utilizadas outras tecnologias de GUI, mas por "conta própria". No sentido de aliviar o esforço respeitante à parte gráfica, fornecem-se os esqueletos de componentes Swing utilizados na implementação do vídeo. ([ProjHelpers.kt](ProjHelpers.kt)) Estes poderão ser usados e adaptados livremente, mas contudo, a sua utilização não é obrigatória.
+
+
+
+## Fase 4 - Editor com Plugins
 
 (a publicar)
