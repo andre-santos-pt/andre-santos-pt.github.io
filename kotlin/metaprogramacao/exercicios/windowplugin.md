@@ -66,10 +66,10 @@ private val actions = mutableListOf<Action>()
 Caso o ficheiro de configuração fosse o apresentado acima, a lista action seria populada com um objeto *Center* e outro *Size*.
 
 
-### 3. Histórico (undo)
+### 3. Plugins para exercício PairDataSet MVC
 
-Evolua a implementação por forma a permitir um mecanismo de *undo* para as ações na janela, aplicando o padrão de desenho [Comandos](/kotlin/padroesdesenho/comandos).
+Utilize a biblioteca desenvolvida para permitir a injeção de comandos (*plugins*) no exercício PairDataSet MVC.
 
-1. Acrescentar uma operação de *undo* na interface *Action*;
-2. Acrescentar uma pilha de *Action* nos objetos *Window*;
-3. Acrescentar uma ação para o comando de *undo* onde a operação (1) é invocada.
+**Dicas:**
+1. Poderá ser necessário rever a interface para os comandos utilizada anteriormente.
+2. Como regra (típica), exigir que as classes que implementam comandos nas extensões tenham um construtor ser parâmetros. O facto de ter várias assinaturas de construtores possíveis complicará a solução, porque não é óbvio como fornecer argumentos.
