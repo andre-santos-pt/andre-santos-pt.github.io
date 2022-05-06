@@ -81,7 +81,7 @@ Completar a classe *DotCanvas* por forma que seja observável. Deverá ser poss�
 <hr/>
 
 ## Infraestrutura de comandos (histórico)
-Tendo a arquitetura de MVC operacional resultante da secção anterior, agora o objetivo é a adicionar a funcionalidade de *undo*. Estes novos desenvolvimentos implicarão algum *refactoring*, e tornarão mais evidente a importância das vistas não alterarem o modelo diretamente. Desta forma, conseguimos centralizar as operações que alteram estado no controlador e facilitar a concretização do histórico.
+Tendo a arquitetura de MVC operacional resultante da secção anterior, agora o objetivo é adicionar a funcionalidade de *undo*. Estes novos desenvolvimentos implicarão algum *refactoring*, e tornarão mais evidente a importância das vistas não alterarem o modelo diretamente. Desta forma, conseguimos centralizar as operações que alteram estado no controlador e facilitar a concretização do histórico.
 
 A funcionalidade de *undo* implica manter um histórico de comandos realizados. Este é um propósito típico para o padrão [Comandos](../comandos). Para tal, é conveniente representar os comandos da aplicação em objetos compatíveis com uma interface comum contendo duas operações: executar e anular o comando (*undo*).
 
