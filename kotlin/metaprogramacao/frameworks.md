@@ -10,7 +10,7 @@ Para utilizar uma biblioteca, o código cliente estabelece uma dependência das 
 
 # Frameworks
 Uma *framework* consiste também em código reutilizável, mas difere de uma biblioteca no sentido em que uma *framework* é já por si uma aplicação, com controlo de fluxo próprio, ainda que possa estar incompleta.
-É uma plataforma sobre a qual vamos desenvolver uma aplicação, permitindo de forma estruturada desenvolver uma **família de aplicações** relacionadas que partilham uma base comum, mas diferem nalgumas partes. Uma *framework* permite maiores graus de reutilização, mas impõe mais restrições uma vez que lógica de funcionamento é imposta pela a mesma, saindo em grande parte do controlo das aplicações.
+É uma plataforma sobre a qual vamos desenvolver uma aplicação, permitindo de forma estruturada desenvolver uma **família de aplicações** relacionadas que partilham uma base comum, mas diferem nalgumas partes. Uma *framework* permite maiores graus de reutilização, mas impõe mais restrições uma vez que a lógica de funcionamento é imposta pela mesma, a qual normalmente sai em grande parte do controlo das aplicações.
 
 Um sistema grande e complexo, ainda que nem sempre deliberadamente, pode evoluir para uma natureza de *framework*. A gestão da complexidade requer alguma forma de componentização, e o número pessoas envolvidas no desenvolvimento promove uma definição mais clara das fronteiras entre componentes, a bem da coerência arquitetural do sistema.
 
