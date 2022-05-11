@@ -11,7 +11,7 @@ Este projeto consiste em desenvolver uma biblioteca para produzir dados no forma
 O projeto deverá ser alojado num repositório [GitHub](https://github.com) privado, mas com permissões de acesso ao utilizador *andre-santos-pt*. Dado que se trata de uma biblioteca disponível para terceiros utilizarem, para além do código fonte, o repositório terá também que conter no Wiki tutoriais sobre:
 1. como utilizar o modelo de dados (Fase 1)
 2. como utilizar a inferência automática (Fase 2)
-3. ... a publicar ... (Fases 3 e 4)
+3. como desenvolver plugins (Fase 4)
 
 # Desenvolvimento
 
@@ -111,5 +111,30 @@ Recomenda-se a utilização de Java Swing, por razões práticas e por a GUI em 
 
 
 ## Fase 4 - Editor com Plugins
+Nesta última fase, o objetivo é tornar o editor de XML numa *framework* que permite acrescentar e customizar funcionalidade através de *plugins*. Pretendem-se dois tipos de *plugins*, que permitem nomeadamente, acrescentar de comandos e alterar a forma como é feita a edição de valores. Para a concretização deve ser utilizada injeção de dependências por via da biblioteca resultante do exercício (*Window plugin*).
 
-(a publicar)
+O seguinte vídeo ilustra as duas formas de estender a *framework*. Podemos observar que há um comando adicional para adicionar entidades *event* (já com atributos) que só é aplicável na entidade *calendar*. Por outro lado, vemos que alguns atributos têm uma visualização diferente, nomeadamente *event.date* e *event.mandatory*.
+
+<video width="500" controls>
+  <source src="demofase4.mov" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+
+### Comandos
+Um dos tipos de *plugin* visa permitir novos comandos no editor, em complemento aos que já existem na base. Os novos comandos deverão integrados no menu dos comandos base, bem como na infraestrutura de *undo/redo*. Os comandos poderão definir se estão disponíveis ou não, consoante o contexto.
+
+Exemplos:
+- Adicionar elementos XML predefinidos para um domínio (pe. HTML). Por exemplo, a criação de uma entidade *body* só estaria disponível no contexto da entidade *html* e caso esta última não contivesse já uma.
+- Efetuar uma validação de uma entidade (verificar se existem determinados atributos e se os valores são válidos).
+
+### Edição de atributos
+No editor base, todos os atributos XML são editados como texto (sem restrições). Este tipo de *plugin* possibilitará alterar os *widgets* que são utilizados para editar e visualizar o texto dos atributos de forma que possam ser utilizados *widgets* especializados consoante o atributo em questão.
+
+Exemplos:
+- o atributo *date* das entidades *event*, do qual se espera uma data num formato bem definido, ser editado com um *widget* específico para para datas.
+- o atributo *mandatory* das entidades *evaluationItem*, do qual se espera um booleano ("true" ou "false") ser visualizado e editado através de uma *checkbox*.
+
+
+### Aplicações Exemplo
+Em complemento à *framework*, como forma de ilustrar o desenvolvimento de extensões, deverão ser desenvolvidas duas aplicações baseadas em *plugins* com algum realismo (ie. *hello world* não basta). Isto é importante para ajudar a averiguar se a flexibilidade oferecida às extensões é satisfatória.
