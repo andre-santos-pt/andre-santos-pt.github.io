@@ -17,7 +17,7 @@ Um sistema grande e complexo, ainda que nem sempre deliberadamente, pode evoluir
 ## Princípio aberto-fechado (*Open-closed*)
 O princípio de desenvolvimento aberto-fechado é baseado na ideia que o software deve ser fechado para modificação (ie. alterações de código), mas aberto para extensão (ie. acrescentar/adaptar funcionalidades). Parece um pouco paradoxal, pois como pode o software evoluir sem o mesmo ser modificado? A chave para alcançar o princípio aberto-fechado são os mecanismos de polimorfismo.
 
-Suponhamos um componente que executa uma das suas tarefas utilizando várias estratégias possíveis. Se a solução seguir uma estrutura semelhante à ao código em baixo, a inclusão de novas estratégias não antecipadas inicialmente implica a alteração do código. Posto isto, este pedaço de software não se caracteriza como sendo "fechado", pois a inclusão de novas estratégias implica a sua modificação.
+Suponhamos um componente que executa uma das suas tarefas utilizando várias estratégias possíveis. Se a solução seguir uma estrutura semelhante à do código em baixo, a inclusão de novas estratégias não antecipadas inicialmente implica a alteração do código. Posto isto, este pedaço de software não se caracteriza como sendo "fechado", pois a inclusão de novas estratégias implica a sua modificação.
 
 {% include code code="
 class Component {

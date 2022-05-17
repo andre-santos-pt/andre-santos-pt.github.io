@@ -72,4 +72,4 @@ Utilize a biblioteca desenvolvida para permitir a injeção de comandos (*plugin
 
 **Dicas:**
 1. Poderá ser necessário rever a interface para os comandos utilizada anteriormente.
-2. Como regra (típica), exigir que as classes que implementam comandos nas extensões tenham um construtor ser parâmetros. O facto de ter várias assinaturas de construtores possíveis complicará a solução, porque não é óbvio como fornecer argumentos.
+2. Como regra (típica), exigir que as classes que implementam comandos nas extensões tenham um construtor sem parâmetros. O facto de ter várias assinaturas de construtores possíveis complicará a solução, porque não é óbvio como fornecer argumentos.
