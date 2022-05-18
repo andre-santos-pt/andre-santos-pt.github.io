@@ -122,7 +122,7 @@ Your browser does not support the video tag.
 
 
 ### Comandos
-Um dos tipos de *plugin* visa permitir novos comandos no editor, em complemento aos que já existem na base. Os novos comandos deverão integrados no menu dos comandos base, bem como na infraestrutura de *undo/redo*. Os comandos poderão definir se estão disponíveis ou não, consoante o contexto.
+Um dos tipos de *plugin* visa permitir novos comandos no editor, em complemento aos que já existem na base. Os novos comandos deverão ser integrados no menu dos comandos base, bem como na infraestrutura de *undo/redo*. Os comandos poderão definir se estão disponíveis ou não, consoante o contexto.
 
 Exemplos:
 - Adicionar elementos XML predefinidos para um domínio (pe. HTML). Por exemplo, a criação de uma entidade *body* só estaria disponível no contexto da entidade *html* e caso esta última não contivesse já uma.
