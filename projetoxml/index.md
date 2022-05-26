@@ -111,7 +111,7 @@ Recomenda-se a utilização de Java Swing, por razões práticas e por a GUI em 
 
 
 ## Fase 4 - Editor com Plugins
-Nesta última fase, o objetivo é tornar o editor de XML numa *framework* que permite acrescentar e customizar funcionalidade através de *plugins*. Pretendem-se dois tipos de *plugins*, que permitem nomeadamente, acrescentar de comandos e alterar a forma como é feita a edição de valores. Para a concretização deve ser utilizada injeção de dependências por via da biblioteca resultante do exercício (*Window plugin*).
+Nesta última fase, o objetivo é tornar o editor de XML numa *framework* que permite acrescentar e customizar funcionalidade através de *plugins*. Pretendem-se dois tipos de *plugins*, que permitem nomeadamente, acrescentar comandos e alterar a forma como é feita a edição de valores. Para a concretização deve ser utilizada injeção de dependências por via da biblioteca resultante do exercício (*Window plugin*).
 
 O seguinte vídeo ilustra as duas formas de estender a *framework*. Podemos observar que há um comando adicional para adicionar entidades *event* (já com atributos) que só é aplicável na entidade *calendar*. Por outro lado, vemos que alguns atributos têm uma visualização diferente, nomeadamente *event.date* e *event.mandatory*.
 
