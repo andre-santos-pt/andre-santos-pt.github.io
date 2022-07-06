@@ -1,11 +1,9 @@
 ---
-title: Webpage
+title: André L. Santos
 layout: single
 ---
 ![](andre_l_santos.png)
 
-André L. Santos
-===============
 Assistant Professor, [Iscte (IUL)](http://www.iscte-iul.pt)
 
 Researcher, [ISTAR](https://istar.iscte-iul.pt)
@@ -17,7 +15,7 @@ Researcher, [ISTAR](https://istar.iscte-iul.pt)
 
 ***
 
-**Digital Book:** (*Portugês*)
+**Digital Book:** (*Português*)
 
 ![](kotlin.png) [Programação Multiparadigma em Kotlin](kotlin)
 
