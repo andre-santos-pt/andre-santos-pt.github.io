@@ -2,15 +2,24 @@
 title: Webpage
 layout: single
 ---
+![](andre_l_santos.png)
 
 André L. Santos
 ===============
+Assistant Professor, [Iscte (IUL)](http://www.iscte-iul.pt)
+
+Researcher, [ISTAR](https://istar.iscte-iul.pt)
 
 ***
 
-**Livro digital:**
-[Programação Multiparadigma em Kotlin](kotlin) ![](https://www.countryflags.io/pt/flat/32.png) ![](https://www.countryflags.io/br/flat/32.png) ![](https://www.countryflags.io/cv/flat/32.png) ![](https://www.countryflags.io/ao/flat/32.png) ![](https://www.countryflags.io/mz/flat/32.png)  ![](https://www.countryflags.io/gw/flat/32.png) ![](https://www.countryflags.io/tl/flat/32.png)
+- [List of publications](publications), ([Google Scholar profile](https://scholar.google.com/citations?hl=pt-PT&user=sYMVDNgAAAAJ&view_op=list_works&sortby=pubdate))
+- [Teaching activities](teaching)
 
+***
+
+**Digital Book:** (*Portugês*)
+
+![](kotlin.png) [Programação Multiparadigma em Kotlin](kotlin)
 
 ***
 
