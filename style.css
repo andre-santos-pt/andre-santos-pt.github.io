@@ -12,6 +12,7 @@ header .w3-dropdown-hover {
   margin-right: 0.2em;
 }
 
+
 main {
   display: flex;
   justify-content: left;
@@ -103,9 +104,42 @@ blockquote {
   font-style: oblique;
 }
 
+
+
+iframe {
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
 div.kotlincode {
   display: flex;
   flex-grow: 2;
+}
+
+div.pubs {
+  background-color: #eeeee4;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+border:1px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    right: 0;
+}
+
+.ui-widget-header {
+ background: lightgray;
+ border: 1px solid #3b678e;
+ font-weight: bold;
+}
+
+hr {
+  border: 1px dotted gray;
+  //width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .imageWrapper {

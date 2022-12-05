@@ -6,7 +6,7 @@ layout: single
 ### 2022/2023
 - Introduction to Programming
 - Advanced Programming [Master programs] (coordinator)
-- Development of Programming Languages
+- Engineering of Programming Languages (coordinator)
 
 ### 2021/2022
 - Advanced Programming [Master programs] (coordinator)

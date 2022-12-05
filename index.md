@@ -2,29 +2,47 @@
 title: André L. Santos
 layout: single
 ---
-![](andre_l_santos.png)
 
-Assistant Professor, [Iscte (IUL)](http://www.iscte-iul.pt)
+![André L. Santos](andre_l_santos.png){: style="float: left; margin-right: 2em;"}
 
-Researcher, [ISTAR](https://istar.iscte-iul.pt)
 
-***
+## André L. Santos
+### Assistant Professor, [Iscte (Instituto Universitário de Lisboa)](http://www.iscte-iul.pt)
 
-- [List of publications](publications), ([Google Scholar profile](https://scholar.google.com/citations?hl=pt-PT&user=sYMVDNgAAAAJ&view_op=list_works&sortby=pubdate))
-- [Teaching activities](teaching)
-
-***
-
-**Digital Book:** (*Português*)
-
-![](kotlin.png) [Programação Multiparadigma em Kotlin](kotlin)
+#### [Teaching activity](teaching)
+#### [Supervision of MSc students](supervision)
+<br>
+<br>
+<br>
 
 ***
 
-**Github:**
-<https://github.com/andre-santos-pt>
+- [PhD thesis](docs/AndreLSantosPhD.pdf){:target="_blank"}  (2009) advised by [Kai Koskimies](https://dblp.org/pid/60/3159.html) and [Antónia Lopes](https://www.di.fc.ul.pt/~mal/)
+
+- Visiting researcher at [Carnegie Mellon University](https://www.cmu.edu) (2014), hosted by [Brad Myers](https://www.cs.cmu.edu/~bam/)
+
+- Visiting researcher at [Aalto University](https://www.aalto.fi/en), [LeTech - Learning + Technology](https://research.cs.aalto.fi/LeTech/) (2020), hosted by [Lauri Malmi](https://www.aalto.fi/en)
+
+
+
 
 ***
 
-**PandionJ:**
-<http://pandionj.iscte-iul.pt>
+**Github:** <https://github.com/andre-santos-pt>
+
+**Digital book on Kotlin:** ![](kotlin.png) [Programação Multiparadigma em Kotlin](kotlin)  (*Português*)
+
+***
+
+## Research
+In broad terms, my research activity is mostly related to Human Aspects of Software Development, with a focus on program comprehension, both in an educational perspective as well as professional practice (software developers are constantly learning how to deal with unfamiliar artifacts).
+
+
+- [Complete list of publications](publications)
+- [Google Scholar profile](https://scholar.google.com/citations?hl=pt-PT&user=sYMVDNgAAAAJ&view_op=list_works){:target="_blank"}
+
+*The following links lead to sections containing an overview of my research organised by themes.*
+
+#### [API Usability](apiusability)
+#### [Programming Education](programmingeducation)
+#### [Domain-Specific Languages](dsl)
