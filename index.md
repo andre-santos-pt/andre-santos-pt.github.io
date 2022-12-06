@@ -28,9 +28,7 @@ layout: single
 
 ***
 
-**Github:** <https://github.com/andre-santos-pt>
-
-**Digital book on Kotlin:** ![](kotlin.png) [Programação Multiparadigma em Kotlin](kotlin)  (*Português*)
+![](kotlin.png) **Digital book on Kotlin:**  [Programação Multiparadigma em Kotlin](kotlin)  (*Português*)
 
 ***
 
@@ -48,3 +46,12 @@ In broad terms, my research activity is mostly related to Human Aspects of Softw
 #### <i class="fa fa-laptop fa-lg"></i> [API Usability](apiusability)
 #### <i class="fa fa-book fa-lg"></i> [Programming Education](programmingeducation)
 #### <i class="fa fa-language fa-lg"></i> [Domain-Specific Languages](dsl)
+
+***
+
+
+<i class="fa fa-envelope fa-2x"></i> <a href="mailto:andre.santos@iscte-iul.pt">andre.santos@iscte-iul.pt</a>
+
+<i class="fa fa-github-square fa-2x"></i> <https://github.com/andre-santos-pt>
+
+<i class="fa fa-linkedin-square fa-2x"></i> <https://www.linkedin.com/in/andré-l-santos-2b7a27ba/>
