@@ -35,14 +35,16 @@ layout: single
 ***
 
 ## Research
-In broad terms, my research activity is mostly related to Human Aspects of Software Development, with a focus on program comprehension, both in an educational perspective as well as professional practice (software developers are constantly learning how to deal with unfamiliar artifacts).
+In broad terms, my research activity is mostly related to Human Aspects of Software Development, with a focus on program writing and comprehension, both in an educational perspective as well as professional practice (software developers are constantly learning how to deal with unfamiliar artifacts).
 
 
 - [Complete list of publications](publications)
 - [Google Scholar profile](https://scholar.google.com/citations?hl=pt-PT&user=sYMVDNgAAAAJ&view_op=list_works){:target="_blank"}
 
+<br>
+
 *The following links lead to sections containing an overview of my research organised by themes.*
 
-#### [API Usability](apiusability)
-#### [Programming Education](programmingeducation)
-#### [Domain-Specific Languages](dsl)
+#### <i class="fa fa-laptop fa-lg"></i> [API Usability](apiusability)
+#### <i class="fa fa-book fa-lg"></i> [Programming Education](programmingeducation)
+#### <i class="fa fa-language fa-lg"></i> [Domain-Specific Languages](dsl)

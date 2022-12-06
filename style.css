@@ -126,13 +126,18 @@ border:1px;
 
 .ui-dialog .ui-dialog-titlebar-close {
     position: absolute;
-    right: 0;
+    right: 10px;
 }
 
 .ui-widget-header {
  background: lightgray;
- border: 1px solid #3b678e;
+ border: 1px solid black;
  font-weight: bold;
+ padding: 10px;
+}
+
+.ui-widget-content {
+    border: 2px solid #DDD;
 }
 
 hr {

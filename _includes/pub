@@ -2,6 +2,7 @@
 {% assign papers = include.papers | split: "," %}
 
 <div id="D{{include.topic}}" title="Publications" class="pubs">
+<br>
 <ul>
   {% for pub in site.data.pubs %}
   {% if papers contains pub.info.key %}

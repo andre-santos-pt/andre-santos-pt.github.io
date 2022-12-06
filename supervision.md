@@ -6,7 +6,7 @@ layout: single
 I was the main MSc advisor of the following students:
 
 - Patrícia Gonçalves
-- [Sérgio Silveira](https://www.linkedin.com/in/sérgio-silveira-4a66b796/)
+- [Sérgio Silveira](https://www.linkedin.com/in/sergio-silveira-4a66b796/)
 - Pedro Barros
 - Eduardo Gomes
 - [Ivo Albuquerque](https://www.linkedin.com/in/ivo-albuquerque-a00bb778)
