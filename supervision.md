@@ -17,6 +17,6 @@ I was the main MSc advisor of the following students:
 - [Francisco Alfredo](https://www.linkedin.com/in/francisco-alfredo/) (co-advisor: [Nuno Garrido](https://ciencia.iscte-iul.pt/authors/nuno-miguel-de-figueiredo-garrido/cv))
 - Diogo Sousa (co-advisor: [Maria Pinto-Albuquerque](https://ciencia.iscte-iul.pt/authors/maria-cabral-diogo-pinto-albuquerque/cv))
 - Ricardo Silva (co-advisor: [Ricardo Ribeiro](https://www.hlt.inesc-id.pt/~rdmr/))
-- Tiago Soares (co-advisor: [Nuno Garrido](https://ciencia.iscte-iul.pt/authors/nuno-miguel-de-figueiredo-garrido/cv))
+- [Tiago Soares](https://www.linkedin.com/in/tiagofmartinho/) (co-advisor: [Nuno Garrido](https://ciencia.iscte-iul.pt/authors/nuno-miguel-de-figueiredo-garrido/cv))
 - Pedro Silva
 - Jorge Gonçalves

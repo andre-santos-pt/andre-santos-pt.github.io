@@ -5,7 +5,7 @@ layout: single
 > A growing number people with different backgrounds writes programs of some sort. Programming has an inherent essential difficulty that is considered hard to learn (and teach) for many people.
 >
 > I was involved in the organization of catalog of programming misconceptions (see <https://progmiscon.org>{:target="_blank"}, in collaboration with the [LuCE Research Lab](https://luce.si.usi.ch){:target="_blank"}).
-> 
+>
 > I have participated in a Dagstuhl Seminar on [Notional Machines and Programming Language Semantics in Education](http://www.dagstuhl.de/19281){:target="_blank"}.
 >
 > I served as PC member of [Koli Calling](https://www.kolicalling.fi){:target="_blank"} - International Conference on Computing Education Research, 2016-22.
@@ -35,5 +35,5 @@ This tool also includes most of the ideas previously developed in AguiaJ. The to
 
 ## AguiaJ
 
-{% include pub topic="AguiaJ" papers="conf/kolicalling/Santos14,conf/iticse/Santos12,conf/iticse/Santos12a,conf/iticse/Santos11" %} An educational runtime for Java (based on class reflection) that embodies metaphors of object-orientation allowing fast experimentation of objects. (website no longer available)
+{% include pub topic="AguiaJ" papers="conf/kolicalling/Santos14,conf/iticse/Santos12,conf/iticse/Santos12a,conf/iticse/Santos11" %} An educational runtime for Java (based on class reflection) that embodies metaphors of object-orientation allowing fast experimentation of objects. (website URL no longer available, [visit the old one](https://sites.google.com/view/aguiaj))
 <iframe width="420" height="315" src="https://www.youtube.com/embed/3E2GAxCA4h8" frameborder="0" allowfullscreen></iframe>
