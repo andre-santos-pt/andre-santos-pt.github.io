@@ -8,7 +8,7 @@ layout: single
 >
 > I have participated in a Dagstuhl Seminar on [Notional Machines and Programming Language Semantics in Education](http://www.dagstuhl.de/19281){:target="_blank"}.
 >
-> I served as PC member of [Koli Calling](https://www.kolicalling.fi){:target="_blank"} - International Conference on Computing Education Research, 2016-22.
+> I often serve as PC member of [ITiCSE](https://iticse.acm.org) - ACM Conference on Innovation and Technology in Computer Science Education and [Koli Calling](https://www.kolicalling.fi){:target="_blank"} - International Conference on Computing Education Research, 2016-22.
 > I am a member of the International Committee of the [SIGSCE Technical Symposium](https://sigcse2023.sigcse.org).
 >
 > I work on tools to facilitate understanding of program state (variable behaviour) and programming metaphors (object-orientation).
