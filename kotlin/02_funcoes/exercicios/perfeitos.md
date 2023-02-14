@@ -63,7 +63,8 @@ Experimente escrever diferentes expressões lambda em valores (**val**), que dad
 - ímpar
 - divisor de 10
 
-Teste as funções desenvolvidas isoladamente e para conjuntos de valores, por exemplo:
+Teste as funções desenvolvidas isoladamente e para conjuntos de valores.
+<!--
 {% include code code="
 println(isEven(7))
 (1..10)
@@ -71,6 +72,7 @@ println(isEven(7))
         .forEach { println(it) }
 "
 %}
+-->
 
 ### 4. Função de ordem superior
 Escreva uma variante da função *sumRange* de ordem superior, por forma a que seja permitido especificar quais os números que serão somados segundo algum critério opcional (p.e. pares, ímpares, primos, etc). O critério será passado numa expressão lambda do tipo do passo anterior. Na ausência de critério, todos os números do intervalo serão considerados no somatório.
@@ -86,8 +88,10 @@ Escreva uma função para verificar se um número é perfeito, recorrendo a func
 
 Teste a função para os primeiros 10000 números naturais.
 
+<!--
 {% include code code="
 (1..10000)
         .filter { n -> isPerfectNumber(n) }
         .forEach { n -> println(n) }  // 6, 28, 496, 8128
 "%}
+>
