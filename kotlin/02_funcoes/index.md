@@ -15,6 +15,6 @@ Quais as vantagens de utilizar as primeiras ao invés das segundas?
   - na multiplicação temos o símbolo *x*
   - na potência temos uma forma de dispor os números
   - ser sucinto, pois as versões expandidas com números ficam intratáveis
-  - beneficiar das operações conhecidas para manipular a operações
+  - beneficiar das operações conhecidas para manipular números
 
 A definição de funções está presente em todas as linguagens de programação (de âmbito não especializado), sempre com os mesmos propósitos: **abstrair** um cálculo (ou procedimento) que é recorrente, ou para **decompor** um processo complexo em sub-processos. Abstrair neste contexto significa dar-lhe uma notação (tal como em Matemática), para que a mesma possa ser **reutilizada** em diversos contextos do programa (ou até de outros programas).

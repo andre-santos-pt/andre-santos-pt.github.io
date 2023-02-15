@@ -169,7 +169,7 @@ Valores booleanos podem ser combinados através de expressões lógicas, obtendo
 | ----------- | ----------- | -------- | ------- |
 | &&          | conjunção condicional  | 1 > 0 && 2 > 0  | true |
 | \|\|        | disjunção condicional  | -1 < 0 \|\| 1 > 0 | true |
-| ^           | disjunção exclusiva    | 1 > 0 && 2 > 0  | false |
+| xor           | disjunção exclusiva    | 1 > 0 xor 2 > 0  | false |
 
 
 ### Negação

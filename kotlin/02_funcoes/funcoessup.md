@@ -6,7 +6,7 @@ title: Funções de ordem superior
 
 # Motivação
 
-Dada a aparente complexidade deste assunto, apresentamos primeiro um caso exemplo para motivar o seu propósito. No seguinte código temos duas funções que realizam uma contagem. A primeira conta quantos números pares existem no intervalo *[min, max]*, ao passo que a segunda quantos números são ímpares. Na verdade, esta forma de contagem é claramente *naïve*, mas o propósito é a apenas ilustrativo.
+Dada a aparente complexidade deste assunto, apresentamos primeiro um caso exemplo para motivar o seu propósito. No seguinte código temos duas funções que realizam uma contagem. A primeira conta quantos números pares existem no intervalo *[min, max]*, ao passo que a segunda quantos números são ímpares. Na verdade, esta forma de contagem é claramente *naïve*, mas o propósito é apenas ilustrativo.
 
 {% include code code="
 fun countEven(min: Int, max: Int): Int =                    
