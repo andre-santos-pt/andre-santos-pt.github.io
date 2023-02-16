@@ -2,13 +2,13 @@
 title: Objetos
 ---
 
-> Os valores não têm identidade. Isto é, quanto por exemplo referimos "aqueles dois carros são de cor vermelho": os carros têm uma identidade, e embora possam exatamente o mesmo modelo, distinguimo-los (identidade); por outro lado, o vermelho é tratado como sendo o mesmo, e não é feita a distinção ainda que esteja nos dois carros. O vermelho é um valor, ao passo que cada carro é um objeto.
+> Os valores não têm identidade. Isto é, quanto por exemplo referimos "aqueles dois carros são de cor vermelho": os carros têm uma identidade, e embora possam ser exatamente o mesmo modelo, distinguimo-los (identidade); por outro lado, o vermelho é tratado como sendo o mesmo, e não é feita a distinção ainda que esteja nos dois carros. O vermelho é um valor, ao passo que cada carro é um objeto.
 
 É apropriado utilizar **objetos** quando lidamos com entidades mais complexas que representam algo que tem um tempo de vida prolongado ao longo de um aplicação, tais como, uma base de dados, a janela de uma aplicação, uma imagem que está a ser editada interativamente. Nestes casos, os objetos podem ser vistos como entidades que têm identidade, bem como estado próprio que é alterado ao longo do tempo.
 
 
 # Instanciação e tipo
-Os objetos têm que ser *instanciados* (ou *criados*) para que possam ser utilizados. Cada objeto tem (pelo menos) um **tipo** associado, que descreve as operações que disponíveis para o manipular.
+Os objetos têm que ser *instanciados* (ou *criados*) para que possam ser utilizados. Cada objeto tem (pelo menos) um **tipo** associado, que descreve as operações que estão disponíveis para o manipular.
 
 Por exemplo, num sistema com utilizadores podemos ter uma lista com os nomes de *login*. No nosso sistema, este objeto representaria a lista de utilizadores registados, onde entram e saem registos ao longo do tempo. No exemplo em baixo temos uma instanciação de uma lista do tipo *ArrayList* que contém elementos do tipo *String*.
 

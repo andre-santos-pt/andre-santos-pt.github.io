@@ -87,7 +87,7 @@ val propValues = clazz.declaredMemberProperties.map { Pair(it.name, it.call(poin
 %}
 
 ## Construtores
-No seguinte exemplo apresentamos duas formas de invocar construtores por reflexão. No primeiro caso, é obtido o construtor primário (*primaryConstructor*), e invocado como uma função. O segundo caso consiste numa operação de conveniência para invocar o construtor sem argumentos. Caso não exista, teremos um erro de execução. Logicamente, os argumentos passados na chamadata
+No seguinte exemplo apresentamos duas formas de invocar construtores por reflexão. No primeiro caso, é obtido o construtor primário (*primaryConstructor*), e invocado como uma função. O segundo caso consiste numa operação de conveniência para invocar o construtor sem argumentos. Caso não exista, teremos um erro de execução. Logicamente, os argumentos passados na chamada terão que ser compatíveis com os parâmetros do construtor.
 
 {% include code code="
 val c1 = clazz.primaryConstructor!!.call(2, 3)  // equivalente: Point(2, 3)
