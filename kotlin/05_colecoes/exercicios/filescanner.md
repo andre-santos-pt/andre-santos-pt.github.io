@@ -3,41 +3,24 @@ title: File scanner
 exer: true
 ---
 
-A seguinte função obtém os ficheiros contidos num diretório. Porém, o processo não ocorre recursivamente (entrando em subdiretórios).
+### Experimentação
 
+Utilizando a class *File* do Java, podemos obter os ficheiros contidos num diretório da seguinte forma:
 {% include code code="
-fun dirFiles(dir: File): List<File> {
-    val files = mutableListOf<File>()
-    dir.listFiles().forEach {
-        if(it.isFile)
-           files.add(it)
-    }
-    return files
-}
+val path = File(System.getProperty(\"user.dir\")) // diretorio de execucao
+val children = path.listFiles() // filhos do diretorio (ficheiros e diretorios)
+val files = children.filter { it.isFile } // filtro para incluir so ficheiros
 "
 %}
-
-O mesmo resultado dado pela função poderia ser obtido da seguinte forma.
-{% include code code="
-val files = path.listFiles().filter { it.isFile }
-"
-%}
-O objetivo desta sequência de exercícios é desenvolver uma função para obter os ficheiros de um diretório, incluindo também nos seus subdiretórios (e sucessivamente).
+Porém, o processo não ocorre recursivamente (entrando em subdiretórios). O objetivo desta sequência de exercícios é desenvolver uma função para obter os ficheiros de um diretório, incluindo também nos seus subdiretórios (e sucessivamente).
 
 <hr>
 
 
 ### 1. Função recursiva
 
-Escreva uma função para obter a listagem de ficheiros incluindo subdiretórios.
-Será útil recorrer a um procedimento auxiliar recursivo, que poderá ser definido internamente.
+Desenvolva uma função para obter a listagem de ficheiros, mas incluindo subdiretórios. Será útil recorrer a um procedimento auxiliar recursivo, que poderá ser definido internamente.
 
-{% include code code="
-fun dirFilesRec(dir: File): List<File> {
-
-}
-"
-%}
 
 ### 2. Função com critério de aceitação opcional
 
@@ -46,21 +29,19 @@ Evolua a função anterior por forma a permitir fornecer um critério de aceita�
 O código permitiria por exemplo obter todos os ficheiros que têm determinada extensão.
 
 {% include code code="
-dirFilesRec(File(path)) {
+val kotlinFiles = deepListFiles(File(path)) {
     it.name.endsWith(\".kt\")
-}.forEach {
-    println(it)
 }
 "
 %}
 
 ### 3. Função de extensão
 
-Evolua a função desenvolvida para uma função de extensão, por forma a poder invocá-la como se se tratasse de uma função de *File*.
+Evolua ainda a função desenvolvida para uma função de extensão, por forma a poder invocá-la como se se tratasse de uma função de *File*.
 
 {% include code code="
-f.dirFilesRec().forEach {
-  println(it)
+val kotlinFiles = path.deepListFiles() {
+    it.name.endsWith(\".kt\")
 }
 "
 %}

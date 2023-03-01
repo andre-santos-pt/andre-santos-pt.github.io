@@ -94,7 +94,7 @@ Por outro lado, poderemos ter um desalinhamento entre o tipo declarado de um val
 {% include error code="
 val c: Boolean = square(2)
 "
-msg="Desalinhamento entre tipo de valor e invocação. A função devolve um inteiro, ao passo que o valor <b>c</b> está declarado como booleano."
+msg="Desalinhamento entre tipo de valor e invocação. A função devolve Double, ao passo que o valor <b>c</b> está declarado como Boolean."
 %}
 
 # Funções baseadas em expressão condicional

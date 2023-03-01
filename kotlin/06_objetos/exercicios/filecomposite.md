@@ -3,19 +3,40 @@ title: File/Directory Composite
 exer: true
 ---
 
-A organização de ficheiros em diretórios consiste numa árvore, onde os diretórios são nós compostos (que contêm filhos) e os ficheiros são nós folha. Este tipo de estrutura pode ser representada através de uma estrutura de dados recursiva (padrão de desenho [Objetos Compostos](../../padroesdesenho/objetoscompostos)), tal como ilustrado na figura. Os elementos podem ser de dois tipos: ficheiros ou diretórios (a class Element é abstrata). Os diretórios contêm outros elementos, os quais podem ser outros diretórios ou ficheiros. Todos os elementos terão o seu pai definido (diretório), porém há a possibilidade do pai não estar definido (para o caso da raiz).
+A organização de ficheiros em diretórios consiste numa árvore, onde os diretórios são nós compostos (que contêm filhos) e os ficheiros são nós folha. Este tipo de estrutura pode ser representada através de uma estrutura de dados recursiva (padrão de desenho [Objetos Compostos](../../padroesdesenho/objetoscompostos)), tal como ilustrado na figura. Os elementos podem ser de dois tipos: ficheiros ou diretórios (*Element* é interface). Os diretórios contêm outros elementos, os quais podem ser diretórios ou ficheiros. Todos os elementos terão o seu pai definido (diretório), porém na raiz da estrutura o pai não estará definido.
 
 ![](filecomposite.png)
 
 ### 1. Estrutura de dados (Objetos Compostos)
 
-Implementar a estrutura de dados de acordo com o que é apresentado no diagrama. As propriedades deverão ser calculadas, por forma a que uma alteração na estrutura (pe. acrescentar um ficheiro) resultará em valores diferentes.
+Implemente a estrutura de dados de acordo com o que é apresentado no diagrama. As propriedades deverão ser calculadas, por forma a que uma alteração na estrutura (pe. acrescentar um ficheiro) resultará em valores diferentes.
 
-- *nElements* significa número total elementos, considerando a contagem recursivamente (pelos subdiretórios).
+- *deepElementCount* significa número total elementos, considerando a contagem recursivamente (pelos subdiretórios).
 - *depth* refere-se à profundidade na árvore (elemento raiz (*root*) terá profundidade zero).
 - *path* é o caminho absoluto do ficheiro (pe. */Users/andre/Desktop/file.txt*)
-- *print* imprime a árvore de ficheiros na consola.
+- *toText* corresponde a um formato textual da árvore (usar tabulação para a profundidade dos elementos).
 
+Para efeito de comparação de estruturas idênticas (e testes), é conveniente representar a estrutura através de objetos de valor. Desta forma, a utilização de **==** e *equals* terá em conta a comparação de conteúdo, e não a identidade dos objetos.
+
+{% include code code="
+interface Element {
+    val name: String
+    val parent: DirectoryElement?
+
+    val depth: Int 
+        get() = 1 // TODO
+    
+    // ...
+}
+
+data class FileElement(
+    override val name: String,
+    override val parent: DirectoryElement? = null
+) : Element {
+    // ...
+}
+"
+%}
 Experimente a instanciação destas classes com pelo menos três níveis de profundidade, testando as propriedades.
 
 ### 2. Carregamento de árvore
@@ -33,6 +54,6 @@ Experimente o carregamento de um diretório local, imprimindo a árvore na conso
 
 {% include code code="
 val tree = File(\"path/to/somewhere\").toDirectoryTree()
-tree.print()
+println(tree.toText)
 "
 %}
