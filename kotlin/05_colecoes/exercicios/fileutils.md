@@ -3,13 +3,11 @@ title: Funções auxiliares para ficheiros
 exer: true
 ---
 
-### Funções auxiliares para File
-
 Partindo dos seguintes casos de teste, desenvolva as funções pretendidas.
 
 #### Propriedade para saber extensão de ficheiro
 
-(*Extension property*)
+(*Extension property*, já existente nas bibliotecas do Kotlin)
 
 {%include code code="
 @Test

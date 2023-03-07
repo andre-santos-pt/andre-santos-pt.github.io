@@ -7,7 +7,7 @@ O objetivo deste exercício é aplicar o padrão de desenho Visitante (*Visitor*
 
 **Nota:** Completar a estrutura de dados desenvolvida no exercício [File Composite](https://andre-santos-pt.github.io/kotlin/06_objetos/exercicios/filecomposite), baseada no padrão [Objetos Compostos](https://andre-santos-pt.github.io/kotlin/padroesdesenho/objetoscompostos).
 
-![](visitanteuml.png)
+![](../../06_objetos/exercicios/filecomposite.png)
 
 ### 1. Funções sobre a estrutura
 
