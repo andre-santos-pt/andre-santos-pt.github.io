@@ -19,12 +19,12 @@ Implemente a estrutura de dados de acordo com o que é apresentado no diagrama. 
 Para efeito de comparação de estruturas idênticas (e testes), é conveniente representar a estrutura através de objetos de valor. Desta forma, a utilização de **==** e *equals* terá em conta a comparação de conteúdo, e não a identidade dos objetos.
 
 {% include code code="
-interface Element {
+sealed interface Element {
     val name: String
     val parent: DirectoryElement?
 
     val depth: Int 
-        get() = 1 // TODO
+        get() = 0 // TODO
     
     // ...
 }
