@@ -2,7 +2,7 @@
 title: Objetos
 ---
 
-> Os valores não têm identidade. Isto é, quanto por exemplo referimos "aqueles dois carros são de cor vermelho": os carros têm uma identidade, e embora possam ser exatamente o mesmo modelo, distinguimo-los (identidade); por outro lado, o vermelho é tratado como sendo o mesmo, e não é feita a distinção ainda que esteja nos dois carros. O vermelho é um valor, ao passo que cada carro é um objeto.
+> Os valores não têm identidade. Isto é, quando por exemplo referimos "aqueles dois carros são de cor vermelha": os carros têm uma identidade, e embora possam ser exatamente o mesmo modelo, distinguimo-los (identidade); por outro lado, o vermelho é tratado como sendo o mesmo, e não é feita a distinção ainda que esteja nos dois carros. O vermelho é um valor, ao passo que cada carro é um objeto.
 
 É apropriado utilizar **objetos** quando lidamos com entidades mais complexas que representam algo que tem um tempo de vida prolongado ao longo de um aplicação, tais como, uma base de dados, a janela de uma aplicação, uma imagem que está a ser editada interativamente. Nestes casos, os objetos podem ser vistos como entidades que têm identidade, bem como estado próprio que é alterado ao longo do tempo.
 
