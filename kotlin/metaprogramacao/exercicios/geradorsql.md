@@ -48,10 +48,17 @@ val KClassifier?.isEnum: Boolean
     get() = this is KClass<*> && this.isSubclassOf(Enum::class)
 
 // obter uma lista de constantes de um tipo enumerado
-val <T : Any> KClass<T>.enumConstants: List<T> get() {
-    require(isEnum) { \"instance must be enum\" }
-    return java.enumConstants.toList()
-}
+val KClassifier?.enumConstants: List<*>
+    get() {
+        require(isEnum) { \"instance must be enum\" }
+        return asClass.java.enumConstants.toList()
+    }
+
+val KClassifier?.asClass: KClass<*>
+    get() {
+        require(this is KClass<*>) { \"instance must be KClass\"}
+        return this
+    }
 
 fun main() {
     val fields: List<KProperty<*>> = Student::class.dataClassFields
