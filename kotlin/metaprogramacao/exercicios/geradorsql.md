@@ -135,7 +135,7 @@ data class Student(
     @Length(50)
     val name: String,
     @DbName(\"degree\")
-    val type: StudentType
+    val type: StudentType? = null
 )
 "
 %}
