@@ -3,17 +3,20 @@ title: KUnit
 exer: true
 ---
 
-Neste exercício o objetivo é fazer uma pequena biblioteca similar ao [JUnit](www.junit.org). Deverão existir dois tipos de anotações:
+Neste exercício o objetivo é fazer uma pequena biblioteca similar ao [JUnit](www.junit.org). Deverão existir três tipos de anotações:
 
 - **@TestCase**, para definir um caso de teste, anotando uma função (que não deverá ter parâmetros);
 
 - **@BeforeTestRun**, para anotar uma função (também sem parâmetros), que irá executar antes de cada caso de teste anotado com @TestCase.
 
+- **@ExpectedException**, para anotar um caso de teste, indicando que a execução do teste tem que dar origem à exceção indicada.
+
 Exemplo de API, para correr os casos de teste definidos na class *MyTests*.
 
 {% include code code="
-val k = KUnit(MyTests::class)
-k.runTests()
+val kunit = KUnit(MyTests::class)
+val results: List<TestCaseResult> = kunit.testResults()
+results.forEach(::println)
 "
 %}
 
@@ -28,7 +31,21 @@ try {
   kFunction.call(obj)
 }
 catch(e: InvocationTargetException) {
-  println(e.cause?.message)
+  val cause: Throwable = e.cause
+  println(cause?.message)
+}
+"
+%}
+
+
+**Dica:** Para a anotação *ExpectedException* será necessário um parâmetro do tipo classe para a exceção esperada possa ser indicada.
+{% include code code="
+annotation class ExpectedException(val exceptionClass: KClass<out Exception>)
+
+@TestCase
+@ExpectedException(IllegalArgumentException::class)
+fun testException() {
+   throw IllegalArgumentException()
 }
 "
 %}
