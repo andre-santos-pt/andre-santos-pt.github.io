@@ -3,7 +3,7 @@ title: KUnit
 exer: true
 ---
 
-Neste exercício o objetivo é fazer uma pequena biblioteca similar ao [JUnit](www.junit.org). Deverão existir três tipos de anotações:
+Neste exercício o objetivo é fazer uma pequena biblioteca similar ao [JUnit](https://www.junit.org). Deverão existir três tipos de anotações:
 
 - **@TestCase**, para definir um caso de teste, anotando uma função (que não deverá ter parâmetros);
 
