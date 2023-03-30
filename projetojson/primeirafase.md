@@ -51,8 +51,10 @@ As classes do modelo deverão oferecer uma forma de varrimento baseada em *visit
 
 1. efetuar pesquisas, como por exemplo:
   - obter todos os valores guardados em propriedades com identificador "numero"
-  - obter todos os objetos que têm determinadas propriedades (pe. todos os objetos que têm as propriedades *numero* e *nome*)
-2. verificar que o modelo obedece a determinada estrutura (pe. a propriedade *inscritos* consiste num array onde todos os objetos têm a mesma estutura)
+  - obter todos os objetos que têm as propriedades *numero* e *nome*
+2. verificar que o modelo obedece a determinada estrutura, por exemplo:
+  - a propriedade *numero* apenas tem como valores números inteiros
+  - a propriedade *inscritos* consiste num array onde todos os objetos têm a mesma estutura
 
 
 # Fase 2 - Inferência por reflexão
