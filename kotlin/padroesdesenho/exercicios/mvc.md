@@ -22,57 +22,59 @@ Vamos partir de uma aplicação incompleta com algumas partes de uma arquitetura
 
 ### Classes fornecidas
 
-- A interface (com comportamento) *IObservable* serve para reutilizar operações relacionadas com o registo/remoção de [Observadores](../observador).
+![](intpairmvc.png)
 
 - Os objetos *PairDataSet* representam o modelo, e os mesmos são observáveis. Apenas a operação para adicionar está implementada.
 
-- A classe *PairDataSetLabel* representa a vista do modelo num *label*, mas ainda não reage a alterações no modelo.
+- A classe *LabelView* representa a vista do modelo num *label*, mas ainda não reage a alterações no modelo.
 
-- A classe *DotCanvas* representa a vista do modelo no *canvas*, e reage a novos pares no modelo. Ao clicar na sua área é impresso a coordenada no ecrã, mas a ideia é que esta ação dê origem a um novo ponto no modelo.
+- A classe *CanvasView* representa a vista do modelo no *canvas*, e reage a novos pares no modelo. Ao clicar na sua área é impresso a coordenada no ecrã, mas a ideia é que esta ação dê origem a um novo ponto no modelo.
 
-- A class *TableComponent* representa a vista do modelo na tabela, e não ainda reage a qualquer alteração no modelo, nem tão pouco as suas ações têm efeito. Contudo, com a implementação atual é possível registar observadores.
+- A classe *TableView* representa a vista do modelo na tabela, e não ainda reage a qualquer alteração no modelo, nem tão pouco as suas ações têm efeito. Contudo, com a implementação atual é possível registar observadores.
+
+- A classe *Controller* tem apenas o *main*, instanciando o modelo e as vistas.
 
 
 ## Infraestrutura de MVC
 
-### 1. PairDataSetLabel com observação
+### 1. LabelView com observação
 
-Completar a classe *PairDataSetLabel* por forma a que o modelo seja observado, e qualquer alteração dê origem à modificação do texto da *label*. Testar verificando que adicionar um par já surte efeito no *label*.
+Completar a classe *LabelView* por forma a que o modelo seja observado, e qualquer alteração dê origem à modificação do texto da *label*. Testar verificando que adicionar um par já surte efeito no *label*.
 
 
 ### 2. Canvas observável
-Completar a classe *DotCanvas* por forma que seja observável. Deverá ser possível que os observadores tenham acesso aos pontos onde são feitos cliques no *canvas*.
+Completar a classe *CanvasView* por forma que seja observável. Deverá ser possível que os observadores tenham acesso aos pontos onde são feitos cliques no *canvas*.
 
-1. Fazer com que a classe *DotCanvas* implemente *IObservable*.
+1. Fazer com que os objetos *CanvasView* possam ser observados.
 
 2. Modificar o controlador (*main*) para reagir aos cliques adicionando novos pares ao modelo.
 
-**Atenção:** a vista *DotCanvas* não deve alterar o modelo diretamente.
+**Atenção:** a vista *CanvasView* não deve alterar o modelo diretamente.
 
 
 ### 3. Substituição observável em PairDataSet
 
-1. Completar a classe *PairDataSet* com uma operação observável para substituir um elemento. Utilizar o terceiro parâmetro do lambda para indicar o elemento antigo que foi substituído.
+1. Completar a classe *PairDataSet* com uma operação observável para substituir um elemento.
 
 2. Alterar o controlador para reagir a eventos de edição de valores, alterando a tabela.
 
-**Atenção:** a vista *TableComponent* não deve alterar o modelo diretamente.
+**Atenção:** a vista *TableView* não deve alterar o modelo diretamente.
 
 
 ### 4. Remoção de elementos
 
-1. Completar a classe *PairDataSet* com uma operação para remover um elemento. Utilizar o segundo parâmetro do lambda para indicar o elemento removido, e ignorar o terceiro (*null*).
+1. Completar a classe *PairDataSet* com uma operação para remover um elemento.
 
-2. Alterar a classe *TableComponent* para notificar eventos de clique no botão *delete*.
+2. Alterar a classe *TableView* para notificar eventos de clique no botão *delete*.
 
-3. Alterar o controlador para reagir aos eventos de *TableComponent*, resultando em alterações no modelo.
+3. Alterar o controlador para reagir aos eventos de *TableView*, resultando em alterações no modelo.
 
-**Atenção:** a vista *TableComponent* não deve alterar o modelo diretamente.
+**Atenção:** a vista *TableView* não deve alterar o modelo diretamente.
 
 
-### 5. Reação em TableComponent
+### 5. Reação em TableView
 
-1. Alterar a classe *TableComponent* por forma a reagir a alterações no modelo. Utilizar as operações já desenvolvidas na classe para acrescentar/modificar/remover linhas.
+1. Alterar a classe *TableView* por forma a reagir a alterações no modelo. Utilizar as operações já desenvolvidas na classe para acrescentar/modificar/remover linhas.
 
 2. Testar para verificar que todos os tipos de alterações no modelo são devidamente refletidas nas vistas.
 
