@@ -14,9 +14,9 @@ O objetivo deste exercício é tomar contacto com o padrão arquitetural *model-
 
 Vamos partir de uma aplicação incompleta com algumas partes de uma arquitetura MVC, que será completada ao longo do exercício. As marcas *TODO* ajudam a localizar as partes a modificar.
 
-1. Descarregar o código [ExObserver.kt](ExObserver.kt) e [SwingDSL.kt](SwingDSL.kt);
+1. Descarregar o código [mvc.zip](mvc.zip); contém um pacote *mvc* com várias classes.
 
-2. Executar o *main*, verificando que:
+2. Executar o *main* em *Controller*, verificando que:
   - adicionar um par via *add* provoca alterações no *canvas*, mas não no *label*
   - nenhuma das ações da tabela tem efeito: clicar nas caixas para editar ou primir *delete*
 
