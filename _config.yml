@@ -6,4 +6,4 @@ defaults:
     values:
       layout: "default"
 
-exclude: [projetoxml,projetojson/segundafase]
+# exclude: [projetoxml,projetojson/segundafase]
