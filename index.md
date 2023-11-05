@@ -45,9 +45,13 @@ In broad terms, my research activity is mostly related to Human Aspects of Softw
 
 #### <i class="fa fa-handshake-o fa-lg"></i> [API Usability](apiusability)
 #### <i class="fa fa-book fa-lg"></i> [Programming Education](programmingeducation)
+#### <i class="fa fa-language fa-lg"></i> [Domain-Specific Languages](dsl)
+
+<!--
 #### <i class="fa fa-gears fa-lg"></i> [Software Maintenance and Evolution](maintenance)
 #### <i class="fa fa-indent fa-lg"></i> [Projectional Editors](editors)
-#### <i class="fa fa-language fa-lg"></i> [Domain-Specific Languages](dsl)
+-->
+
 
 ***
 
