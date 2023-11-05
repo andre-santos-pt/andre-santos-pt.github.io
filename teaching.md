@@ -3,10 +3,15 @@ title: Teaching activity
 layout: single
 ---
 
-### 2022/2023
-- Introduction to Programming
+### 2023/2024
 - Advanced Programming [Master programs] (coordinator)
 - Engineering of Programming Languages (coordinator)
+- Introduction to Programming
+
+### 2022/2023
+- Advanced Programming [Master programs] (coordinator)
+- Engineering of Programming Languages (coordinator)
+- Introduction to Programming
 
 ### 2021/2022
 - Advanced Programming [Master programs] (coordinator)
