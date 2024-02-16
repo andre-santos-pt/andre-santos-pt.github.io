@@ -16,8 +16,14 @@ layout: single
 *Click on the icon <i class="fa fa-book"></i> to see related publications.*
 
 ***
+## Jinter
+{% include pub topic="Jinter" papers="conf/iticse/GoncalvesS23" %} A system capable of generating feedback hints about how to proceed or fix a Java exercise targeting the first stages of programming learning. This work was developed in the MSc thesis of [Jorge Gonçalves](https://www.linkedin.com/in/jorge-gonçalves-77b56380/){:target="_blank"}.
+
+ ![Jinter](images/jinter.png)
+
+***
 ## Jask
-{% include pub topic="Jask" papers="conf/iticse/SantosSGL22,conf/iwpc/Lehtinen0S21" %} A system capable of generating questions about the Java code (static and dynamic) targeting the first stages of programming learning. In collaboration with the [LeTech Research Group](https://research.cs.aalto.fi/LeTech/){:target="_blank"}.
+{% include pub topic="Jask" papers="conf/iticse/SantosSGL22,conf/iwpc/Lehtinen0S21" %} A system capable of generating questions about the Java code (static and dynamic) targeting the first stages of programming learning. In collaboration with the [LeTech Research Group](https://research.cs.aalto.fi/LeTech/){:target="_blank"}. This work was developed in the MSc thesis of [Tiago Soares](https://www.linkedin.com/in/tiagofmartinho){:target="_blank"}.
 
  ![Jask](images/jask.png)
 

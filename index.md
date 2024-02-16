@@ -7,7 +7,7 @@ layout: single
 
 
 ## André L. Santos
-### Assistant Professor, [Iscte (Instituto Universitário de Lisboa)](http://www.iscte-iul.pt)
+### [Assistant Professor](https://ciencia.iscte-iul.pt/authors/andre-leal-santos/cv), [Iscte (Instituto Universitário de Lisboa)](http://www.iscte-iul.pt)
 
 #### [Teaching activity](teaching)
 #### [Supervision of MSc students](supervision)
@@ -17,7 +17,7 @@ layout: single
 
 ***
 
-- [PhD thesis](docs/AndreLSantosPhD.pdf){:target="_blank"}  (2009) advised by [Kai Koskimies](https://dblp.org/pid/60/3159.html) and [Antónia Lopes](https://www.di.fc.ul.pt/~mal/)
+- PhD (2009) [University of Lisbon](https://www.ulisboa.pt/en) in cooperation with [Tampere University of Technology](https://www.tuni.fi/en), advised by [Kai Koskimies](https://dblp.org/pid/60/3159.html) and [Antónia Lopes](https://www.di.fc.ul.pt/~mal/)
 
 - Visiting researcher at [Carnegie Mellon University](https://www.cmu.edu) (2014), hosted by [Brad Myers](https://www.cs.cmu.edu/~bam/)
 

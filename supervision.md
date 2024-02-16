@@ -19,7 +19,7 @@ I was the main MSc advisor of the following students:
 - Ricardo Silva (co-advisor: [Ricardo Ribeiro](https://www.hlt.inesc-id.pt/~rdmr/))
 - [Tiago Soares](https://www.linkedin.com/in/tiagofmartinho/) (co-advisor: [Nuno Garrido](https://ciencia.iscte-iul.pt/authors/nuno-miguel-de-figueiredo-garrido))
 - Pedro Silva
-- Jorge Gonçalves
+- [Jorge Gonçalves](https://www.linkedin.com/in/jorge-gonçalves-77b56380/)
 - [André Teles](https://www.linkedin.com/in/andré-teles-4b3973270/)
 - [José Lopes](https://www.linkedin.com/in/jose-fau-lopes/)
 - [Alexandre Cancelinha](https://www.linkedin.com/in/alexandre-cancelinha-9849081a3/) (co-advisor: [Fernando Batista](https://ciencia.iscte-iul.pt/authors/fernando-batista))
