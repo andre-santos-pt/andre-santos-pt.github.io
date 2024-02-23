@@ -28,8 +28,7 @@ Os primeiros números naturais perfeitos são:
 - 496
 - 8128
 
-A sequência de passos propostos (funções) conduzirá ao resultado final, ter uma forma de determinar se um número é perfeito.
-
+A sequência de passos propostos (funções) conduzirá ao resultado final, ter uma forma de determinar se um número é perfeito. Defina testes JUnit para cada passo.
 
 
 ### 1. Recursão regular
@@ -65,10 +64,7 @@ Experimente escrever diferentes expressões lambda em valores (**val**), que dad
 
 Teste as funções desenvolvidas isoladamente e para conjuntos de valores, por exemplo:
 {% include code code="
-println(isEven(7))
-(1..10)
-        .filter { i -> isEven(i) }
-        .forEach { println(it) }
+val evenNumbers = (1..10).filter { i -> isEven(i) } // [2, 4, 6, 8, 10]
 "
 %}
 
@@ -87,7 +83,5 @@ Escreva uma função para verificar se um número é perfeito, recorrendo a func
 Teste a função para os primeiros 10000 números naturais.
 
 {% include code code="
-(1..10000)
-        .filter { n -> isPerfectNumber(n) }
-        .forEach { n -> println(n) }  // 6, 28, 496, 8128
+val perfectNumbers = (1..10000).filter { n -> isPerfectNumber(n) } // [6, 28, 496, 8128]
 "%}
