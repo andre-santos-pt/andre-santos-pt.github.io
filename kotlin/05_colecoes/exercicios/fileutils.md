@@ -19,6 +19,20 @@ fun fileExtension() {
 "
 %}
 
+#### Propriedade para saber profundidade de ficheiro/diretório na árvore
+
+(*Extension property*)
+
+{%include code code="
+@Test
+fun fileDepth() {
+    assertEquals(0, File(\"\").depth)
+    assertEquals(1, File(\"dir\").depth)
+    assertEquals(2, File(\"dir/subdir\").depth)
+}
+"
+%}
+
 
 #### Obter extensões de lista de ficheiro
 
