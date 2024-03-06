@@ -11,10 +11,10 @@ A organização de ficheiros em diretórios consiste numa árvore, onde os diret
 
 Implemente a estrutura de dados de acordo com o que é apresentado no diagrama. As propriedades deverão ser calculadas, por forma a que uma alteração na estrutura (pe. acrescentar um ficheiro) resultará em valores diferentes.
 
-- *depth* refere-se à profundidade na árvore (elemento raiz (*root*) terá profundidade zero).
+- *depth* refere-se à profundidade na árvore (elemento raiz (*root*) terá profundidade um).
 - *path* é o caminho absoluto do ficheiro (pe. */Users/andre/Desktop/file.txt*)
-- *deepElementCount* significa número total elementos, considerando a contagem recursivamente (pelos subdiretórios).
 - *toText* corresponde a um formato textual da árvore (usar tabulação para a profundidade dos elementos).
+- *deepElementCount* significa número total elementos, considerando a contagem recursivamente (pelos subdiretórios).
 
 Para efeito de comparação de estruturas idênticas (e testes), é conveniente representar a estrutura através de objetos de valor. Desta forma, a utilização de **==** e *equals* terá em conta a comparação de conteúdo, e não a identidade dos objetos.
 
@@ -56,7 +56,7 @@ class TestFileComposite {
 
 ### 2. Carregamento de árvore
 
-Escreva uma função de extensão de File para criar uma árvore, instanciando as classes desenvolvidas em (1).
+Nesta alínea pretende-se obter uma instância da estrutura anterior, obtida através do sistema de ficheiros. Escreva um teste, e uma função de extensão de File para concretizar o pretendido.
 
 {% include code code="
 fun File.toDirectoryTree(): Element {
@@ -65,10 +65,3 @@ fun File.toDirectoryTree(): Element {
 "
 %}
 
-Experimente o carregamento de um diretório local, imprimindo a árvore na consola.
-
-{% include code code="
-val tree = File(\"path/to/somewhere\").toDirectoryTree()
-println(tree.toText)
-"
-%}
