@@ -11,7 +11,7 @@ Partindo dos seguintes casos de teste, desenvolva as funções pretendidas.
 
 {%include code code="
 @Test
-fun fileExtension() {
+fun testFileExtension() {
     assertEquals(\"\", File(\"random\").extension)
     assertEquals(\"kt\", File(\"Test.kt\").extension)
     assertEquals(\"kts\", File(\"build.gradle.kts\").extension)
@@ -25,7 +25,7 @@ fun fileExtension() {
 
 {%include code code="
 @Test
-fun fileDepth() {
+fun testFileDepth() {
     assertEquals(0, File(\"\").depth)
     assertEquals(1, File(\"dir\").depth)
     assertEquals(2, File(\"dir/subdir\").depth)
@@ -45,7 +45,7 @@ val fileList = listOf(
 )
 
 @Test
-fun distinctExtensions() {
+fun testDistinctExtensions() {
     assertEquals(setOf(\"kt\", \"kts\"), distinctExtensions(fileList))
 }
 "%}
@@ -56,7 +56,7 @@ fun distinctExtensions() {
 
 {%include code code="
 @Test
-fun countExtensions() {
+fun testCountExtensions() {
     assertEquals(2, fileList.countExtension(\"kt\"))
     assertEquals(0, fileList.countExtension(\"txt\"))
 }
@@ -68,7 +68,7 @@ fun countExtensions() {
 
 {%include code code="
 @Test
-fun withExtension() {
+fun testWithExtension() {
     val expected = listOf(File(\"Test.kt\"), File(\"Example.kt\"))
     assertEquals(expected, fileList.withExtension(\"kt\"))
     assertEquals(emptyList<File>(), fileList.withExtension(\"txt\"))

@@ -11,9 +11,9 @@ A organização de ficheiros em diretórios consiste numa árvore, onde os diret
 
 Implemente a estrutura de dados de acordo com o que é apresentado no diagrama. As propriedades deverão ser calculadas, por forma a que uma alteração na estrutura (pe. acrescentar um ficheiro) resultará em valores diferentes.
 
-- *deepElementCount* significa número total elementos, considerando a contagem recursivamente (pelos subdiretórios).
 - *depth* refere-se à profundidade na árvore (elemento raiz (*root*) terá profundidade zero).
 - *path* é o caminho absoluto do ficheiro (pe. */Users/andre/Desktop/file.txt*)
+- *deepElementCount* significa número total elementos, considerando a contagem recursivamente (pelos subdiretórios).
 - *toText* corresponde a um formato textual da árvore (usar tabulação para a profundidade dos elementos).
 
 Para efeito de comparação de estruturas idênticas (e testes), é conveniente representar a estrutura através de objetos de valor. Desta forma, a utilização de **==** e *equals* terá em conta a comparação de conteúdo, e não a identidade dos objetos.
@@ -23,21 +23,36 @@ sealed interface Element {
     val name: String
     val parent: DirectoryElement?
 
-    val depth: Int 
+    val depth: Int
         get() = 0 // TODO
-    
-    // ...
 }
 
-data class FileElement(
+data class DirectoryElement(
     override val name: String,
     override val parent: DirectoryElement? = null
-) : Element {
-    // ...
+) : Element
+"
+%}
+
+Experimente a instanciação destas classes com pelo menos três níveis de profundidade, testando as propriedades.
+
+Pode utilizar o seguinte caso de teste como ponto de partida.
+{% include code code="
+class TestFileComposite {
+    @Test
+    fun testDepth() {
+        val artists = DirectoryElement(\"artists\")
+        val beatles = DirectoryElement(\"beatles\", artists)
+        val help = DirectoryElement(\"help\", beatles)
+        val letitbe = DirectoryElement(\"let it be\", beatles)
+        assertEquals(1, artists.depth)
+        assertEquals(2, beatles.depth)
+        assertEquals(3, help.depth)
+        assertEquals(3, letitbe.depth)
+    }
 }
 "
 %}
-Experimente a instanciação destas classes com pelo menos três níveis de profundidade, testando as propriedades.
 
 ### 2. Carregamento de árvore
 
