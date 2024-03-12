@@ -64,7 +64,7 @@ class TestFileComposite {
         assertEquals(1, artists.depth)
         assertEquals(2, beatles.depth)
         assertEquals(3, help.depth)
-        assertEquals(3, letitbe.depth)
+        assertEquals(3, letItBe.depth)
     }
 }
 "
