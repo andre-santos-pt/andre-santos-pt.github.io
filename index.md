@@ -24,7 +24,11 @@ layout: single
 - Visiting researcher at [Aalto University](https://www.aalto.fi/en), [LeTech - Learning + Technology](https://research.cs.aalto.fi/LeTech/) (2020), hosted by [Lauri Malmi](http://www.cs.hut.fi/~lma)
 
 
+***
 
+I'm organizing [ICPEC'24](http://icpeconf.org/2024) in Lisbon (27-28 June), check it out if you have interest in programming education.
+
+[![](logo_icpec.png)](http://icpeconf.org/2024)
 
 ***
 
