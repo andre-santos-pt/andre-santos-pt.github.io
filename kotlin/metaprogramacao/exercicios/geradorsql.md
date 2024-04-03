@@ -22,8 +22,9 @@ enum class StudentType {
 
 ### Preparação
 
-É necessária a dependência para o módulo *kotlin-reflect*. No caso de utilizar o Gradle:
+É necessária a dependência para o módulo *kotlin-reflect*.
 
+No caso de utilizar Gradle:
 {% include code code="
 dependencies {
   implementation(\"org.jetbrains.kotlin:kotlin-reflect\")
@@ -48,10 +49,11 @@ val KClassifier?.isEnum: Boolean
     get() = this is KClass<*> && this.isSubclassOf(Enum::class)
 
 // obter uma lista de constantes de um tipo enumerado
-val KClassifier?.enumConstants: List<*>
+val KClassifier.getEnumValues: List<Enum<*>>
     get() {
         require(isEnum) { \"instance must be enum\" }
-        return asClass.java.enumConstants.toList()
+        this as KClass<out Enum<*>>
+        return this.java.enumConstants.toList()
     }
 
 val KClassifier?.asClass: KClass<*>
