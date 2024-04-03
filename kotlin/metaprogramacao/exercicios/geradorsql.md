@@ -67,7 +67,8 @@ fun main() {
     println(fields)
     val isEnum = StudentType::class.isEnum
     println(isEnum)
-    val enumConstants: List<StudentType> = StudentType::class.enumConstants
+    val enumConstants: List<Enum<*>> = StudentType::class.getEnumValues
+
     println(enumConstants)
 }
 "
