@@ -1,7 +1,65 @@
 [
   {
     "@score": "1",
-    "@id": "178658",
+    "@id": "219183",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "382/2951",
+            "text": "Afonso B. Caniço"
+          },
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          }
+        ]
+      },
+      "title": "A Domain-Specific Language for Dynamic White-Box Evaluation of Java Assignments.",
+      "venue": "ICPEC",
+      "pages": "2:1-2:13",
+      "year": "2024",
+      "type": "Conference and Workshop Papers",
+      "access": "open",
+      "key": "conf/icpec/Canico024",
+      "doi": "10.4230/OASICS.ICPEC.2024.2",
+      "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2024.2",
+      "url": "https://dblp.org/rec/conf/icpec/Canico024"
+    },
+    "url": "URL#219183"
+  },
+  {
+    "@score": "1",
+    "@id": "219191",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "385/9404",
+            "text": "Rodrigo Mourato"
+          },
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          }
+        ]
+      },
+      "title": "Educational Program Visualizations Using Synthetized Execution Information.",
+      "venue": "ICPEC",
+      "pages": "10:1-10:8",
+      "year": "2024",
+      "type": "Conference and Workshop Papers",
+      "access": "open",
+      "key": "conf/icpec/Mourato024",
+      "doi": "10.4230/OASICS.ICPEC.2024.10",
+      "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2024.10",
+      "url": "https://dblp.org/rec/conf/icpec/Mourato024"
+    },
+    "url": "URL#219191"
+  },
+  {
+    "@score": "1",
+    "@id": "243234",
     "info": {
       "authors": {
         "author": [
@@ -25,11 +83,43 @@
       "ee": "https://doi.org/10.1145/3660829.3660844",
       "url": "https://dblp.org/rec/conf/programming/SantosM24"
     },
-    "url": "URL#178658"
+    "url": "URL#243234"
   },
   {
     "@score": "1",
-    "@id": "576044",
+    "@id": "257837",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "85/4416",
+            "text": "Maria Pinto-Albuquerque"
+          }
+        ]
+      },
+      "title": "5th International Computer Programming Education Conference, ICPEC 2024, June 27-28, 2024, Lisbon, Portugal",
+      "venue": [
+        "ICPEC",
+        "OASIcs"
+      ],
+      "volume": "122",
+      "publisher": "Schloss Dagstuhl - Leibniz-Zentrum für Informatik",
+      "year": "2024",
+      "type": "Editorship",
+      "access": "open",
+      "key": "conf/icpec/2024",
+      "ee": "https://www.dagstuhl.de/dagpub/978-3-95977-347-8",
+      "url": "https://dblp.org/rec/conf/icpec/2024"
+    },
+    "url": "URL#257837"
+  },
+  {
+    "@score": "1",
+    "@id": "661270",
     "info": {
       "authors": {
         "author": {
@@ -48,11 +138,11 @@
       "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2023.1",
       "url": "https://dblp.org/rec/conf/icpec/000123"
     },
-    "url": "URL#576044"
+    "url": "URL#661270"
   },
   {
     "@score": "1",
-    "@id": "604034",
+    "@id": "689411",
     "info": {
       "authors": {
         "author": [
@@ -77,11 +167,11 @@
       "ee": "https://doi.org/10.1145/3587102.3588820",
       "url": "https://dblp.org/rec/conf/iticse/GoncalvesS23"
     },
-    "url": "URL#604034"
+    "url": "URL#689411"
   },
   {
     "@score": "1",
-    "@id": "627887",
+    "@id": "713436",
     "info": {
       "authors": {
         "author": [
@@ -106,11 +196,11 @@
       "ee": "https://doi.org/10.1145/3622758.3622891",
       "url": "https://dblp.org/rec/conf/onward/TelesS23"
     },
-    "url": "URL#627887"
+    "url": "URL#713436"
   },
   {
     "@score": "1",
-    "@id": "628618",
+    "@id": "714167",
     "info": {
       "authors": {
         "author": [
@@ -135,11 +225,11 @@
       "ee": "https://doi.org/10.1145/3623504.3623571",
       "url": "https://dblp.org/rec/conf/paint/LopesS23"
     },
-    "url": "URL#628618"
+    "url": "URL#714167"
   },
   {
     "@score": "1",
-    "@id": "647095",
+    "@id": "732673",
     "info": {
       "authors": {
         "author": [
@@ -164,11 +254,11 @@
       "ee": "https://doi.org/10.1145/3622780.3623650",
       "url": "https://dblp.org/rec/conf/splash/CanicoS23"
     },
-    "url": "URL#647095"
+    "url": "URL#732673"
   },
   {
     "@score": "1",
-    "@id": "1077101",
+    "@id": "1163514",
     "info": {
       "authors": {
         "author": [
@@ -197,11 +287,11 @@
       "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2022.2",
       "url": "https://dblp.org/rec/conf/icpec/Alfredo0G22"
     },
-    "url": "URL#1077101"
+    "url": "URL#1163514"
   },
   {
     "@score": "1",
-    "@id": "1104371",
+    "@id": "1190784",
     "info": {
       "authors": {
         "author": [
@@ -234,11 +324,11 @@
       "ee": "https://doi.org/10.1145/3502718.3524761",
       "url": "https://dblp.org/rec/conf/iticse/SantosSGL22"
     },
-    "url": "URL#1104371"
+    "url": "URL#1190784"
   },
   {
     "@score": "1",
-    "@id": "1576256",
+    "@id": "1662984",
     "info": {
       "authors": {
         "author": [
@@ -279,11 +369,11 @@
       "ee": "https://doi.org/10.1145/3430665.3456343",
       "url": "https://dblp.org/rec/conf/iticse/ChiodiniSGTSH21"
     },
-    "url": "URL#1576256"
+    "url": "URL#1662984"
   },
   {
     "@score": "1",
-    "@id": "1579009",
+    "@id": "1665737",
     "info": {
       "authors": {
         "author": [
@@ -312,11 +402,11 @@
       "ee": "https://doi.org/10.1109/ICPC52881.2021.00054",
       "url": "https://dblp.org/rec/conf/iwpc/Lehtinen0S21"
     },
-    "url": "URL#1579009"
+    "url": "URL#1665737"
   },
   {
     "@score": "1",
-    "@id": "1601075",
+    "@id": "1687865",
     "info": {
       "authors": {
         "author": {
@@ -335,11 +425,11 @@
       "ee": "https://doi.org/10.1145/3464432.3464435",
       "url": "https://dblp.org/rec/conf/programming/Santos21"
     },
-    "url": "URL#1601075"
+    "url": "URL#1687865"
   },
   {
     "@score": "1",
-    "@id": "2044548",
+    "@id": "2131458",
     "info": {
       "authors": {
         "author": {
@@ -358,11 +448,11 @@
       "ee": "https://doi.org/10.1145/3397537.3397561",
       "url": "https://dblp.org/rec/conf/programming/Santos20"
     },
-    "url": "URL#2044548"
+    "url": "URL#2131458"
   },
   {
     "@score": "1",
-    "@id": "2845508",
+    "@id": "2933343",
     "info": {
       "authors": {
         "author": {
@@ -381,11 +471,11 @@
       "ee": "https://doi.org/10.1145/3279720.3279732",
       "url": "https://dblp.org/rec/conf/kolicalling/Santos18"
     },
-    "url": "URL#2845508"
+    "url": "URL#2933343"
   },
   {
     "@score": "1",
-    "@id": "3029336",
+    "@id": "3117446",
     "info": {
       "authors": {
         "author": [
@@ -411,11 +501,11 @@
       "ee": "https://doi.org/10.1016/j.jss.2016.12.036",
       "url": "https://dblp.org/rec/journals/jss/SantosM17"
     },
-    "url": "URL#3029336"
+    "url": "URL#3117446"
   },
   {
     "@score": "1",
-    "@id": "3029337",
+    "@id": "3117447",
     "info": {
       "authors": {
         "author": [
@@ -449,11 +539,11 @@
       "ee": "https://doi.org/10.1016/j.jss.2016.06.063",
       "url": "https://dblp.org/rec/journals/jss/SantosPSR17"
     },
-    "url": "URL#3029337"
+    "url": "URL#3117447"
   },
   {
     "@score": "1",
-    "@id": "3057739",
+    "@id": "3145849",
     "info": {
       "authors": {
         "author": {
@@ -474,11 +564,11 @@
       "ee": "https://doi.org/10.1002/spe.2428",
       "url": "https://dblp.org/rec/journals/spe/Santos17"
     },
-    "url": "URL#3057739"
+    "url": "URL#3145849"
   },
   {
     "@score": "1",
-    "@id": "3201156",
+    "@id": "3289280",
     "info": {
       "authors": {
         "author": [
@@ -503,11 +593,11 @@
       "ee": "https://doi.org/10.1145/3141880.3141892",
       "url": "https://dblp.org/rec/conf/kolicalling/0001S17"
     },
-    "url": "URL#3201156"
+    "url": "URL#3289280"
   },
   {
     "@score": "1",
-    "@id": "3201187",
+    "@id": "3289311",
     "info": {
       "authors": {
         "author": [
@@ -532,11 +622,11 @@
       "ee": "https://doi.org/10.1145/3141880.3141911",
       "url": "https://dblp.org/rec/conf/kolicalling/SantosS17"
     },
-    "url": "URL#3201187"
+    "url": "URL#3289311"
   },
   {
     "@score": "1",
-    "@id": "3432142",
+    "@id": "3520381",
     "info": {
       "authors": {
         "author": [
@@ -561,11 +651,11 @@
       "ee": "https://doi.org/10.1109/CBSE.2016.16",
       "url": "https://dblp.org/rec/conf/cbse/SantosA16"
     },
-    "url": "URL#3432142"
+    "url": "URL#3520381"
   },
   {
     "@score": "1",
-    "@id": "3496192",
+    "@id": "3584431",
     "info": {
       "authors": {
         "author": [
@@ -590,11 +680,11 @@
       "ee": "https://doi.org/10.1007/978-3-319-35122-3_19",
       "url": "https://dblp.org/rec/conf/icsr/SantosC16"
     },
-    "url": "URL#3496192"
+    "url": "URL#3584431"
   },
   {
     "@score": "1",
-    "@id": "3554466",
+    "@id": "3642705",
     "info": {
       "authors": {
         "author": [
@@ -618,11 +708,11 @@
       "ee": "http://dl.acm.org/citation.cfm?id=2997377",
       "url": "https://dblp.org/rec/conf/sle/SantosG16"
     },
-    "url": "URL#3554466"
+    "url": "URL#3642705"
   },
   {
     "@score": "1",
-    "@id": "3835384",
+    "@id": "3923759",
     "info": {
       "authors": {
         "author": {
@@ -641,11 +731,11 @@
       "ee": "https://doi.org/10.1145/2828959.2828972",
       "url": "https://dblp.org/rec/conf/kolicalling/Santos15"
     },
-    "url": "URL#3835384"
+    "url": "URL#3923759"
   },
   {
     "@score": "1",
-    "@id": "4001128",
+    "@id": "4089640",
     "info": {
       "authors": {
         "author": {
@@ -666,11 +756,11 @@
       "ee": "https://doi.org/10.1002/smr.1650",
       "url": "https://dblp.org/rec/journals/smr/Santos14"
     },
-    "url": "URL#4001128"
+    "url": "URL#4089640"
   },
   {
     "@score": "1",
-    "@id": "4129769",
+    "@id": "4218289",
     "info": {
       "authors": {
         "author": {
@@ -689,11 +779,11 @@
       "ee": "https://doi.org/10.1145/2674683.2674693",
       "url": "https://dblp.org/rec/conf/kolicalling/Santos14"
     },
-    "url": "URL#4129769"
+    "url": "URL#4218289"
   },
   {
     "@score": "1",
-    "@id": "4681232",
+    "@id": "4770192",
     "info": {
       "authors": {
         "author": {
@@ -712,11 +802,11 @@
       "ee": "https://doi.org/10.1145/2325296.2325320",
       "url": "https://dblp.org/rec/conf/iticse/Santos12"
     },
-    "url": "URL#4681232"
+    "url": "URL#4770192"
   },
   {
     "@score": "1",
-    "@id": "4681233",
+    "@id": "4770193",
     "info": {
       "authors": {
         "author": {
@@ -735,11 +825,11 @@
       "ee": "https://doi.org/10.1145/2325296.2325394",
       "url": "https://dblp.org/rec/conf/iticse/Santos12a"
     },
-    "url": "URL#4681233"
+    "url": "URL#4770193"
   },
   {
     "@score": "1",
-    "@id": "4720175",
+    "@id": "4809135",
     "info": {
       "authors": {
         "author": {
@@ -758,11 +848,11 @@
       "ee": "https://doi.org/10.1109/VLHCC.2012.6344495",
       "url": "https://dblp.org/rec/conf/vl/Santos12"
     },
-    "url": "URL#4720175"
+    "url": "URL#4809135"
   },
   {
     "@score": "1",
-    "@id": "4720176",
+    "@id": "4809136",
     "info": {
       "authors": {
         "author": {
@@ -781,11 +871,11 @@
       "ee": "https://doi.org/10.1109/VLHCC.2012.6344545",
       "url": "https://dblp.org/rec/conf/vl/Santos12a"
     },
-    "url": "URL#4720176"
+    "url": "URL#4809136"
   },
   {
     "@score": "1",
-    "@id": "4937771",
+    "@id": "5026881",
     "info": {
       "authors": {
         "author": {
@@ -804,11 +894,11 @@
       "ee": "https://doi.org/10.1145/1999747.1999762",
       "url": "https://dblp.org/rec/conf/iticse/Santos11"
     },
-    "url": "URL#4937771"
+    "url": "URL#5026881"
   },
   {
     "@score": "1",
-    "@id": "5055808",
+    "@id": "5145055",
     "info": {
       "authors": {
         "author": [
@@ -839,11 +929,11 @@
       "ee": "https://doi.org/10.1016/j.jss.2010.01.047",
       "url": "https://dblp.org/rec/journals/jss/SantosKL10"
     },
-    "url": "URL#5055808"
+    "url": "URL#5145055"
   },
   {
     "@score": "1",
-    "@id": "5298328",
+    "@id": "5387712",
     "info": {
       "authors": {
         "author": [
@@ -886,11 +976,11 @@
       "ee": "https://doi.org/10.1002/spe.893",
       "url": "https://dblp.org/rec/journals/spe/HammoudaRSSKS09"
     },
-    "url": "URL#5298328"
+    "url": "URL#5387712"
   },
   {
     "@score": "1",
-    "@id": "5563436",
+    "@id": "5652961",
     "info": {
       "authors": {
         "author": [
@@ -913,11 +1003,11 @@
       "ee": "https://ceur-ws.org/Vol-610/paper07.pdf",
       "url": "https://dblp.org/rec/conf/europlop/SantosK08"
     },
-    "url": "URL#5563436"
+    "url": "URL#5652961"
   },
   {
     "@score": "1",
-    "@id": "5633947",
+    "@id": "5723472",
     "info": {
       "authors": {
         "author": [
@@ -946,11 +1036,11 @@
       "ee": "https://doi.org/10.1109/SPLC.2008.17",
       "url": "https://dblp.org/rec/conf/splc/SantosKL08"
     },
-    "url": "URL#5633947"
+    "url": "URL#5723472"
   },
   {
     "@score": "1",
-    "@id": "5736250",
+    "@id": "5825906",
     "info": {
       "authors": {
         "author": [
@@ -979,11 +1069,11 @@
       "ee": "https://doi.org/10.1145/1218563.1218566",
       "url": "https://dblp.org/rec/conf/aosd/SantosLK07"
     },
-    "url": "URL#5736250"
+    "url": "URL#5825906"
   },
   {
     "@score": "1",
-    "@id": "5770931",
+    "@id": "5860605",
     "info": {
       "authors": {
         "author": [
@@ -1016,11 +1106,11 @@
       "ee": "https://doi.org/10.1109/ICALT.2007.100",
       "url": "https://dblp.org/rec/conf/icalt/HammoudaJSK07"
     },
-    "url": "URL#5770931"
+    "url": "URL#5860605"
   },
   {
     "@score": "1",
-    "@id": "5813509",
+    "@id": "5903183",
     "info": {
       "authors": {
         "author": {
@@ -1039,11 +1129,11 @@
       "ee": "https://doi.org/10.1145/1297846.1297947",
       "url": "https://dblp.org/rec/conf/oopsla/Santos07"
     },
-    "url": "URL#5813509"
+    "url": "URL#5903183"
   },
   {
     "@score": "1",
-    "@id": "5893506",
+    "@id": "5983309",
     "info": {
       "authors": {
         "author": [
@@ -1072,11 +1162,11 @@
       "key": "journals/njc/SantosKL06",
       "url": "https://dblp.org/rec/journals/njc/SantosKL06"
     },
-    "url": "URL#5893506"
+    "url": "URL#5983309"
   },
   {
     "@score": "1",
-    "@id": "5987500",
+    "@id": "6077392",
     "info": {
       "authors": {
         "author": [
@@ -1103,11 +1193,11 @@
       "key": "conf/jisbd/SantosLK06",
       "url": "https://dblp.org/rec/conf/jisbd/SantosLK06"
     },
-    "url": "URL#5987500"
+    "url": "URL#6077392"
   },
   {
     "@score": "1",
-    "@id": "6001350",
+    "@id": "6091242",
     "info": {
       "authors": {
         "author": [
@@ -1136,6 +1226,6 @@
       "ee": "https://doi.org/10.1145/1141277.1141465",
       "url": "https://dblp.org/rec/conf/sac/GomesSS06"
     },
-    "url": "URL#6001350"
+    "url": "URL#6091242"
   }
 ]
