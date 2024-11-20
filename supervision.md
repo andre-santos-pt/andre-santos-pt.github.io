@@ -24,3 +24,5 @@ I was the main MSc advisor of the following students:
 - [José Lopes](https://www.linkedin.com/in/jose-fau-lopes/)
 - [Alexandre Cancelinha](https://www.linkedin.com/in/alexandre-cancelinha-9849081a3/) (co-advisor: [Fernando Batista](https://ciencia.iscte-iul.pt/authors/fernando-batista))
 - [Ângelo Mendonça](https://www.linkedin.com/in/ângelo-miguel-de-lima-mendonça-1b657b1b9/)
+- [Afonso Caniço](https://www.linkedin.com/in/afonso-canico/)
+- [Rodrigo Mourato](https://www.linkedin.com/in/rodrigo-mourato-26449b1a3/)
