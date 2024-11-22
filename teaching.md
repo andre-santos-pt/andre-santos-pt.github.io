@@ -4,6 +4,11 @@ layout: single
 ---
 
 ### 2023/2024
+- Introduction to Programming (coordinator)
+- Advanced Programming [Master programs] (coordinator)
+- Engineering of Programming Languages (coordinator)
+
+### 2023/2024
 - Advanced Programming [Master programs] (coordinator)
 - Engineering of Programming Languages (coordinator)
 - Introduction to Programming

@@ -26,9 +26,12 @@ layout: single
 
 ***
 
-I'm organizing [ICPEC'24](http://icpeconf.org/2024) in Lisbon (27-28 June), check it out if you have interest in programming education.
+I organized [ICPEC'24](http://icpeconf.org/2024).
 
-[![](logo_icpec.png)](http://icpeconf.org/2024)
+I served as a reviewer for:
+- [ITiCSE (several editions)](https://iticse.acm.org)
+- [Koli Calling (several editions)](https://www.kolicalling.fi)
+- [SPLASH-E'24](https://2024.splashcon.org/track/splash-2024-SPLASH-E)
 
 ***
 
