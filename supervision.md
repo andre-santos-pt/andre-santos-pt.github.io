@@ -26,3 +26,5 @@ I was the main MSc advisor of the following students:
 - [Ângelo Mendonça](https://www.linkedin.com/in/ângelo-miguel-de-lima-mendonça-1b657b1b9/)
 - [Afonso Caniço](https://www.linkedin.com/in/afonso-canico/)
 - [Rodrigo Mourato](https://www.linkedin.com/in/rodrigo-mourato-26449b1a3/)
+- [Afonso Neves](https://www.linkedin.com/in/afonsocentenoneves/) (co-advisor: [Sancho Oliveira](https://ciencia.iscte-iul.pt/authors/sancho-moura-oliveira/cv))
+- [Afonso Sampaio](https://www.linkedin.com/in/afonsopsampaio/) (co-advisor: [Sancho Oliveira](https://ciencia.iscte-iul.pt/authors/sancho-moura-oliveira/cv))
