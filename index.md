@@ -10,7 +10,6 @@ layout: single
 ### [Assistant Professor](https://ciencia.iscte-iul.pt/authors/andre-leal-santos/cv), [Iscte (Instituto Universitário de Lisboa)](http://www.iscte-iul.pt)
 
 #### [Teaching activity](teaching)
-#### [Supervision of MSc students](supervision)
 <br>
 <br>
 <br>
@@ -23,17 +22,14 @@ layout: single
 
 - Visiting researcher at [Aalto University](https://www.aalto.fi/en), [LeTech - Learning + Technology](https://research.cs.aalto.fi/LeTech/) (2020), hosted by [Lauri Malmi](http://www.cs.hut.fi/~lma)
 
+***
+#### PhD students
+- [Afonso Caniço](https://www.linkedin.com/in/afonso-canico/)
+- [Ricardo Miranda](https://www.linkedin.com/in/ricardocmiranda/)
 
+#### [MSc students](supervision)
 ***
 
-I organized [ICPEC'24](http://icpeconf.org/2024).
-
-I served as a reviewer for:
-- [ITiCSE (several editions)](https://iticse.acm.org)
-- [Koli Calling (several editions)](https://www.kolicalling.fi)
-- [SPLASH-E'24](https://2024.splashcon.org/track/splash-2024-SPLASH-E)
-
-***
 
 ![](kotlin.png) **Digital book on Kotlin:**  [Programação Multiparadigma em Kotlin](kotlin)  (*Português*)
 
@@ -46,19 +42,23 @@ In broad terms, my research activity is mostly related to Human Aspects of Softw
 - [Complete list of publications](publications)
 - [Google Scholar profile](https://scholar.google.com/citations?hl=pt-PT&user=sYMVDNgAAAAJ&view_op=list_works){:target="_blank"}
 
-<br>
-
 *The following links lead to sections containing an overview of my research organised by themes.*
 
 #### <i class="fa fa-handshake-o fa-lg"></i> [API Usability](apiusability)
 #### <i class="fa fa-book fa-lg"></i> [Programming Education](programmingeducation)
 #### <i class="fa fa-language fa-lg"></i> [Domain-Specific Languages](dsl)
-
+#### <i class="fa fa-indent fa-lg"></i> [Projectional Editors](projectional)
 <!--
 #### <i class="fa fa-gears fa-lg"></i> [Software Maintenance and Evolution](maintenance)
-#### <i class="fa fa-indent fa-lg"></i> [Projectional Editors](editors)
 -->
 
+***
+I organized [ICPEC'24](http://icpeconf.org/2024).
+
+I served in the Program Committee of:
+- [ITiCSE (several editions)](https://iticse.acm.org)
+- [Koli Calling (several editions)](https://www.kolicalling.fi)
+- [SPLASH-E'24](https://2024.splashcon.org/track/splash-2024-SPLASH-E)
 
 ***
 

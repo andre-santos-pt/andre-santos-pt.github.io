@@ -13,7 +13,7 @@ layout: single
 >
 > I work on tools to facilitate understanding of program state (variable behaviour) and programming metaphors (object-orientation).
 
-*Click on the icon <i class="fa fa-book"></i> to see related publications.*
+*Click on <i class="fa fa-book"></i> to see related publications;  <i class="fa fa-github"></i> to visit the repository on Github.*
 
 ***
 ## Jinter
@@ -29,7 +29,7 @@ layout: single
 
 ***
 
-## PandionJ
+## PandionJ  <a href="https://github.com/andre-santos-pt/pandionj"><i class="fa fa-github fa-lg"></i></a>
 
 {% include pub topic="PandionJ" papers="conf/kolicalling/Santos18,conf/kolicalling/SantosS17,conf/kolicalling/0001S17" %} An educational Java debugger that leverages on detecting variable roles to provide rich are meaningful visualisations of state. This work was initially developed in the MSc thesis of [Hugo Sousa](https://www.linkedin.com/in/hugo-sousa-43456928/){:target="_blank"}.
 
