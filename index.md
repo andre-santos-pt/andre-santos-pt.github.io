@@ -47,18 +47,20 @@ In broad terms, my research activity is mostly related to Human Aspects of Softw
 #### <i class="fa fa-handshake-o fa-lg"></i> [API Usability](apiusability)
 #### <i class="fa fa-book fa-lg"></i> [Programming Education](programmingeducation)
 #### <i class="fa fa-language fa-lg"></i> [Domain-Specific Languages](dsl)
-#### <i class="fa fa-indent fa-lg"></i> [Projectional Editors](projectional)
-<!--
 #### <i class="fa fa-gears fa-lg"></i> [Software Maintenance and Evolution](maintenance)
--->
+#### <i class="fa fa-indent fa-lg"></i> [Projectional Editors](projectional)
 
 ***
-I organized [ICPEC'24](http://icpeconf.org/2024).
 
-I served in the Program Committee of:
-- [ITiCSE (several editions)](https://iticse.acm.org)
-- [Koli Calling (several editions)](https://www.kolicalling.fi)
-- [SPLASH-E'24](https://2024.splashcon.org/track/splash-2024-SPLASH-E)
+*I've been actively involved in the Computing Education community:*
+
+- I organized [ICPEC'24](http://icpeconf.org/2024).
+- I served in the Program Committee of:
+    - [ITiCSE (several editions)](https://iticse.acm.org)
+    - [Koli Calling (several editions)](https://www.kolicalling.fi)
+    - [SPLASH-E'24](https://2024.splashcon.org/track/splash-2024-SPLASH-E)
+- I'm a member of the International Committee of the [SIGSCE Technical Symposium](https://sigcse2023.sigcse.org).
+- I participated in the Dagstuhl Seminar on [Notional Machines and Programming Language Semantics in Education](http://www.dagstuhl.de/19281){:target="_blank"}.
 
 ***
 

@@ -7,7 +7,7 @@ layout: single
 >
 > My [PhD thesis](docs/AndreLSantosPhD.pdf){:target="_blank"} addressed the development of APIs for Object-Oriented Frameworks that allow instantiation code to closely resemble domain concepts, and in turn, facilitate the definition of a DSL for developing applications based on a given framework.
 
-*Click on the icon <i class="fa fa-book"></i> to see related publications.*
+*Click on <i class="fa fa-book"></i> to see related publications;  <i class="fa fa-github"></i> to visit the repository on Github.*
 
 ***
 
@@ -20,14 +20,16 @@ The ALFAMA workbench is a prototype that automatizes the definition of the abstr
 
 ***
 
-## Configuration of plugin-based systems using feature models
-{% include pub topic="EquinoxPlugins" papers="journals/spe/Santos17" %} An approach for managing the variability offered by the plugin-based system of Eclipse ([Equinox/OGSi](https://www.eclipse.org/equinox/){:target="_blank"}) by means of feature models -- these are manipulated as a technical DSL to define valid system configurations.
+## Jedi <a href="https://github.com/andre-santos-pt/lombok-jedi"><i class="fa fa-github fa-lg"></i></a>
+{% include pub topic="Jedi" papers="conf/icsr/SantosC16" %} Java language extensions (via annotations) for design pattern instantiation. Built as [Lombok](https://projectlombok.org) plugins.
 
- ![Plugins as features](images/equinoxplugins.jpg)
+![Jedi](images/jedi.png){: style="width: 600px; margin-right: 2em;"}
 
- ***
 
-## XDiagram
+***
+
+
+## XDiagram <a href="https://github.com/andre-santos-pt/xdiagram"><i class="fa fa-github fa-lg"></i></a>
 {% include pub topic="XDiagram" papers="conf/sle/SantosG16" %} A technical DSL to define graphical DSLs in the ecosystem of Eclipse ([EMF](https://www.eclipse.org/modeling/emf/){:target="_blank"}).
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/7S9qzrLoY2c" frameborder="0" allowfullscreen></iframe>
