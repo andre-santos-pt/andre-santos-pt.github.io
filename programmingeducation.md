@@ -8,25 +8,35 @@ layout: single
 >
 > I was involved in the organization of catalog of programming misconceptions (see <https://progmiscon.org>{:target="_blank"}, in collaboration with the [LuCE Research Lab](https://luce.si.usi.ch){:target="_blank"}).
 
-*Click on <i class="fa fa-book"></i> to see related publications;  <i class="fa fa-github"></i> to visit the repository on Github.*
+{% include iconinfo %}
 
 ***
-## Jinter
-{% include pub topic="Jinter" papers="conf/iticse/GoncalvesS23" %} A system capable of generating feedback hints about how to proceed or fix a Java exercise targeting the first stages of programming learning. This work was developed in the MSc thesis of [Jorge Gonçalves](https://www.linkedin.com/in/jorge-gonçalves-77b56380/){:target="_blank"}.
+
+{% include topic name="Jinter" title="Jinter" papers="conf/iticse/GoncalvesS23" %}
+
+A system capable of generating feedback hints about how to proceed or fix a Java exercise targeting the first stages of programming learning. 
+
+This work was developed in the MSc thesis of [Jorge Gonçalves](https://www.linkedin.com/in/jorge-gonçalves-77b56380/){:target="_blank"}.
 
  ![Jinter](images/jinter.png)
 
 ***
-## Jask
-{% include pub topic="Jask" papers="conf/iticse/SantosSGL22,conf/iwpc/Lehtinen0S21" %} A system capable of generating questions about the Java code (static and dynamic) targeting the first stages of programming learning. In collaboration with the [LeTech Research Group](https://research.cs.aalto.fi/LeTech/){:target="_blank"}. This work was developed in the MSc thesis of [Tiago Soares](https://www.linkedin.com/in/tiagofmartinho){:target="_blank"}.
+
+{% include topic name="Jask" title="Jask" papers="conf/iticse/SantosSGL22,conf/iwpc/Lehtinen0S21" %}
+
+A system capable of generating questions about the Java code (static and dynamic) targeting the first stages of programming learning. In collaboration with the [LeTech Research Group](https://research.cs.aalto.fi/LeTech/){:target="_blank"}. 
+
+This work was developed in the MSc thesis of [Tiago Soares](https://www.linkedin.com/in/tiagofmartinho){:target="_blank"}.
 
  ![Jask](images/jask.png)
 
 ***
 
-## PandionJ  <a href="https://github.com/andre-santos-pt/pandionj"><i class="fa fa-github fa-lg"></i></a>
+{% include topic name="PandionJ" title="PandionJ" papers="conf/kolicalling/Santos18,conf/kolicalling/SantosS17,conf/kolicalling/0001S17" github="andre-santos-pt/pandionj" %}
 
-{% include pub topic="PandionJ" papers="conf/kolicalling/Santos18,conf/kolicalling/SantosS17,conf/kolicalling/0001S17" %} An educational Java debugger that leverages on detecting variable roles to provide rich are meaningful visualisations of state. This work was initially developed in the MSc thesis of [Hugo Sousa](https://www.linkedin.com/in/hugo-sousa-43456928/){:target="_blank"}.
+An educational Java debugger that leverages on detecting variable roles to provide rich are meaningful visualisations of state.
+
+This work was initially developed in the MSc thesis of [Hugo Sousa](https://www.linkedin.com/in/hugo-sousa-43456928/){:target="_blank"}.
 
 This tool also includes most of the ideas previously developed in AguiaJ. The tool is currently being used at the introductory programming courses of our institution. Downloads and more information available at: <https://pandionj.iscte-iul.pt>{:target="_blank"}
 
@@ -34,7 +44,7 @@ This tool also includes most of the ideas previously developed in AguiaJ. The to
 
 ***
 
-## AguiaJ
+{% include topic name="AguiaJ" title="AguiaJ" papers="conf/kolicalling/Santos14,conf/iticse/Santos12,conf/iticse/Santos11" %}
 
-{% include pub topic="AguiaJ" papers="conf/kolicalling/Santos14,conf/iticse/Santos12,conf/iticse/Santos12a,conf/iticse/Santos11" %} An educational runtime for Java (based on class reflection) that embodies metaphors of object-orientation allowing fast experimentation of objects. (website URL no longer available, [visit the old one](https://sites.google.com/view/aguiaj))
+An educational runtime for Java (based on class reflection) that embodies metaphors of object-orientation allowing fast experimentation of objects. (website URL no longer available, [visit the old one](https://sites.google.com/view/aguiaj))
 <iframe width="420" height="315" src="https://www.youtube.com/embed/3E2GAxCA4h8" frameborder="0" allowfullscreen></iframe>

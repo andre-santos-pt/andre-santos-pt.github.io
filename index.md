@@ -44,11 +44,11 @@ In broad terms, my research activity is mostly related to Human Aspects of Softw
 
 *The following links lead to sections containing an overview of my research organised by themes.*
 
-#### <i class="fa fa-handshake-o fa-lg"></i> [API Usability](apiusability)
-#### <i class="fa fa-book fa-lg"></i> [Programming Education](programmingeducation)
-#### <i class="fa fa-language fa-lg"></i> [Domain-Specific Languages](dsl)
-#### <i class="fa fa-gears fa-lg"></i> [Software Maintenance and Evolution](maintenance)
+#### <i class="fas fa-university fa-lg"></i> [Programming Education](programmingeducation)
 #### <i class="fa fa-indent fa-lg"></i> [Projectional Editors](projectional)
+#### <i class="fas fa-book fa-lg"></i> [API Usability](apiusability)
+#### <i class="fas fa-file-code fa-lg"></i> [Domain-Specific Languages](dsl)
+#### <i class="fas fa-code-branch fa-lg"></i> [Software Maintenance and Evolution](evolution)
 
 ***
 
@@ -65,8 +65,8 @@ In broad terms, my research activity is mostly related to Human Aspects of Softw
 ***
 
 
-<i class="fa fa-envelope fa-2x"></i> <a href="mailto:andre.santos@iscte-iul.pt">andre.santos@iscte-iul.pt</a>
+<i class="fas fa-envelope fa-lg"></i> <a href="mailto:andre.santos@iscte-iul.pt">andre.santos@iscte-iul.pt</a>
 
-<i class="fa fa-github-square fa-2x"></i> <https://github.com/andre-santos-pt>
+<i class="fab fa-github fa-lg"></i> <https://github.com/andre-santos-pt>
 
-<i class="fa fa-linkedin-square fa-2x"></i> <https://www.linkedin.com/in/andré-l-santos-2b7a27ba/>
+<i class="fab fa-linkedin fa-lg"></i> <https://www.linkedin.com/in/andré-l-santos-2b7a27ba/>

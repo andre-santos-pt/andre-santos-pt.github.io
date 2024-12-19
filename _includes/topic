@@ -1,0 +1,25 @@
+
+{% assign papers = include.papers | split: "," %}
+
+<div id="D{{include.name}}" title="Publications" class="pubs">
+<br>
+<ul>
+  {% for pub in site.data.pubs %}
+  {% if papers contains pub.info.key %}
+  <li><a href="{{ pub.info.ee }}" target="_blank">{{ pub.info.title }}</a><br>
+  {% assign authors = pub.info.authors.author | map: "text"  | join: ", " | replace: " 0001", "" %}
+  <i>{{ authors }}</i><br>
+  {{ pub.info.venue }} {{ pub.info.year }}</li><br>
+{% endif %}
+{% endfor %}
+</ul>
+</div>
+
+<h2>{{include.title}}
+{% if include.papers != null %}
+<a class="opener" id="{{include.name}}"><i class="fas fa-file-alt fa-xs"></i></a>
+{% endif %}
+{% if include.github != null %}
+<a href="https://github.com/{{include.github}}" target="_blank"><i class="fab fa-github fa-xs"></i></a>
+{% endif %}
+</h2>
