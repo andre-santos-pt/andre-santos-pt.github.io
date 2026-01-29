@@ -3,6 +3,11 @@ title: Teaching activity
 layout: single
 ---
 
+### 2025/2026
+- Introduction to Programming (coordinator)
+- Advanced Programming [Master programs] (coordinator)
+- Engineering of Programming Languages (coordinator)
+
 ### 2024/2025
 - Introduction to Programming (coordinator)
 - Advanced Programming [Master programs] (coordinator)
