@@ -26,6 +26,7 @@ layout: single
 #### PhD students
 - [Afonso Caniço](https://www.linkedin.com/in/afonso-canico/)
 - [Ricardo Miranda](https://www.linkedin.com/in/ricardocmiranda/)
+- [Daniel Canoli](https://www.linkedin.com/in/danielcanoli/)
 
 #### [MSc students](supervision)
 ***
