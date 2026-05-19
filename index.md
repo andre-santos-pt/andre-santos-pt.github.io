@@ -55,13 +55,14 @@ In broad terms, my research activity is mostly related to Human Aspects of Softw
 
 *I've been actively involved in the Computing Education community:*
 
-- I organized [ICPEC'24](http://icpeconf.org/2024).
-- I served in the Program Committee of:
+- I've organized [ICPEC'24](http://icpeconf.org/2024) and [SLATE'26](https://slate-conf.org/2026)
+- I've served in the Program Committee of:
     - [ITiCSE (several editions)](https://iticse.acm.org)
     - [Koli Calling (several editions)](https://www.kolicalling.fi)
     - [SPLASH-E'24](https://2024.splashcon.org/track/splash-2024-SPLASH-E)
-- I'm a member of the International Committee of the [SIGSCE Technical Symposium](https://sigcse2023.sigcse.org).
-- I participated in the Dagstuhl Seminar on [Notional Machines and Programming Language Semantics in Education](http://www.dagstuhl.de/19281){:target="_blank"}.
+- I'm involved in the organization of [SIGCSE Virtual](https://sigcsevirtual2026.acm.org) 
+- I'm a member of the International Committee of the [SIGSCE Technical Symposium](https://sigcse2023.sigcse.org)
+- I've participated in the Dagstuhl Seminar on [Notional Machines and Programming Language Semantics in Education](http://www.dagstuhl.de/19281){:target="_blank"}.
 
 ***
 
