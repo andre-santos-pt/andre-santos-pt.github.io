@@ -6,6 +6,34 @@
       "authors": {
         "author": [
           {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "382/2951",
+            "text": "Afonso B. Caniço"
+          }
+        ]
+      },
+      "title": "Modeling structured programming with Strudel: a simulation runtime for programming education tools",
+      "venue": "Software and Systems Modeling",
+      "pages": null,
+      "year": "2025",
+      "type": "Journal Papers",
+      "access": "open",
+      "key": "journals/sosym/Santos25",
+      "doi": "10.1007/s10270-025-01337-7",
+      "ee": "https://link.springer.com/article/10.1007/s10270-025-01337-7"
+    },
+    "url": "URL#230024"
+  },
+  {
+    "@score": "1",
+    "@id": "516408",
+    "info": {
+      "authors": {
+        "author": [
+          {
             "@pid": "382/2951",
             "text": "Afonso B. Caniço"
           },
@@ -26,69 +54,71 @@
       "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2025.5",
       "url": "https://dblp.org/rec/conf/icpec/Canico025"
     },
-    "url": "URL#230024"
+    "url": "URL#516408"
   },
   {
     "@score": "1",
-    "@id": "715408",
+    "@id": "1210700",
     "info": {
       "authors": {
         "author": [
           {
-            "@pid": "382/2951",
-            "text": "Afonso B. Caniço"
-          },
-          {
             "@pid": "16/268",
             "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "85/4416",
+            "text": "Maria Pinto-Albuquerque"
           }
         ]
       },
-      "title": "A Domain-Specific Language for Dynamic White-Box Evaluation of Java Assignments.",
-      "venue": "ICPEC",
-      "pages": "2:1-2:13",
+      "title": "5th International Computer Programming Education Conference, ICPEC 2024, Lisbon, Portugal, June 27-28, 2024",
+      "venue": [
+        "ICPEC",
+        "OASIcs"
+      ],
+      "volume": "122",
+      "publisher": "Schloss Dagstuhl - Leibniz-Zentrum für Informatik",
       "year": "2024",
-      "type": "Conference and Workshop Papers",
+      "type": "Editorship",
       "access": "open",
-      "key": "conf/icpec/Canico024",
-      "doi": "10.4230/OASICS.ICPEC.2024.2",
-      "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2024.2",
-      "url": "https://dblp.org/rec/conf/icpec/Canico024"
+      "key": "conf/icpec/2024",
+      "ee": "https://www.dagstuhl.de/dagpub/978-3-95977-347-8",
+      "url": "https://dblp.org/rec/conf/icpec/2024"
     },
-    "url": "URL#715408"
+    "url": "URL#1210700"
   },
   {
     "@score": "1",
-    "@id": "715416",
+    "@id": "1176315",
     "info": {
       "authors": {
         "author": [
           {
-            "@pid": "385/9404",
-            "text": "Rodrigo Mourato"
-          },
-          {
             "@pid": "16/268",
             "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "380/0218",
+            "text": "Ângelo Mendonça"
           }
         ]
       },
-      "title": "Educational Program Visualizations Using Synthetized Execution Information.",
-      "venue": "ICPEC",
-      "pages": "10:1-10:8",
+      "title": "Autocorrection in Projectional Editors.",
+      "venue": "Programming",
       "year": "2024",
       "type": "Conference and Workshop Papers",
-      "access": "open",
-      "key": "conf/icpec/Mourato024",
-      "doi": "10.4230/OASICS.ICPEC.2024.10",
-      "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2024.10",
-      "url": "https://dblp.org/rec/conf/icpec/Mourato024"
+      "access": "closed",
+      "key": "conf/programming/SantosM24",
+      "doi": "10.1145/3660829.3660844",
+      "ee": "https://doi.org/10.1145/3660829.3660844",
+      "url": "https://dblp.org/rec/conf/programming/SantosM24"
     },
-    "url": "URL#715416"
+    "url": "URL#1176315"
   },
   {
     "@score": "1",
-    "@id": "724025",
+    "@id": "1120314",
     "info": {
       "authors": {
         "author": [
@@ -117,100 +147,46 @@
       "ee": "https://doi.org/10.1145/3643796.3648449",
       "url": "https://dblp.org/rec/conf/ide/SantosCB24"
     },
-    "url": "URL#724025"
+    "url": "URL#1120314"
   },
   {
     "@score": "1",
-    "@id": "778840",
+    "@id": "1111666",
     "info": {
       "authors": {
         "author": [
           {
-            "@pid": "16/268",
-            "text": "André L. Santos 0001"
+            "@pid": "385/9404",
+            "text": "Rodrigo Mourato"
           },
-          {
-            "@pid": "380/0218",
-            "text": "Ângelo Mendonça"
-          }
-        ]
-      },
-      "title": "Autocorrection in Projectional Editors.",
-      "venue": "Programming",
-      "year": "2024",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/programming/SantosM24",
-      "doi": "10.1145/3660829.3660844",
-      "ee": "https://doi.org/10.1145/3660829.3660844",
-      "url": "https://dblp.org/rec/conf/programming/SantosM24"
-    },
-    "url": "URL#778840"
-  },
-  {
-    "@score": "1",
-    "@id": "812317",
-    "info": {
-      "authors": {
-        "author": [
           {
             "@pid": "16/268",
             "text": "André L. Santos 0001"
-          },
-          {
-            "@pid": "85/4416",
-            "text": "Maria Pinto-Albuquerque"
           }
         ]
       },
-      "title": "5th International Computer Programming Education Conference, ICPEC 2024, June 27-28, 2024, Lisbon, Portugal",
-      "venue": [
-        "ICPEC",
-        "OASIcs"
-      ],
-      "volume": "122",
-      "publisher": "Schloss Dagstuhl - Leibniz-Zentrum für Informatik",
-      "year": "2024",
-      "type": "Editorship",
-      "access": "open",
-      "key": "conf/icpec/2024",
-      "ee": "https://www.dagstuhl.de/dagpub/978-3-95977-347-8",
-      "url": "https://dblp.org/rec/conf/icpec/2024"
-    },
-    "url": "URL#812317"
-  },
-  {
-    "@score": "1",
-    "@id": "1275561",
-    "info": {
-      "authors": {
-        "author": {
-          "@pid": "16/268",
-          "text": "André L. Santos 0001"
-        }
-      },
-      "title": "Shifting programming education assessment from exercise outputs toward deeper comprehension (Invited Talk).",
+      "title": "Educational Program Visualizations Using Synthetized Execution Information.",
       "venue": "ICPEC",
-      "pages": "1:1-1:5",
-      "year": "2023",
+      "pages": "10:1-10:8",
+      "year": "2024",
       "type": "Conference and Workshop Papers",
       "access": "open",
-      "key": "conf/icpec/000123",
-      "doi": "10.4230/OASICS.ICPEC.2023.1",
-      "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2023.1",
-      "url": "https://dblp.org/rec/conf/icpec/000123"
+      "key": "conf/icpec/Mourato024",
+      "doi": "10.4230/OASICS.ICPEC.2024.10",
+      "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2024.10",
+      "url": "https://dblp.org/rec/conf/icpec/Mourato024"
     },
-    "url": "URL#1275561"
+    "url": "URL#1111666"
   },
   {
     "@score": "1",
-    "@id": "1304636",
+    "@id": "1111658",
     "info": {
       "authors": {
         "author": [
           {
-            "@pid": "350/4723",
-            "text": "Jorge A. Gonçalves"
+            "@pid": "382/2951",
+            "text": "Afonso B. Caniço"
           },
           {
             "@pid": "16/268",
@@ -218,80 +194,22 @@
           }
         ]
       },
-      "title": "Jinter: A Hint Generation System for Java Exercises.",
-      "venue": "ITiCSE",
-      "pages": "375-381",
-      "year": "2023",
+      "title": "A Domain-Specific Language for Dynamic White-Box Evaluation of Java Assignments.",
+      "venue": "ICPEC",
+      "pages": "2:1-2:13",
+      "year": "2024",
       "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/iticse/GoncalvesS23",
-      "doi": "10.1145/3587102.3588820",
-      "ee": "https://doi.org/10.1145/3587102.3588820",
-      "url": "https://dblp.org/rec/conf/iticse/GoncalvesS23"
+      "access": "open",
+      "key": "conf/icpec/Canico024",
+      "doi": "10.4230/OASICS.ICPEC.2024.2",
+      "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2024.2",
+      "url": "https://dblp.org/rec/conf/icpec/Canico024"
     },
-    "url": "URL#1304636"
+    "url": "URL#1111658"
   },
   {
     "@score": "1",
-    "@id": "1329340",
-    "info": {
-      "authors": {
-        "author": [
-          {
-            "@pid": "382/2644",
-            "text": "André R. Teles"
-          },
-          {
-            "@pid": "16/268",
-            "text": "André L. Santos 0001"
-          }
-        ]
-      },
-      "title": "Code Merging using Transformations and Member Identity.",
-      "venue": "Onward",
-      "pages": "71-88",
-      "year": "2023",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/onward/TelesS23",
-      "doi": "10.1145/3622758.3622891",
-      "ee": "https://doi.org/10.1145/3622758.3622891",
-      "url": "https://dblp.org/rec/conf/onward/TelesS23"
-    },
-    "url": "URL#1329340"
-  },
-  {
-    "@score": "1",
-    "@id": "1330071",
-    "info": {
-      "authors": {
-        "author": [
-          {
-            "@pid": "382/3207",
-            "text": "José F. Lopes"
-          },
-          {
-            "@pid": "16/268",
-            "text": "André L. Santos 0001"
-          }
-        ]
-      },
-      "title": "PescaJ: A Projectional Editor for Java Featuring Scattered Code Aggregation.",
-      "venue": "PAINT@SPLASH",
-      "pages": "44-50",
-      "year": "2023",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/paint/LopesS23",
-      "doi": "10.1145/3623504.3623571",
-      "ee": "https://doi.org/10.1145/3623504.3623571",
-      "url": "https://dblp.org/rec/conf/paint/LopesS23"
-    },
-    "url": "URL#1330071"
-  },
-  {
-    "@score": "1",
-    "@id": "1349034",
+    "@id": "1749855",
     "info": {
       "authors": {
         "author": [
@@ -316,44 +234,121 @@
       "ee": "https://doi.org/10.1145/3622780.3623650",
       "url": "https://dblp.org/rec/conf/splash/CanicoS23"
     },
-    "url": "URL#1349034"
+    "url": "URL#1749855"
   },
   {
     "@score": "1",
-    "@id": "1785748",
+    "@id": "1730838",
     "info": {
       "authors": {
         "author": [
           {
-            "@pid": "324/0622",
-            "text": "Francisco Alfredo"
+            "@pid": "382/3207",
+            "text": "José F. Lopes"
           },
           {
             "@pid": "16/268",
             "text": "André L. Santos 0001"
-          },
-          {
-            "@pid": "324/0599",
-            "text": "Nuno Garrido"
           }
         ]
       },
-      "title": "Sprinter: A Didactic Linter for Structured Programming.",
-      "venue": "ICPEC",
-      "pages": "2:1-2:8",
-      "year": "2022",
+      "title": "PescaJ: A Projectional Editor for Java Featuring Scattered Code Aggregation.",
+      "venue": "PAINT@SPLASH",
+      "pages": "44-50",
+      "year": "2023",
       "type": "Conference and Workshop Papers",
-      "access": "open",
-      "key": "conf/icpec/Alfredo0G22",
-      "doi": "10.4230/OASICS.ICPEC.2022.2",
-      "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2022.2",
-      "url": "https://dblp.org/rec/conf/icpec/Alfredo0G22"
+      "access": "closed",
+      "key": "conf/paint/LopesS23",
+      "doi": "10.1145/3623504.3623571",
+      "ee": "https://doi.org/10.1145/3623504.3623571",
+      "url": "https://dblp.org/rec/conf/paint/LopesS23"
     },
-    "url": "URL#1785748"
+    "url": "URL#1730838"
   },
   {
     "@score": "1",
-    "@id": "1813385",
+    "@id": "1730107",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "382/2644",
+            "text": "André R. Teles"
+          },
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          }
+        ]
+      },
+      "title": "Code Merging using Transformations and Member Identity.",
+      "venue": "Onward",
+      "pages": "71-88",
+      "year": "2023",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/onward/TelesS23",
+      "doi": "10.1145/3622758.3622891",
+      "ee": "https://doi.org/10.1145/3622758.3622891",
+      "url": "https://dblp.org/rec/conf/onward/TelesS23"
+    },
+    "url": "URL#1730107"
+  },
+  {
+    "@score": "1",
+    "@id": "1705261",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "350/4723",
+            "text": "Jorge A. Gonçalves"
+          },
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          }
+        ]
+      },
+      "title": "Jinter: A Hint Generation System for Java Exercises.",
+      "venue": "ITiCSE",
+      "pages": "375-381",
+      "year": "2023",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/iticse/GoncalvesS23",
+      "doi": "10.1145/3587102.3588820",
+      "ee": "https://doi.org/10.1145/3587102.3588820",
+      "url": "https://dblp.org/rec/conf/iticse/GoncalvesS23"
+    },
+    "url": "URL#1705261"
+  },
+  {
+    "@score": "1",
+    "@id": "1676124",
+    "info": {
+      "authors": {
+        "author": {
+          "@pid": "16/268",
+          "text": "André L. Santos 0001"
+        }
+      },
+      "title": "Shifting programming education assessment from exercise outputs toward deeper comprehension (Invited Talk).",
+      "venue": "ICPEC",
+      "pages": "1:1-1:5",
+      "year": "2023",
+      "type": "Conference and Workshop Papers",
+      "access": "open",
+      "key": "conf/icpec/000123",
+      "doi": "10.4230/OASICS.ICPEC.2023.1",
+      "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2023.1",
+      "url": "https://dblp.org/rec/conf/icpec/000123"
+    },
+    "url": "URL#1676124"
+  },
+  {
+    "@score": "1",
+    "@id": "2215563",
     "info": {
       "authors": {
         "author": [
@@ -386,11 +381,100 @@
       "ee": "https://doi.org/10.1145/3502718.3524761",
       "url": "https://dblp.org/rec/conf/iticse/SantosSGL22"
     },
-    "url": "URL#1813385"
+    "url": "URL#2215563"
   },
   {
     "@score": "1",
-    "@id": "2289652",
+    "@id": "2187926",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "324/0622",
+            "text": "Francisco Alfredo"
+          },
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "324/0599",
+            "text": "Nuno Garrido"
+          }
+        ]
+      },
+      "title": "Sprinter: A Didactic Linter for Structured Programming.",
+      "venue": "ICPEC",
+      "pages": "2:1-2:8",
+      "year": "2022",
+      "type": "Conference and Workshop Papers",
+      "access": "open",
+      "key": "conf/icpec/Alfredo0G22",
+      "doi": "10.4230/OASICS.ICPEC.2022.2",
+      "ee": "https://doi.org/10.4230/OASIcs.ICPEC.2022.2",
+      "url": "https://dblp.org/rec/conf/icpec/Alfredo0G22"
+    },
+    "url": "URL#2187926"
+  },
+  {
+    "@score": "1",
+    "@id": "2717509",
+    "info": {
+      "authors": {
+        "author": {
+          "@pid": "16/268",
+          "text": "André L. Santos 0001"
+        }
+      },
+      "title": "Javardeye: Gaze Input for Cursor Control in a Structured Editor.",
+      "venue": "Programming",
+      "pages": "31-35",
+      "year": "2021",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/programming/Santos21",
+      "doi": "10.1145/3464432.3464435",
+      "ee": "https://doi.org/10.1145/3464432.3464435",
+      "url": "https://dblp.org/rec/conf/programming/Santos21"
+    },
+    "url": "URL#2717509"
+  },
+  {
+    "@score": "1",
+    "@id": "2695213",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "119/2436",
+            "text": "Teemu Lehtinen"
+          },
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "26/4827",
+            "text": "Juha Sorva"
+          }
+        ]
+      },
+      "title": "Let&apos;s Ask Students About Their Programs, Automatically.",
+      "venue": "ICPC",
+      "pages": "467-475",
+      "year": "2021",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/iwpc/Lehtinen0S21",
+      "doi": "10.1109/ICPC52881.2021.00054",
+      "ee": "https://doi.org/10.1109/ICPC52881.2021.00054",
+      "url": "https://dblp.org/rec/conf/iwpc/Lehtinen0S21"
+    },
+    "url": "URL#2695213"
+  },
+  {
+    "@score": "1",
+    "@id": "2692460",
     "info": {
       "authors": {
         "author": [
@@ -431,67 +515,11 @@
       "ee": "https://doi.org/10.1145/3430665.3456343",
       "url": "https://dblp.org/rec/conf/iticse/ChiodiniSGTSH21"
     },
-    "url": "URL#2289652"
+    "url": "URL#2692460"
   },
   {
     "@score": "1",
-    "@id": "2292405",
-    "info": {
-      "authors": {
-        "author": [
-          {
-            "@pid": "119/2436",
-            "text": "Teemu Lehtinen"
-          },
-          {
-            "@pid": "16/268",
-            "text": "André L. Santos 0001"
-          },
-          {
-            "@pid": "26/4827",
-            "text": "Juha Sorva"
-          }
-        ]
-      },
-      "title": "Let&apos;s Ask Students About Their Programs, Automatically.",
-      "venue": "ICPC",
-      "pages": "467-475",
-      "year": "2021",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/iwpc/Lehtinen0S21",
-      "doi": "10.1109/ICPC52881.2021.00054",
-      "ee": "https://doi.org/10.1109/ICPC52881.2021.00054",
-      "url": "https://dblp.org/rec/conf/iwpc/Lehtinen0S21"
-    },
-    "url": "URL#2292405"
-  },
-  {
-    "@score": "1",
-    "@id": "2314583",
-    "info": {
-      "authors": {
-        "author": {
-          "@pid": "16/268",
-          "text": "André L. Santos 0001"
-        }
-      },
-      "title": "Javardeye: Gaze Input for Cursor Control in a Structured Editor.",
-      "venue": "Programming",
-      "pages": "31-35",
-      "year": "2021",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/programming/Santos21",
-      "doi": "10.1145/3464432.3464435",
-      "ee": "https://doi.org/10.1145/3464432.3464435",
-      "url": "https://dblp.org/rec/conf/programming/Santos21"
-    },
-    "url": "URL#2314583"
-  },
-  {
-    "@score": "1",
-    "@id": "2760740",
+    "@id": "3164309",
     "info": {
       "authors": {
         "author": {
@@ -510,11 +538,11 @@
       "ee": "https://doi.org/10.1145/3397537.3397561",
       "url": "https://dblp.org/rec/conf/programming/Santos20"
     },
-    "url": "URL#2760740"
+    "url": "URL#3164309"
   },
   {
     "@score": "1",
-    "@id": "3566080",
+    "@id": "3970216",
     "info": {
       "authors": {
         "author": {
@@ -533,11 +561,11 @@
       "ee": "https://doi.org/10.1145/3279720.3279732",
       "url": "https://dblp.org/rec/conf/kolicalling/Santos18"
     },
-    "url": "URL#3566080"
+    "url": "URL#3970216"
   },
   {
     "@score": "1",
-    "@id": "3751026",
+    "@id": "4327588",
     "info": {
       "authors": {
         "author": [
@@ -546,28 +574,81 @@
             "text": "André L. Santos 0001"
           },
           {
-            "@pid": "54/1970",
-            "text": "Brad A. Myers"
+            "@pid": "207/9082",
+            "text": "Hugo S. Sousa"
           }
         ]
       },
-      "title": "Design annotations to improve API discoverability.",
-      "venue": "J. Syst. Softw.",
-      "volume": "126",
-      "pages": "17-33",
+      "title": "PandionJ: a pedagogical debugger featuring illustrations of variable tracing and look-ahead.",
+      "venue": "Koli Calling",
+      "pages": "195-196",
       "year": "2017",
-      "type": "Journal Articles",
+      "type": "Conference and Workshop Papers",
       "access": "closed",
-      "key": "journals/jss/SantosM17",
-      "doi": "10.1016/J.JSS.2016.12.036",
-      "ee": "https://doi.org/10.1016/j.jss.2016.12.036",
-      "url": "https://dblp.org/rec/journals/jss/SantosM17"
+      "key": "conf/kolicalling/SantosS17",
+      "doi": "10.1145/3141880.3141911",
+      "ee": "https://doi.org/10.1145/3141880.3141911",
+      "url": "https://dblp.org/rec/conf/kolicalling/SantosS17"
     },
-    "url": "URL#3751026"
+    "url": "URL#4327588"
   },
   {
     "@score": "1",
-    "@id": "3751027",
+    "@id": "4327557",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "207/9082",
+            "text": "Hugo S. Sousa"
+          }
+        ]
+      },
+      "title": "An exploratory study of how programming instructors illustrate variables and control flow.",
+      "venue": "Koli Calling",
+      "pages": "173-177",
+      "year": "2017",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/kolicalling/0001S17",
+      "doi": "10.1145/3141880.3141892",
+      "ee": "https://doi.org/10.1145/3141880.3141892",
+      "url": "https://dblp.org/rec/conf/kolicalling/0001S17"
+    },
+    "url": "URL#4327557"
+  },
+  {
+    "@score": "1",
+    "@id": "4183811",
+    "info": {
+      "authors": {
+        "author": {
+          "@pid": "16/268",
+          "text": "André L. Santos 0001"
+        }
+      },
+      "title": "Variability management of plugin-based systems using feature models.",
+      "venue": "Softw. Pract. Exp.",
+      "volume": "47",
+      "number": "7",
+      "pages": "959-970",
+      "year": "2017",
+      "type": "Journal Articles",
+      "access": "closed",
+      "key": "journals/spe/Santos17",
+      "doi": "10.1002/SPE.2428",
+      "ee": "https://doi.org/10.1002/spe.2428",
+      "url": "https://dblp.org/rec/journals/spe/Santos17"
+    },
+    "url": "URL#4183811"
+  },
+  {
+    "@score": "1",
+    "@id": "4155339",
     "info": {
       "authors": {
         "author": [
@@ -601,36 +682,41 @@
       "ee": "https://doi.org/10.1016/j.jss.2016.06.063",
       "url": "https://dblp.org/rec/journals/jss/SantosPSR17"
     },
-    "url": "URL#3751027"
+    "url": "URL#4155339"
   },
   {
     "@score": "1",
-    "@id": "3779469",
+    "@id": "4155338",
     "info": {
       "authors": {
-        "author": {
-          "@pid": "16/268",
-          "text": "André L. Santos 0001"
-        }
+        "author": [
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "54/1970",
+            "text": "Brad A. Myers"
+          }
+        ]
       },
-      "title": "Variability management of plugin-based systems using feature models.",
-      "venue": "Softw. Pract. Exp.",
-      "volume": "47",
-      "number": "7",
-      "pages": "959-970",
+      "title": "Design annotations to improve API discoverability.",
+      "venue": "J. Syst. Softw.",
+      "volume": "126",
+      "pages": "17-33",
       "year": "2017",
       "type": "Journal Articles",
       "access": "closed",
-      "key": "journals/spe/Santos17",
-      "doi": "10.1002/SPE.2428",
-      "ee": "https://doi.org/10.1002/spe.2428",
-      "url": "https://dblp.org/rec/journals/spe/Santos17"
+      "key": "journals/jss/SantosM17",
+      "doi": "10.1016/J.JSS.2016.12.036",
+      "ee": "https://doi.org/10.1016/j.jss.2016.12.036",
+      "url": "https://dblp.org/rec/journals/jss/SantosM17"
     },
-    "url": "URL#3779469"
+    "url": "URL#4155338"
   },
   {
     "@score": "1",
-    "@id": "3923218",
+    "@id": "4682237",
     "info": {
       "authors": {
         "author": [
@@ -639,85 +725,26 @@
             "text": "André L. Santos 0001"
           },
           {
-            "@pid": "207/9082",
-            "text": "Hugo S. Sousa"
+            "@pid": "190/7906",
+            "text": "Eduardo Gomes"
           }
         ]
       },
-      "title": "An exploratory study of how programming instructors illustrate variables and control flow.",
-      "venue": "Koli Calling",
-      "pages": "173-177",
-      "year": "2017",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/kolicalling/0001S17",
-      "doi": "10.1145/3141880.3141892",
-      "ee": "https://doi.org/10.1145/3141880.3141892",
-      "url": "https://dblp.org/rec/conf/kolicalling/0001S17"
-    },
-    "url": "URL#3923218"
-  },
-  {
-    "@score": "1",
-    "@id": "3923249",
-    "info": {
-      "authors": {
-        "author": [
-          {
-            "@pid": "16/268",
-            "text": "André L. Santos 0001"
-          },
-          {
-            "@pid": "207/9082",
-            "text": "Hugo S. Sousa"
-          }
-        ]
-      },
-      "title": "PandionJ: a pedagogical debugger featuring illustrations of variable tracing and look-ahead.",
-      "venue": "Koli Calling",
-      "pages": "195-196",
-      "year": "2017",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/kolicalling/SantosS17",
-      "doi": "10.1145/3141880.3141911",
-      "ee": "https://doi.org/10.1145/3141880.3141911",
-      "url": "https://dblp.org/rec/conf/kolicalling/SantosS17"
-    },
-    "url": "URL#3923249"
-  },
-  {
-    "@score": "1",
-    "@id": "4155049",
-    "info": {
-      "authors": {
-        "author": [
-          {
-            "@pid": "16/268",
-            "text": "André L. Santos 0001"
-          },
-          {
-            "@pid": "181/9223",
-            "text": "Ivo Albuquerque"
-          }
-        ]
-      },
-      "title": "VISCTE: Runtime Exploration of Component-Based Systems.",
-      "venue": "CBSE",
-      "pages": "91-96",
+      "title": "Xdiagram: a declarative textual DSL for describing diagram editors (tool demo).",
+      "venue": "SLE",
+      "pages": "253-257",
       "year": "2016",
       "type": "Conference and Workshop Papers",
       "access": "closed",
-      "key": "conf/cbse/SantosA16",
-      "doi": "10.1109/CBSE.2016.16",
-      "ee": "https://doi.org/10.1109/CBSE.2016.16",
-      "url": "https://dblp.org/rec/conf/cbse/SantosA16"
+      "key": "conf/sle/SantosG16",
+      "ee": "http://dl.acm.org/citation.cfm?id=2997377",
+      "url": "https://dblp.org/rec/conf/sle/SantosG16"
     },
-    "url": "URL#4155049"
+    "url": "URL#4682237"
   },
   {
     "@score": "1",
-    "@id": "4219280",
+    "@id": "4623896",
     "info": {
       "authors": {
         "author": [
@@ -742,11 +769,11 @@
       "ee": "https://doi.org/10.1007/978-3-319-35122-3_19",
       "url": "https://dblp.org/rec/conf/icsr/SantosC16"
     },
-    "url": "URL#4219280"
+    "url": "URL#4623896"
   },
   {
     "@score": "1",
-    "@id": "4277615",
+    "@id": "4559665",
     "info": {
       "authors": {
         "author": [
@@ -755,26 +782,27 @@
             "text": "André L. Santos 0001"
           },
           {
-            "@pid": "190/7906",
-            "text": "Eduardo Gomes"
+            "@pid": "181/9223",
+            "text": "Ivo Albuquerque"
           }
         ]
       },
-      "title": "Xdiagram: a declarative textual DSL for describing diagram editors (tool demo).",
-      "venue": "SLE",
-      "pages": "253-257",
+      "title": "VISCTE: Runtime Exploration of Component-Based Systems.",
+      "venue": "CBSE",
+      "pages": "91-96",
       "year": "2016",
       "type": "Conference and Workshop Papers",
       "access": "closed",
-      "key": "conf/sle/SantosG16",
-      "ee": "http://dl.acm.org/citation.cfm?id=2997377",
-      "url": "https://dblp.org/rec/conf/sle/SantosG16"
+      "key": "conf/cbse/SantosA16",
+      "doi": "10.1109/CBSE.2016.16",
+      "ee": "https://doi.org/10.1109/CBSE.2016.16",
+      "url": "https://dblp.org/rec/conf/cbse/SantosA16"
     },
-    "url": "URL#4277615"
+    "url": "URL#4559665"
   },
   {
     "@score": "1",
-    "@id": "4559692",
+    "@id": "4964494",
     "info": {
       "authors": {
         "author": {
@@ -793,11 +821,34 @@
       "ee": "https://doi.org/10.1145/2828959.2828972",
       "url": "https://dblp.org/rec/conf/kolicalling/Santos15"
     },
-    "url": "URL#4559692"
+    "url": "URL#4964494"
   },
   {
     "@score": "1",
-    "@id": "4726232",
+    "@id": "5260220",
+    "info": {
+      "authors": {
+        "author": {
+          "@pid": "16/268",
+          "text": "André L. Santos 0001"
+        }
+      },
+      "title": "Novel interaction metaphors for object-oriented programming concepts.",
+      "venue": "Koli Calling",
+      "pages": "117-126",
+      "year": "2014",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/kolicalling/Santos14",
+      "doi": "10.1145/2674683.2674693",
+      "ee": "https://doi.org/10.1145/2674683.2674693",
+      "url": "https://dblp.org/rec/conf/kolicalling/Santos14"
+    },
+    "url": "URL#5260220"
+  },
+  {
+    "@score": "1",
+    "@id": "5131231",
     "info": {
       "authors": {
         "author": {
@@ -818,103 +869,11 @@
       "ee": "https://doi.org/10.1002/smr.1650",
       "url": "https://dblp.org/rec/journals/smr/Santos14"
     },
-    "url": "URL#4726232"
+    "url": "URL#5131231"
   },
   {
     "@score": "1",
-    "@id": "4855221",
-    "info": {
-      "authors": {
-        "author": {
-          "@pid": "16/268",
-          "text": "André L. Santos 0001"
-        }
-      },
-      "title": "Novel interaction metaphors for object-oriented programming concepts.",
-      "venue": "Koli Calling",
-      "pages": "117-126",
-      "year": "2014",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/kolicalling/Santos14",
-      "doi": "10.1145/2674683.2674693",
-      "ee": "https://doi.org/10.1145/2674683.2674693",
-      "url": "https://dblp.org/rec/conf/kolicalling/Santos14"
-    },
-    "url": "URL#4855221"
-  },
-  {
-    "@score": "1",
-    "@id": "5408886",
-    "info": {
-      "authors": {
-        "author": {
-          "@pid": "16/268",
-          "text": "André L. Santos 0001"
-        }
-      },
-      "title": "An open-ended environment for teaching Java in context.",
-      "venue": "ITiCSE",
-      "pages": "87-92",
-      "year": "2012",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/iticse/Santos12",
-      "doi": "10.1145/2325296.2325320",
-      "ee": "https://doi.org/10.1145/2325296.2325320",
-      "url": "https://dblp.org/rec/conf/iticse/Santos12"
-    },
-    "url": "URL#5408886"
-  },
-  {
-    "@score": "1",
-    "@id": "5408887",
-    "info": {
-      "authors": {
-        "author": {
-          "@pid": "16/268",
-          "text": "André L. Santos 0001"
-        }
-      },
-      "title": "Developing contexts for teaching Java using AGUIA/J.",
-      "venue": "ITiCSE",
-      "pages": "378",
-      "year": "2012",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/iticse/Santos12a",
-      "doi": "10.1145/2325296.2325394",
-      "ee": "https://doi.org/10.1145/2325296.2325394",
-      "url": "https://dblp.org/rec/conf/iticse/Santos12a"
-    },
-    "url": "URL#5408887"
-  },
-  {
-    "@score": "1",
-    "@id": "5447916",
-    "info": {
-      "authors": {
-        "author": {
-          "@pid": "16/268",
-          "text": "André L. Santos 0001"
-        }
-      },
-      "title": "GUI-driven code tracing.",
-      "venue": "VL/HCC",
-      "pages": "111-118",
-      "year": "2012",
-      "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/vl/Santos12",
-      "doi": "10.1109/VLHCC.2012.6344495",
-      "ee": "https://doi.org/10.1109/VLHCC.2012.6344495",
-      "url": "https://dblp.org/rec/conf/vl/Santos12"
-    },
-    "url": "URL#5447916"
-  },
-  {
-    "@score": "1",
-    "@id": "5447917",
+    "@id": "5853455",
     "info": {
       "authors": {
         "author": {
@@ -933,11 +892,80 @@
       "ee": "https://doi.org/10.1109/VLHCC.2012.6344545",
       "url": "https://dblp.org/rec/conf/vl/Santos12a"
     },
-    "url": "URL#5447917"
+    "url": "URL#5853455"
   },
   {
     "@score": "1",
-    "@id": "5666469",
+    "@id": "5853454",
+    "info": {
+      "authors": {
+        "author": {
+          "@pid": "16/268",
+          "text": "André L. Santos 0001"
+        }
+      },
+      "title": "GUI-driven code tracing.",
+      "venue": "VL/HCC",
+      "pages": "111-118",
+      "year": "2012",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/vl/Santos12",
+      "doi": "10.1109/VLHCC.2012.6344495",
+      "ee": "https://doi.org/10.1109/VLHCC.2012.6344495",
+      "url": "https://dblp.org/rec/conf/vl/Santos12"
+    },
+    "url": "URL#5853454"
+  },
+  {
+    "@score": "1",
+    "@id": "5814425",
+    "info": {
+      "authors": {
+        "author": {
+          "@pid": "16/268",
+          "text": "André L. Santos 0001"
+        }
+      },
+      "title": "Developing contexts for teaching Java using AGUIA/J.",
+      "venue": "ITiCSE",
+      "pages": "378",
+      "year": "2012",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/iticse/Santos12a",
+      "doi": "10.1145/2325296.2325394",
+      "ee": "https://doi.org/10.1145/2325296.2325394",
+      "url": "https://dblp.org/rec/conf/iticse/Santos12a"
+    },
+    "url": "URL#5814425"
+  },
+  {
+    "@score": "1",
+    "@id": "5814424",
+    "info": {
+      "authors": {
+        "author": {
+          "@pid": "16/268",
+          "text": "André L. Santos 0001"
+        }
+      },
+      "title": "An open-ended environment for teaching Java in context.",
+      "venue": "ITiCSE",
+      "pages": "87-92",
+      "year": "2012",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/iticse/Santos12",
+      "doi": "10.1145/2325296.2325320",
+      "ee": "https://doi.org/10.1145/2325296.2325320",
+      "url": "https://dblp.org/rec/conf/iticse/Santos12"
+    },
+    "url": "URL#5814424"
+  },
+  {
+    "@score": "1",
+    "@id": "6072239",
     "info": {
       "authors": {
         "author": {
@@ -956,11 +984,11 @@
       "ee": "https://doi.org/10.1145/1999747.1999762",
       "url": "https://dblp.org/rec/conf/iticse/Santos11"
     },
-    "url": "URL#5666469"
+    "url": "URL#6072239"
   },
   {
     "@score": "1",
-    "@id": "5785176",
+    "@id": "6191051",
     "info": {
       "authors": {
         "author": [
@@ -991,11 +1019,11 @@
       "ee": "https://doi.org/10.1016/j.jss.2010.01.047",
       "url": "https://dblp.org/rec/journals/jss/SantosKL10"
     },
-    "url": "URL#5785176"
+    "url": "URL#6191051"
   },
   {
     "@score": "1",
-    "@id": "6028565",
+    "@id": "6434716",
     "info": {
       "authors": {
         "author": [
@@ -1038,38 +1066,11 @@
       "ee": "https://doi.org/10.1002/spe.893",
       "url": "https://dblp.org/rec/journals/spe/HammoudaRSSKS09"
     },
-    "url": "URL#6028565"
+    "url": "URL#6434716"
   },
   {
     "@score": "1",
-    "@id": "6294376",
-    "info": {
-      "authors": {
-        "author": [
-          {
-            "@pid": "16/268",
-            "text": "André L. Santos 0001"
-          },
-          {
-            "@pid": "60/3159",
-            "text": "Kai Koskimies"
-          }
-        ]
-      },
-      "title": "Modular Hot Spots: A Pattern Language for Developing High-Level Framework Reuse Interfaces using Aspects.",
-      "venue": "EuroPLoP",
-      "year": "2008",
-      "type": "Conference and Workshop Papers",
-      "access": "open",
-      "key": "conf/europlop/SantosK08",
-      "ee": "https://ceur-ws.org/Vol-610/paper07.pdf",
-      "url": "https://dblp.org/rec/conf/europlop/SantosK08"
-    },
-    "url": "URL#6294376"
-  },
-  {
-    "@score": "1",
-    "@id": "6364907",
+    "@id": "6771332",
     "info": {
       "authors": {
         "author": [
@@ -1098,11 +1099,11 @@
       "ee": "https://doi.org/10.1109/SPLC.2008.17",
       "url": "https://dblp.org/rec/conf/splc/SantosKL08"
     },
-    "url": "URL#6364907"
+    "url": "URL#6771332"
   },
   {
     "@score": "1",
-    "@id": "6467845",
+    "@id": "6700801",
     "info": {
       "authors": {
         "author": [
@@ -1111,31 +1112,48 @@
             "text": "André L. Santos 0001"
           },
           {
-            "@pid": "75/5295",
-            "text": "Antónia Lopes"
-          },
-          {
             "@pid": "60/3159",
             "text": "Kai Koskimies"
           }
         ]
       },
-      "title": "Framework specialization aspects.",
-      "venue": "AOSD",
-      "pages": "14-24",
-      "year": "2007",
+      "title": "Modular Hot Spots: A Pattern Language for Developing High-Level Framework Reuse Interfaces using Aspects.",
+      "venue": "EuroPLoP",
+      "year": "2008",
       "type": "Conference and Workshop Papers",
-      "access": "closed",
-      "key": "conf/aosd/SantosLK07",
-      "doi": "10.1145/1218563.1218566",
-      "ee": "https://doi.org/10.1145/1218563.1218566",
-      "url": "https://dblp.org/rec/conf/aosd/SantosLK07"
+      "access": "open",
+      "key": "conf/europlop/SantosK08",
+      "ee": "https://ceur-ws.org/Vol-610/paper07.pdf",
+      "url": "https://dblp.org/rec/conf/europlop/SantosK08"
     },
-    "url": "URL#6467845"
+    "url": "URL#6700801"
   },
   {
     "@score": "1",
-    "@id": "6502544",
+    "@id": "6951730",
+    "info": {
+      "authors": {
+        "author": {
+          "@pid": "16/268",
+          "text": "André L. Santos 0001"
+        }
+      },
+      "title": "Automatic support for model-driven specialization of object-oriented frameworks.",
+      "venue": "OOPSLA Companion",
+      "pages": "923-924",
+      "year": "2007",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/oopsla/Santos07",
+      "doi": "10.1145/1297846.1297947",
+      "ee": "https://doi.org/10.1145/1297846.1297947",
+      "url": "https://dblp.org/rec/conf/oopsla/Santos07"
+    },
+    "url": "URL#6951730"
+  },
+  {
+    "@score": "1",
+    "@id": "6909152",
     "info": {
       "authors": {
         "author": [
@@ -1168,98 +1186,44 @@
       "ee": "https://doi.org/10.1109/ICALT.2007.100",
       "url": "https://dblp.org/rec/conf/icalt/HammoudaJSK07"
     },
-    "url": "URL#6502544"
+    "url": "URL#6909152"
   },
   {
     "@score": "1",
-    "@id": "6545122",
+    "@id": "6874453",
     "info": {
       "authors": {
-        "author": {
-          "@pid": "16/268",
-          "text": "André L. Santos 0001"
-        }
+        "author": [
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "75/5295",
+            "text": "Antónia Lopes"
+          },
+          {
+            "@pid": "60/3159",
+            "text": "Kai Koskimies"
+          }
+        ]
       },
-      "title": "Automatic support for model-driven specialization of object-oriented frameworks.",
-      "venue": "OOPSLA Companion",
-      "pages": "923-924",
+      "title": "Framework specialization aspects.",
+      "venue": "AOSD",
+      "pages": "14-24",
       "year": "2007",
       "type": "Conference and Workshop Papers",
       "access": "closed",
-      "key": "conf/oopsla/Santos07",
-      "doi": "10.1145/1297846.1297947",
-      "ee": "https://doi.org/10.1145/1297846.1297947",
-      "url": "https://dblp.org/rec/conf/oopsla/Santos07"
+      "key": "conf/aosd/SantosLK07",
+      "doi": "10.1145/1218563.1218566",
+      "ee": "https://doi.org/10.1145/1218563.1218566",
+      "url": "https://dblp.org/rec/conf/aosd/SantosLK07"
     },
-    "url": "URL#6545122"
+    "url": "URL#6874453"
   },
   {
     "@score": "1",
-    "@id": "6625723",
-    "info": {
-      "authors": {
-        "author": [
-          {
-            "@pid": "16/268",
-            "text": "André L. Santos 0001"
-          },
-          {
-            "@pid": "60/3159",
-            "text": "Kai Koskimies"
-          },
-          {
-            "@pid": "75/5295",
-            "text": "Antónia Lopes"
-          }
-        ]
-      },
-      "title": "A Model-Driven Approach to Variability Management in Product-Line Engineering.",
-      "venue": "Nord. J. Comput.",
-      "volume": "13",
-      "number": "3",
-      "pages": "196-213",
-      "year": "2006",
-      "type": "Journal Articles",
-      "access": "unavailable",
-      "key": "journals/njc/SantosKL06",
-      "url": "https://dblp.org/rec/journals/njc/SantosKL06"
-    },
-    "url": "URL#6625723"
-  },
-  {
-    "@score": "1",
-    "@id": "6719806",
-    "info": {
-      "authors": {
-        "author": [
-          {
-            "@pid": "16/268",
-            "text": "André L. Santos 0001"
-          },
-          {
-            "@pid": "75/5295",
-            "text": "Antónia Lopes"
-          },
-          {
-            "@pid": "60/3159",
-            "text": "Kai Koskimies"
-          }
-        ]
-      },
-      "title": "Modularizing Framework Hot Spots Using Aspects.",
-      "venue": "JISBD",
-      "pages": "389-399",
-      "year": "2006",
-      "type": "Conference and Workshop Papers",
-      "access": "unavailable",
-      "key": "conf/jisbd/SantosLK06",
-      "url": "https://dblp.org/rec/conf/jisbd/SantosLK06"
-    },
-    "url": "URL#6719806"
-  },
-  {
-    "@score": "1",
-    "@id": "6733656",
+    "@id": "7140479",
     "info": {
       "authors": {
         "author": [
@@ -1288,6 +1252,70 @@
       "ee": "https://doi.org/10.1145/1141277.1141465",
       "url": "https://dblp.org/rec/conf/sac/GomesSS06"
     },
-    "url": "URL#6733656"
+    "url": "URL#7140479"
+  },
+  {
+    "@score": "1",
+    "@id": "7126629",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "75/5295",
+            "text": "Antónia Lopes"
+          },
+          {
+            "@pid": "60/3159",
+            "text": "Kai Koskimies"
+          }
+        ]
+      },
+      "title": "Modularizing Framework Hot Spots Using Aspects.",
+      "venue": "JISBD",
+      "pages": "389-399",
+      "year": "2006",
+      "type": "Conference and Workshop Papers",
+      "access": "unavailable",
+      "key": "conf/jisbd/SantosLK06",
+      "url": "https://dblp.org/rec/conf/jisbd/SantosLK06"
+    },
+    "url": "URL#7126629"
+  },
+  {
+    "@score": "1",
+    "@id": "7032387",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "60/3159",
+            "text": "Kai Koskimies"
+          },
+          {
+            "@pid": "75/5295",
+            "text": "Antónia Lopes"
+          }
+        ]
+      },
+      "title": "A Model-Driven Approach to Variability Management in Product-Line Engineering.",
+      "venue": "Nord. J. Comput.",
+      "volume": "13",
+      "number": "3",
+      "pages": "196-213",
+      "year": "2006",
+      "type": "Journal Articles",
+      "access": "unavailable",
+      "key": "journals/njc/SantosKL06",
+      "url": "https://dblp.org/rec/journals/njc/SantosKL06"
+    },
+    "url": "URL#7032387"
   }
 ]

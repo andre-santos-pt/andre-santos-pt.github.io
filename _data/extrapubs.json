@@ -1,0 +1,30 @@
+[
+  {
+    "@score": "1",
+    "@id": "230024",
+    "info": {
+      "authors": {
+        "author": [
+            {
+            "@pid": "16/268",
+            "text": "André L. Santos 0001"
+          },
+          {
+            "@pid": "382/2951",
+            "text": "Afonso B. Caniço"
+          }
+        ]
+      },
+      "title": "Modeling structured programming with Strudel: a simulation runtime for programming education tools",
+      "venue": "Software and Systems Modeling",
+      "pages": null,
+      "year": "2025",
+      "type": "Journal Papers",
+      "access": "open",
+      "key": "journals/sosym/Santos25",
+      "doi": "10.1007/s10270-025-01337-7",
+      "ee": "https://link.springer.com/article/10.1007/s10270-025-01337-7"
+    },
+    "url": "URL#230024"
+  }
+]
