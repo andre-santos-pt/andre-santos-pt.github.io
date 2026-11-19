@@ -1,1 +1,275 @@
-hello
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Loading course...</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="lib/matte-web-ace.js"></script>
+    <script src="lib/tracing-matte.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/viz.js@2.1.2/viz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/viz.js@2.1.2/full.render.js"></script>
+    <link rel="stylesheet" href="lib/controlflow-matte.css">
+    <script src="lib/controlflow-matte.js"></script>
+
+    <script src="quiz.js"></script>
+</head>
+<body>
+
+<header id="course-header">
+    <div id="course-heading">
+        <h1 id="book-title">Course</h1>
+        <span id="course-author"></span>
+    </div>
+    <span id="active-section" aria-live="polite"></span>
+</header>
+<div id="course-layout">
+    <aside id="sidebar" aria-label="Course chapters">
+        <button id="sidebar-toggle" type="button" aria-controls="chapter-list"
+                aria-label="Hide chapters" title="Hide chapters" aria-expanded="true">
+            ‹
+        </button>
+        <div id="chapter-list"></div>
+    </aside>
+    <div id="content">Loading...</div>
+</div>
+
+<script>
+
+    const renderer = new marked.Renderer();
+    marked.setOptions({
+        renderer: renderer,
+        highlight: function (code) {
+            return hljs.highlightAuto(code).value;
+        },
+        gfm: true,
+        breaks: true
+    });
+
+    var contentRoot = new URLSearchParams(window.location.search)
+        .get('course') || 'pej';
+
+    const contentIndexName = '/index.json'
+    async function loadCourse() {
+        const response = await fetch(contentRoot + contentIndexName);
+        const course = await response.json();
+
+        document.title = course.title;
+        document.getElementById('book-title').textContent = course.title;
+        const author = typeof course.author === 'string' ? course.author.trim() : '';
+        const authorAttribution = document.getElementById('course-author');
+        authorAttribution.textContent = author ? `${author}` : '';
+        authorAttribution.hidden = !author;
+
+        const sidebar = document.getElementById('chapter-list');
+
+        const requestedPage = new URLSearchParams(window.location.search).get('page');
+        const pages = coursePages(course.chapters);
+        course.chapters.forEach(section => renderSection(section, sidebar));
+        const chapter = pages.find(chapter => chapterKey(chapter) === requestedPage)
+            || pages[0];
+        await openChapter(chapter, false);
+
+        window.addEventListener('popstate', () => {
+            const page = new URLSearchParams(window.location.search).get('page');
+            const chapter = pages.find(chapter => chapterKey(chapter) === page)
+                || pages[0];
+            openChapter(chapter, false);
+        });
+    }
+
+    function renderSection(section, container, parent = '') {
+        const group = document.createElement('div');
+        group.className = 'chapter-group';
+        group.dataset.pages = coursePages([section], parent).map(chapterKey).join(' ');
+
+        if (section.file || section.folder) {
+            const chapter = {...section, parent};
+            const link = document.createElement('button');
+            link.type = 'button';
+            link.className = section.file ? 'chapter' : 'chapter chapter-group-title';
+            link.textContent = section.title;
+            link.dataset.page = chapterKey(chapter);
+            link.addEventListener('click', () => openChapter(chapter, true));
+            group.appendChild(link);
+        } else {
+            const title = document.createElement('div');
+            title.className = 'chapter-group-title';
+            title.textContent = section.title;
+            group.appendChild(title);
+        }
+
+        if (section.sections?.length) {
+            const children = document.createElement('div');
+            children.className = 'chapter-children';
+            children.hidden = true;
+            const childParent = section.folder
+                ? (parent ? `${parent}/${section.folder}` : section.folder)
+                : parent;
+            section.sections.forEach(subsection =>
+                renderSection(subsection, children, childParent));
+            group.appendChild(children);
+        }
+
+        container.appendChild(group);
+    }
+
+    function coursePages(sections, parent = '') {
+        return sections.flatMap(section => {
+            const page = section.file || section.folder
+                ? {...section, parent}
+                : null;
+            const childParent = section.folder
+                ? (parent ? `${parent}/${section.folder}` : section.folder)
+                : parent;
+            return [
+                ...(page ? [page] : []),
+                ...coursePages(section.sections || [], childParent)
+            ];
+        });
+    }
+
+    function chapterKey(chapter) {
+        return (chapter.file || chapter.folder).replace(/\.md$/i, '');
+    }
+
+    function markdownFileName(file) {
+        return /\.md$/i.test(file) ? file : `${file}.md`;
+    }
+
+    async function openChapter(chapter, updateUrl) {
+        if (!chapter)
+            return;
+
+        const page = chapterKey(chapter);
+        document.querySelectorAll('.chapter[data-page]').forEach(element => {
+            element.classList.toggle('active', element.dataset.page === page);
+        });
+        document.querySelectorAll('.chapter-group').forEach(group => {
+            const children = group.querySelector(':scope > .chapter-children');
+            if (children)
+                children.hidden = !group.dataset.pages.split(' ').includes(page);
+        });
+        document.getElementById('active-section').textContent = chapter.title;
+
+        if (updateUrl) {
+            const url = new URL(window.location.href);
+            url.searchParams.set('page', chapterKey(chapter));
+            url.hash = '';
+            window.history.pushState({}, '', url);
+        }
+
+        const file = chapter.file
+            ? `${contentRoot}/${chapter.parent ? `${chapter.parent}/` : ''}${markdownFileName(chapter.file)}`
+            : `${contentRoot}/${chapter.parent ? `${chapter.parent}/` : ''}${chapter.folder}/${markdownFileName(chapter.folder)}`;
+        await loadMarkdown(file, window.location.hash);
+    }
+
+    let markdownRequest = 0;
+    async function loadMarkdown(file, anchor = '') {
+        const request = ++markdownRequest;
+        const response = await fetch(file);
+        const markdown = await response.text();
+        if (request !== markdownRequest)
+            return;
+
+        const content = document.getElementById('content');
+        const renderedContent = document.createElement('template');
+        renderedContent.innerHTML = marked.parse(markdown);
+        renderedContent.content.querySelectorAll('matte-ace').forEach(widget => {
+            widget.setAttribute('pt', '');
+        });
+        content.replaceChildren(renderedContent.content);
+        restoreCodeWidgets(content);
+        const headingIds = new Set();
+        content.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach((heading, index) => {
+            const slug = heading.textContent.trim().normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/^-|-$/g, '') || `section-${index + 1}`;
+            let id = slug;
+            let suffix = 2;
+            while (headingIds.has(id))
+                id = `${slug}-${suffix++}`;
+            headingIds.add(id);
+            heading.id = id;
+        });
+        window.initializeQuizzes(content);
+
+        if (anchor) {
+            let id;
+            try {
+                id = decodeURIComponent(anchor.slice(1));
+            } catch (error) {
+                console.warn('Ignoring malformed section link:', anchor);
+                return;
+            }
+            Array.from(content.querySelectorAll('h1, h2, h3, h4, h5, h6'))
+                .find(heading => heading.id === id)
+                ?.scrollIntoView();
+        }
+    }
+
+    function restoreCodeWidgets(root) {
+        root.querySelectorAll('matte-ace[data-storage-id]').forEach(widget => {
+            const storageId = widget.dataset.storageId.trim();
+            if (!storageId || !widget.editor)
+                return;
+
+            const editor = widget.editor;
+            const storageKey = `matte:code:${storageId}`;
+            let savedCode = null;
+            let savedCall = null;
+            try {
+                savedCode = window.localStorage.getItem(storageKey);
+                savedCall = window.localStorage.getItem(`${storageKey}:call`);
+            } catch (error) {
+                console.warn('Unable to load saved code:', error);
+            }
+
+            if (savedCode !== null)
+                editor.editor.setValue(savedCode, -1);
+            if (savedCall !== null && editor.callBox)
+                editor.callBox.value = savedCall;
+
+            editor.editor.session.on('change', () => {
+                try {
+                    window.localStorage.setItem(storageKey, editor.editor.getValue());
+                } catch (error) {
+                    console.warn('Unable to save code:', error);
+                }
+            });
+            editor.callBox?.addEventListener('input', () => {
+                try {
+                    window.localStorage.setItem(`${storageKey}:call`, editor.callBox.value);
+                } catch (error) {
+                    console.warn('Unable to save code widget call:', error);
+                }
+            });
+
+            if (savedCode !== null || savedCall !== null)
+                editor.runParser(savedCall ?? editor.callBox?.value ?? '');
+        });
+    }
+
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    sidebarToggle.addEventListener('click', () => {
+        const collapsed = document.body.classList.toggle('sidebar-collapsed');
+        sidebarToggle.setAttribute('aria-expanded', String(!collapsed));
+        const label = collapsed ? 'Show chapters' : 'Hide chapters';
+        sidebarToggle.setAttribute('aria-label', label);
+        sidebarToggle.title = label;
+        sidebarToggle.textContent = collapsed ? '›' : '‹';
+    });
+
+    loadCourse();
+</script>
+
+</body>
+</html>

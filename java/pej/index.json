@@ -1,0 +1,23 @@
+{
+    "title": "Programação Estruturada (em Java)",
+    "author": "André L. Santos",
+    "chapters": [
+      { "title": "Sobre", "folder": "sobre" },
+
+      { "title": "Expressões", "folder": "expressoes",
+        "sections": [
+          { "title": "Expressões constantes", "file": "expressoes-constantes" },
+          { "title": "Expressões dependentes", "file": "expressoes-dependentes" },
+          { "title": "Exercícios", "file": "expressoes-exercicios" }
+        ]
+      },
+      {
+        "title": "Ciclos",
+        "folder": "ciclos",
+        "sections": [
+          { "title": "Exercícios", "file": "ciclos-exercicios" },
+          { "title": "Exercícios N/A", "file": "ciclos-exercicios2" }
+        ]
+      }
+    ]
+  }

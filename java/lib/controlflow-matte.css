@@ -1,0 +1,40 @@
+.control-flow {
+    overflow: auto;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.control-flow-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #35556f;
+    font-size: 13px;
+}
+
+.control-flow-toolbar select {
+    max-width: 100%;
+    padding: 3px 6px;
+}
+
+.control-flow-message {
+    padding: 2px;
+    color: #687887;
+    font-size: 13px;
+}
+
+.control-flow svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    font-family: Arial, sans-serif;
+}
+
+.control-flow .cfg-active > polygon,
+.control-flow .cfg-active > ellipse,
+.control-flow .cfg-active > path {
+    fill: #ffe0b2;
+    stroke: #e87916;
+    stroke-width: 2.5px;
+}
